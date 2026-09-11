@@ -1,0 +1,6 @@
+{
+  "name": "Objectio Hub",
+  "description": "Portail de Droit Positif et Hub central de l'écosystème Objectio par Mohamed MORCHID (964 R/1970).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
