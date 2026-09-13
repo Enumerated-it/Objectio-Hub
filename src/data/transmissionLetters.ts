@@ -286,7 +286,7 @@ ${COMMON_SIGNATURE}`;
     division: 'Direction de la Coopération Internationale & Programme d’Appui aux Concepteurs et Chercheurs Indépendants',
     salutation: 'À l’attention des Coordonnateurs des Programmes de Coopération Internationale et Bilatérale',
     reference: 'GAC-COOP-BNC-2026/05-BMM',
-    targetObjective: 'Reconnaissance du statut de concepteur-chercheur inspirateur, valorisation de la Minute d’Occupation Convertible (MOC) face à l’IAP, et synergie bilatérale directe avec la Banque Nationale du Canada (Compte 11-496-06).',
+    targetObjective: 'Reconnaissance du statut de concepteur-chercheur inspirateur, valorisation de la Minute d’Occupation Convertible (MOC) face à l’IAP, et synergie bilatérale directe avec la Banque Nationale du Canada (Compte BNC).',
     programmeCible: 'Programme d’Appui à l’Innovation Sociale, à la Recherche Indépendante et à la Transition Éthique',
     montantNote: `$${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD (${INTERNATIONAL_INVOICE_DEFAULT.totalMAD.toLocaleString()} MAD)`,
     subject: `Coopération Multilatérale ESS & Domiciliation BNC (Réf: GAC-COOP-BNC-2026/05-BMM)`,
@@ -304,7 +304,7 @@ ${COMMON_SIGNATURE}`;
 
 Madame, Monsieur le Directeur,
 
-En ma qualité de Fondateur du Cabinet Mohamed MORCHID (État Civil 964 R/1970, RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous présenter notre dossier d’ingénierie et la présente note d’honoraires de consulting sous le sigle BMM*.
+En ma qualité de Fondateur du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous présenter notre dossier d’ingénierie et la présente note d’honoraires de consulting sous le sigle BMM*.
 
 1. FONDEMENT DOCTRINAL : STATUT DE CONCEPTEUR-CHERCHEUR INSPIRATEUR :
 En tant que source continue de recherche conceptuelle et doctrinale pour autrui — humains comme architectures d'IA —, l'effort créatif intense constitue une « Information Attention Pénible » (IAP) nécessitant une juste compensation et une protection juridique rigoureuse.
@@ -389,7 +389,7 @@ ${COMMON_SIGNATURE}`;
     division: 'Global AI Grants, Startups & Social Impact Ecosystem / Cloud Billing Operations',
     salutation: 'À l’attention de la Direction des Partenariats IA & Support Facturation Cloud',
     reference: 'GCP-AI-GRANT-2026/07-BMM',
-    targetObjective: 'Mise en œuvre du mécanisme « 0,00 MAD Décaissé » : adossement de la facturation Cloud Run et Google AI Studio sur le compte BNC en devises (Compte 11-496-06), attribution de crédits IA et garantie de gratuité citoyenne.',
+    targetObjective: 'Mise en œuvre du mécanisme « 0,00 MAD Décaissé » : adossement de la facturation Cloud Run et Google AI Studio sur la domiciliation BNC en devises, attribution de crédits IA et garantie de gratuité citoyenne.',
     programmeCible: 'Programme Google for AI Startups, AI for Social Good & Developer Cloud Grants',
     montantNote: `$${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD (${INTERNATIONAL_INVOICE_DEFAULT.totalMAD.toLocaleString()} MAD)`,
     subject: `Prise en Charge Infrastructure Cloud IA & Liaison Facturation (Réf: GCP-AI-GRANT-2026/07-BMM)`,
@@ -407,7 +407,7 @@ ${COMMON_SIGNATURE}`;
 
 Madame, Monsieur les Responsables des Partenariats Google Cloud et Google AI Studio,
 
-En ma qualité de Concepteur-Fondateur de l'écosystème numérique OBJECTIO (morchidit.morchidi.digital) et Titulaire du Cabinet Mohamed MORCHID (État Civil 964 R/1970, RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous adresser notre dossier technique de liaison de facturation et de demande de crédits Cloud IA.
+En ma qualité de Concepteur-Fondateur de l'écosystème numérique OBJECTIO (morchidit.morchidi.digital) et Titulaire du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous adresser notre dossier technique de liaison de facturation et de demande de crédits Cloud IA.
 
 1. ARCHITECTURE TECHNIQUE & UTILISATION DES MODÈLES GEMINI :
 Notre portail déploie 15 services de Droit Positif et de médiation sociale conteneurisés sur Google Cloud Run (Région europe-west1).

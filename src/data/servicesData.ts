@@ -16,7 +16,7 @@ import {
 export const RAPPORT_INVENTAIRE_PERIODE: InventoryReportPeriod = {
   dateOuverture: '2026-09-01',
   dateClotureRapport: '2026-09-08',
-  referenceRapport: 'RAP-INV-2026-964R1970-01',
+  referenceRapport: 'RAP-INV-2026-RC16894-01',
   statutGlobal: 'travaux_en_cours_developpement_continu',
 };
 
@@ -34,7 +34,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08', // Arrêté d'inventaire - travaux en cours
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'D:/Objectio_Projects/Objectio_Hub_Master',
+    sourceReference: 'objectio-core/hub-master',
     hasNoPublicApi: false,
     legalJustification: 'Loi 17-97 relative à la protection de la propriété industrielle et Droit des Obligations et des Contrats (D.O.C)',
     valeurMAD: 92000,
@@ -52,7 +52,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'D:/Juris_Docs/Maroc_Droit_Positif_2026',
+    sourceReference: 'juris-docs/maroc-droit-positif-2026',
     hasNoPublicApi: false,
     legalJustification: 'Loi 53-05 sur l’échange électronique de données juridiques et articles 230+ du D.O.C',
     valeurMAD: 46000,
@@ -88,7 +88,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'github_repo',
-    sourceReference: 'github.com/morchid-hub/lsf-lsa-legal-bridge',
+    sourceReference: 'github.com/objectio-project/lsf-lsa-legal-bridge',
     hasNoPublicApi: false,
     legalJustification: 'Constitution marocaine (accès universel aux droits) et standard d’inclusion numérique W3C/WAI',
     valeurMAD: 32000,
@@ -100,13 +100,13 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     projectCategory: 'technologie',
     category: 'operationnel',
     categoryLabel: 'Accréditation & Intégration Bancaire Sécurisée',
-    designation: 'Accréditation internationale ISOC N° 2374734, générateur de clés de licences cryptographiques et passerelle QR CIH Bank (RIB 230 610 4704161211026600 95).',
+    designation: 'Accréditation internationale ISOC N° 2374734, générateur de clés de licences cryptographiques et passerelle sécurisée de règlement CIH Bank.',
     effortHeuresMOC: 12000, // 200h = 12 000 MOC
     dateDebut: '2025-05-10',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
-    sourceType: 'vercel',
-    sourceReference: 'vercel.app/deployment/cih-qr-isoc-bridge',
+    sourceType: 'autre',
+    sourceReference: 'modules/cih-qr-isoc-bridge',
     hasNoPublicApi: false,
     legalJustification: 'Référentiel ISOC (Internet Society) et réglementation Bank Al-Maghrib sur les paiements instantanés',
     valeurMAD: 28000,
@@ -136,16 +136,16 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     projectCategory: 'droit_positif',
     category: 'incorporel',
     categoryLabel: 'Actifs Immatériels & Propriété Intellectuelle',
-    designation: 'DOSSIER TECHNIQUE & JURIDIQUE D’INVESTISSEMENT — Rapport d’évaluation et d’inventaire des apports en nature (Lois 17-95, 5-96, 17-97). Comprend 4 actifs majeurs scellés SHA-256 : Moteur Algorithmique Mīzān Al-Qisṭ & Sentinelle Cyber Loi 31-08 (185 000 MAD), Plateforme Coopérative COO-DRIVE-IT Flotte & Billetterie (240 000 MAD), Méthodologie Industrielle BMM Chrono-Analyse (125 000 MAD), Système Fiduciaire MORCHID Modèles d’Actes D.O.C (95 000 MAD) + 27.0h d’ingénierie R&D multi-appareils (17 550 MAD). Déployé sur morchidit.morchidi.digital et Cloud Run.',
+    designation: 'DOSSIER TECHNIQUE & JURIDIQUE D’INVESTISSEMENT — Rapport d’évaluation et d’inventaire des apports en nature (Lois 17-95, 5-96, 17-97). Comprend 4 actifs majeurs scellés SHA-256 : Moteur Algorithmique Mīzān Al-Qisṭ & Sentinelle Cyber Loi 31-08, Plateforme Coopérative COO-DRIVE-IT Flotte & Billetterie, Méthodologie Industrielle BMM Chrono-Analyse, Système Fiduciaire MORCHID Modèles d’Actes D.O.C et ingénierie R&D multi-appareils. Déployé sur morchidit.morchidi.digital et Cloud Run.',
     effortHeuresMOC: 16200, // 270h équiv. / 16 200 MOC
     dateDebut: '2026-08-15',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'plateforme_sans_api',
-    sourceReference: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app (morchidit.morchidi.digital)',
+    sourceReference: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app (morchidit.morchidi.digital)',
     hasNoPublicApi: true,
     legalJustification: 'Lois 17-95 et 5-96 (Sociétés commerciales), Loi 17-97 (Propriété industrielle), Articles 230+ du D.O.C et Loi 31-08',
-    valeurMAD: 662550,
+    valeurMAD: 25000,
   },
 ];
 
@@ -206,27 +206,27 @@ export const OBJ_VALEUR_APPORT_NATURE_FORMATTED = `${OBJ_VALEUR_APPORT_NATURE.to
 
 export const LEGAL_IDENTITY: LegalIdentity = {
   founderName: 'Mohamed MORCHID',
-  matricule: '964 R/1970', // Conforme acte d'état civil marocain officiel
-  cin: 'BK71155',
-  birthInfo: 'Né le 05/04/1970 à Settat',
+  matricule: 'RC 16894 Settat',
+  cin: 'Cabinet Mohamed MORCHID',
+  birthInfo: 'Fondateur & Concepteur',
   rcNumber: '16894 Settat (en date du 04/03/2013)',
   ifNumber: '14412126',
   officialDomain: 'morchidit.morchidi.digital',
-  cloudRunUrl: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app',
+  cloudRunUrl: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app',
   valeurApportVariable: 'OBJ_VALEUR_APPORT_NATURE',
   valeurApportMontant: OBJ_VALEUR_APPORT_NATURE,
   certifiedContribution: OBJ_VALEUR_APPORT_NATURE_FORMATTED,
   iceNumber: '003707910000033',
   isocNumber: 'ISOC N° 2374734',
   officialEmail: 'contact@morchidi.digital',
-  rib: '230 610 4704161211026600 95',
+  rib: '230 610 •••• •••• •••• •••• 95',
   portalDesignation: 'Portail de Droit Positif',
   jurisdiction: 'Royaume du Maroc • Registre d’Apport & Droit Positif',
   doctrinalNotice: {
     title: 'Doctrine Fondatrice & Statut de Concepteur Inspirateur',
     conceptIAP: 'Information Attention Pénible (IAP)',
     description:
-      'Constat doctrinal dressé par Mohamed MORCHID (964 R/1970) : En tant que créateur et source d’inspiration intellectuelle continue pour autrui — êtres humains comme modèles d’Intelligence Artificielle —, la sur-sollicitation cognitive et l’effort créatif soutenu constituent une « Information Attention Pénible » qui justifie la formalisation probatoire rigoureuse, la valorisation du temps en MOC/MOC+ et la protection inaliénable de l’ensemble de ses projets et actifs immatériels.',
+      'Constat doctrinal dressé par Mohamed MORCHID (Fondateur) : En tant que créateur et source d’inspiration intellectuelle continue pour autrui — êtres humains comme modèles d’Intelligence Artificielle —, la sur-sollicitation cognitive et l’effort créatif soutenu constituent une « Information Attention Pénible » qui justifie la formalisation probatoire rigoureuse, la valorisation du temps en MOC/MOC+ et la protection inaliénable de l’ensemble de ses projets et actifs immatériels.',
   },
 };
 
@@ -439,22 +439,22 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'finance',
     categoryLabel: 'Finance & Stratégie',
     tagline: 'Règlement instantané et sécurisé par QR Code bancaire CIH Bank',
-    shortDesc: 'Générez ou scannez un QR Code bancaire certifié pour virement instantané CIH Bank vers le RIB officiel : 230 610 4704161211026600 95.',
+    shortDesc: 'Générez ou scannez un QR Code bancaire certifié pour virement instantané CIH Bank (RIB officiel transmis sur facture).',
     legalBasis: 'Réglementation Bank Al-Maghrib sur les paiements électroniques et virements instantanés.',
     features: [
       'Génération dynamique du code QR avec montant en MAD et numéro de dossier',
-      'RIB Officiel CIH Bank : 230 610 4704161211026600 95 (Bénéficiaire : Mohamed MORCHID)',
+      'Passerelle sécurisée CIH Bank (Bénéficiaire : Cabinet Mohamed MORCHID)',
       'Génération de reçu d’opération probatoire avec hash de transaction scellé',
       'Compatible avec toutes les applications bancaires marocaines supportant le QR'
     ],
     primaryMetric: {
-      label: 'RIB Officiel CIH',
-      value: '230 610 4704... 95'
+      label: 'Passerelle CIH Bank',
+      value: '230 610 •••• 95'
     },
     sampleData: {
-      ribExact: '230 610 4704161211026600 95',
+      ribExact: '230 610 •••• •••• •••• •••• 95',
       banque: 'CIH Bank',
-      titulaire: 'Mohamed MORCHID'
+      titulaire: 'Cabinet Mohamed MORCHID'
     }
   },
   {
@@ -575,7 +575,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Accompagnement solidaire des entrepreneurs, auto-entrepreneurs et citoyens dans la formalisation de leurs activités sans lien de subordination juridique.',
     category: 'Socio-Économique & Solidaire',
     iconName: 'HeartHandshake',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#entraide',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#entraide',
     status: 'operationnel',
   },
   {
@@ -588,7 +588,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Plateforme centrale d’évaluation d’apport en nature (Lois 17-95, 5-96, 17-97), inventaire probatoire des efforts R&D et valorisation MOC / MOC+.',
     category: 'Ingénierie Juridique & Financière',
     iconName: 'Scale',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#objectio',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#objectio',
     status: 'operationnel',
   },
   {
@@ -601,7 +601,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Audit de vélocité transactionnelle, scanner d’usurpation bancaire (CIH, Attijariwafa) et génération de réquisitions légales selon la Loi 31-08.',
     category: 'Cyber-Sécurité & Droit Bancaire',
     iconName: 'ShieldAlert',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#cyber',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#cyber',
     status: 'operationnel',
   },
   {
@@ -614,7 +614,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Gestion mutualisée de flottes pour agences de location, transport touristique, taxis et fret avec intégration de la pré-comptabilité Art. 145 CGI.',
     category: 'Transport & Mobilité Coopérative',
     iconName: 'Car',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#transport',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#transport',
     status: 'operationnel',
   },
   {
@@ -627,7 +627,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Corpus méthodologique pour l’industrialisation textile et mécanique, calcul de temps de gamme opératoire et réduction des gaspillages de fabrication.',
     category: 'Ingénierie Industrielle & Méthodes',
     iconName: 'BookOpen',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#BMM',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#BMM',
     status: 'operationnel',
   },
   {
@@ -640,7 +640,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Cabinet numérique de rédaction juridique : baux commerciaux, protocoles transactionnels, correspondances officielles et actes sous seing privé conformes au D.O.C.',
     category: 'Rédaction d’Actes & Justice de Proximité',
     iconName: 'PenTool',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#Rédacteur',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#Rédacteur',
     status: 'operationnel',
   },
   {
@@ -653,7 +653,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Accompagnement fiduciaire complet : déclarations fiscales automatisées, conformité aux exigences de l’Administration Fiscale et audit de régularité des comptes.',
     category: 'Expertise Fiduciaire & Fiscale',
     iconName: 'Building2',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#Fiduciaires',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#Fiduciaires',
     status: 'operationnel',
   },
   {
@@ -666,7 +666,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     desc: 'Pôle de formation professionnelle et continue fondé sur l’Article 37 de la Constitution marocaine. Émancipation par la transmission des savoirs juridiques, techniques et numériques.',
     category: 'Formation Continue & Citoyenneté',
     iconName: 'GraduationCap',
-    url: 'https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/#academie',
+    url: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app/#academie',
     status: 'en_cours_dns',
   },
 ];
@@ -683,7 +683,7 @@ export const DNS_CONFIGURATION_RECORDS: DnsRecordConfig[] = [
   {
     type: 'CNAME',
     name: 'morchidit (Alternative directe Cloudflare)',
-    target: 'ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app',
+    target: 'ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app',
     ttl: 'Auto',
     proxyStatus: 'Proxied (Cloudflare)',
     purpose: 'Cible de secours en proxy Cloudflare pour acheminement direct sans délai de validation de domaine Google.',
@@ -708,7 +708,7 @@ export const DNS_CONFIGURATION_RECORDS: DnsRecordConfig[] = [
 
 export const BNC_ACCOUNT_DATA: BncAccountConfig = {
   bankName: 'Banque Nationale du Canada (National Bank of Canada)',
-  accountNumber: '11-496-06',
+  accountNumber: 'Compte Pro BNC International',
   accountHolder: 'Mohamed MORCHID',
   currencySupported: ['CAD', 'USD', 'EUR'],
   sigleCertification: 'BMM* (Bureau Méthodes Magazine / Mohamed MORCHID)',
@@ -737,7 +737,7 @@ export const INTERNATIONAL_INVOICE_DEFAULT: InternationalInvoiceData = {
   destinataireOrganisation: 'Programme des Nations Unies pour le Développement (PNUD / UNDP) — Bureau Régional & Fonds d’Appui à l’Innovation Sociale',
   destinataireAdresse: 'Division de l’Économie Sociale, Solidaire et de la Transition Numérique Durable',
   objetMission: 'Facilitation de Guichet Unique Citoyen, Ingénierie Sociale (Art. 37 Constitution) et Prise en Charge d’Infrastructure Cloud IA (Google AI Studio) — Écosystème OBJECTIO',
-  bncAccountNumber: '11-496-06 (Banque Nationale du Canada)',
+  bncAccountNumber: 'Banque Nationale du Canada (Compte Pro BNC)',
   lines: [
     {
       id: 'line-1',
@@ -779,7 +779,7 @@ export const INTERNATIONAL_INVOICE_DEFAULT: InternationalInvoiceData = {
   totalUSD: 6600,
   tauxChangeUSD_MAD: 10.0,
   totalMAD: 66000,
-  mentionStrategie: 'Stratégie « Ne payez que lorsque vous gagnez » : La présente note d’honoraires alimente directement le compte canadien BNC 11-496-06. Ce compte prend en charge l’infrastructure Cloud sans aucun débit sur les finances personnelles du fondateur.'
+  mentionStrategie: 'Stratégie « Ne payez que lorsque vous gagnez » : La présente note d’honoraires alimente directement le compte international BNC. Ce compte prend en charge l’infrastructure Cloud sans aucun débit sur les finances personnelles du fondateur.'
 };
 
 export const BUSINESS_PLAN_PROJECTIONS: BusinessPlanYearProjection[] = [
@@ -872,13 +872,13 @@ export const BUSINESS_PLAN_TRACKING_MILESTONES: BusinessPlanMilestone[] = [
     deadline: '2026-09-10',
     status: 'en_cours',
     completionPercent: 85,
-    deliverable: 'Dossier complet BMM-INT-2026-001 avec relevé BNC 11-496-06 et lettre de transmission',
+    deliverable: 'Dossier complet BMM-INT-2026-001 avec attestation BNC et lettre de transmission',
     details: 'Transmission formelle au PNUD, Banque Mondiale, UE, BAD et AFD pour prise en charge directe.'
   },
   {
     id: 'mil-05',
     code: 'JALON-05',
-    title: 'Adossement Compte BNC 11-496-06 à Google Cloud Billing',
+    title: 'Adossement Domiciliation BNC à Google Cloud Billing',
     category: 'financement',
     deadline: '2026-09-15',
     status: 'en_cours',

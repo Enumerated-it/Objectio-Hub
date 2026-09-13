@@ -94,7 +94,7 @@ ${currentRecipient.salutation}
 OBJET :
 ${subject}
 
-[NOTE DE TRANSMISSION : L'intégralité du texte juridique officiel de la lettre, l'état civil certifié (964 R/1970) et les coordonnées bancaires BNC (Compte 11-496-06) ont été automatiquement copiés dans votre presse-papiers. Vous pouvez faire Ctrl+V pour les coller directement ci-dessous.]
+[NOTE DE TRANSMISSION : L'intégralité du texte officiel de la lettre, les références légales et les coordonnées de domiciliation BNC ont été automatiquement copiés dans votre presse-papiers. Vous pouvez faire Ctrl+V pour les coller directement ci-dessous.]
 
 --- DÉBUT DE LA LETTRE OFFICIELLE CERTIFIÉE BMM* ---
 ${fullLetter.slice(0, 900)}...
@@ -136,7 +136,7 @@ Devise : Dollar Américain (USD) / Équivalent MAD
 
 ÉMETTEUR :
 Cabinet de Consulting Mohamed MORCHID (Sigle d'Expertise BMM*)
-Titulaire : Mohamed MORCHID (État Civil 964 R/1970 • CIN BK71155)
+Titulaire : Mohamed MORCHID (Fondateur & Concepteur)
 RC 16894 Settat • ICE 003707910000033 • IF 14412126
 Internet Society ISOC N° 2374734
 Settat (Royaume du Maroc)
@@ -191,7 +191,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                   Accès Réservé : Fondateur & Secrétaire Général
                 </h2>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold shrink-0">
-                  Dossier BMM* • BNC 11-496-06
+                  Dossier BMM* • Domiciliation BNC
                 </span>
               </div>
               <p className="text-[11px] text-slate-400">
@@ -438,7 +438,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                     <span className="text-slate-200 truncate">{currentRecipient.subject}</span>
                   </div>
                   <span className="text-[10px] text-emerald-400 font-bold shrink-0 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
-                    Note $6 600 USD • BNC 11-496-06
+                    Note $6 600 USD • Domiciliation BNC
                   </span>
                 </div>
 
@@ -556,7 +556,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
               <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Conforme État Civil (964 R/1970), CIN (BK71155), RC 16894 Settat et Compte BNC 11-496-06.</span>
+                  <span>Conforme RC 16894 Settat, ICE 003707910000033 et Domiciliation BNC.</span>
                 </span>
                 <span className="text-amber-400 font-mono font-bold">100% Opposable Tribunal de Commerce</span>
               </div>
@@ -580,7 +580,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                     </span>
                   </div>
                   <p className="text-xs text-slate-400 mt-1">
-                    Destiné à encaissement sur le <strong>Compte BNC 11-496-06 (Banque Nationale du Canada)</strong>.
+                    Destiné à encaissement sur le <strong>Compte BNC International (Banque Nationale du Canada)</strong>.
                   </p>
                 </div>
 
@@ -599,7 +599,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
                   <span>DÉTAIL DES LIGNES DE CONSULTING CERTIFIÉES BMM* :</span>
-                  <span>Compte BNC 11-496-06</span>
+                  <span>Domiciliation BNC International</span>
                 </div>
 
                 <div className="divide-y divide-slate-800 border border-slate-800 rounded-xl overflow-hidden font-mono text-xs">
@@ -679,10 +679,10 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                     <span>CABINET DE CONSULTING & CONSEIL SOCIAL MOHAMED MORCHID (Sigle d'Expertise BMM*)</span>
                   </div>
                   <div className="text-slate-400 text-[11px] grid grid-cols-1 sm:grid-cols-2 gap-1 pt-1 border-t border-slate-800">
-                    <div>Titulaire Fondateur : <strong className="text-amber-300">Mohamed MORCHID</strong> (CIN <strong>BK71155</strong> • État Civil <strong>964 R/1970</strong>)</div>
+                    <div>Titulaire Fondateur : <strong className="text-amber-300">Mohamed MORCHID</strong> (Cabinet de Conseil Social)</div>
                     <div>Registre de Commerce : <strong className="text-slate-200">RC 16894 Settat</strong> (depuis le 04/03/2013)</div>
                     <div>Identifiants Légaux : <strong className="text-slate-200">ICE 003707910000033</strong> • IF 14412126</div>
-                    <div>Compte Domiciliation Int. : <strong className="text-emerald-400">BNC 11-496-06 (Banque Nationale du Canada)</strong></div>
+                    <div>Compte Domiciliation Int. : <strong className="text-emerald-400">Banque Nationale du Canada (Compte BNC)</strong></div>
                   </div>
                 </div>
 
@@ -722,12 +722,12 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                         Étape B : Envoi de la note d’honoraires certifiée BMM* aux Bailleurs
                       </h4>
                       <span className="text-[10px] font-mono text-sky-400 font-bold bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">
-                        ${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD • BNC 11-496-06
+                        ${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD • Domiciliation BNC
                       </span>
                     </div>
 
                     <p className="text-slate-300 leading-relaxed">
-                      La note d’honoraires de consulting (<strong>${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD</strong>, soit équivalent <strong>{INTERNATIONAL_INVOICE_DEFAULT.totalMAD.toLocaleString()} MAD</strong>) est transmise formellement <strong>au PNUD et aux bailleurs internationaux partenaires</strong> avec le libellé du compte <strong>Banque Nationale du Canada (Compte 11-496-06)</strong> :
+                      La note d’honoraires de consulting (<strong>${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD</strong>, soit équivalent <strong>{INTERNATIONAL_INVOICE_DEFAULT.totalMAD.toLocaleString()} MAD</strong>) est transmise formellement <strong>au PNUD et aux bailleurs internationaux partenaires</strong> avec le libellé du compte <strong>Banque Nationale du Canada (Compte BNC Pro)</strong> :
                     </p>
 
                     {/* Liste nominative et interactive des bailleurs et partenaires adressés */}
@@ -780,7 +780,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                     <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-[11px] space-y-1 text-slate-300">
                       <span className="font-bold text-amber-300 block font-mono">Détails de l'Expertise & Mandat de Consulting :</span>
                       <p className="text-slate-400 leading-relaxed">
-                        • <strong>Titulaire :</strong> Honoraires de consulting de <strong>Monsieur Mohamed MORCHID</strong> (CIN <strong>BK71155</strong>, État Civil Marocain <strong>964 R/1970</strong>, immatriculé au <strong>RC 16894 Settat</strong> depuis le 04/03/2013, ICE 003707910000033).<br />
+                        • <strong>Titulaire :</strong> Honoraires de consulting de <strong>Monsieur Mohamed MORCHID</strong> (immatriculé au <strong>RC 16894 Settat</strong> depuis le 04/03/2013, ICE 003707910000033).<br />
                         • <strong>Sollicitations & Commanditaires :</strong> Consulté par les délégations de programmes de modernisation administrative, d'inclusion citoyenne, les partenaires socio-économiques et institutionnels pour la facilitation du Guichet Unique Citoyen (Art. 37 Constitution).<br />
                         • <strong>Période & Volume d'Intervention :</strong> Période continue <strong>2024-2026</strong> totalisant <strong>55 heures d'ingénierie certifiée</strong> (dont 33 heures d'intervention multi-terminaux MOC, 18.5h d'architecture système, 14.5h de chrono-analyse industrielle SMED BMM*, 12h de cyber-défense bancaire Loi 31-08, et 10h d'intégration et supervision IA).<br />
                         • <strong>Valeur des Services d'IA Prévus & Sollicités :</strong> Utilisation des modèles Google Gemini 1.5/2.0 Pro & Flash (Google AI Studio) pour le raisonnement de droit positif, l'analyse vectorielle des 15 services, la chrono-analyse industrielle et la protection Mīzān Al-Qisṭ, hébergés sur cluster Cloud Run conteneurisé.
@@ -802,7 +802,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                       </span>
                     </h4>
                     <p className="text-slate-400 leading-relaxed">
-                      Dès réception du premier versement ou subvention sur le compte canadien <strong>Banque Nationale du Canada (Compte N° 11-496-06)</strong>, ce moyen de paiement en devises est directement associé à la facturation Google Cloud. <strong>Aucune carte bancaire marocaine personnelle n'est sollicitée ni débitée.</strong>
+                      Dès réception du premier versement ou subvention sur le compte canadien <strong>Banque Nationale du Canada (Compte BNC Pro)</strong>, ce moyen de paiement en devises est directement associé à la facturation Google Cloud. <strong>Aucune carte bancaire marocaine personnelle n'est sollicitée ni débitée.</strong>
                     </p>
                   </div>
                 </div>
@@ -1013,7 +1013,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
         <div className="px-5 py-3.5 border-t border-slate-800 bg-slate-950/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-mono shrink-0">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Banque Nationale du Canada (Compte 11-496-06) • BMM* • RC 16894 Settat</span>
+            <span>Banque Nationale du Canada • BMM* • RC 16894 Settat</span>
           </div>
 
           <div className="flex items-center gap-2">

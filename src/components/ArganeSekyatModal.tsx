@@ -177,7 +177,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
         if (lower.includes('smed') || lower.includes('chrono') || lower.includes('atelier')) {
           sekyatText = `Pour la chrono-analyse SMED d'atelier, la méthodologie BMM* scinde les temps de transition : préparation externe en temps masqué, outillage pré-réglé, et standardisation 5S. Vous pouvez ainsi diviser par 3 les temps d'arrêt machine et optimiser votre Taux de Rendement Synthétique (TRS).`;
         } else if (lower.includes('bnc') || lower.includes('dollar') || lower.includes('facture') || lower.includes('honoraires') || lower.includes('6600')) {
-          sekyatText = `Le modèle de financement international est adossé à la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) et à la domiciliation Banque Nationale du Canada (BNC Compte N° 11-496-06). Il permet de couvrir les requêtes serveurs et l'hébergement sans débourser un seul dirham citoyen.`;
+          sekyatText = `Le modèle de financement international est adossé à la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) et à la domiciliation Banque Nationale du Canada (Compte BNC International). Il permet de couvrir les requêtes serveurs et l'hébergement sans débourser un seul dirham citoyen.`;
         }
 
         const sekyatMsg: ChatMessage = {
@@ -199,7 +199,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
   const handleCopyTranscript = async () => {
     let transcript = `================================================================================\n`;
     transcript += `PROCES-VERBAL DE CONCERTATION INTELLIGENTE — ARGANE-SEKYAT V2\n`;
-    transcript += `Cabinet de Consulting BMM* • Titulaire : Mohamed MORCHID (964 R/1970 • CIN BK71155)\n`;
+    transcript += `Cabinet de Consulting BMM* • Titulaire : Mohamed MORCHID (Fondateur)\n`;
     transcript += `Immatriculation : RC 16894 Settat • ICE 003707910000033 • E-mail : contact@morchidi.digital\n`;
     transcript += `================================================================================\n\n`;
 
@@ -528,7 +528,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                       {currentScenario.consensus}
                     </p>
                     <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
-                      <span>Adossé au Compte BNC N° 11-496-06 • Gratuité usager 0,00 MAD</span>
+                      <span>Adossé à la Domiciliation BNC • Gratuité usager 0,00 MAD</span>
                       <button
                         onClick={handleCopyTranscript}
                         className="text-purple-300 hover:text-white flex items-center gap-1 cursor-pointer"
@@ -728,7 +728,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                   <div className="p-3 rounded-lg bg-slate-950 border border-slate-850">
                     <div className="text-slate-500 text-[10px] uppercase">Souveraineté & Coût</div>
                     <div className="text-emerald-300 font-bold mt-0.5">0,00 MAD Décaissé</div>
-                    <div className="text-[10px] text-slate-400 mt-1">Prise en charge BNC (Compte 11-496-06)</div>
+                    <div className="text-[10px] text-slate-400 mt-1">Prise en charge Domiciliation BNC</div>
                   </div>
                 </div>
               </div>

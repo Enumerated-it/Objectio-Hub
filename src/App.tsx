@@ -367,7 +367,7 @@ export default function App() {
                 {LEGAL_IDENTITY.isocNumber}
               </strong>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                Matricule titulaire 964 R/1970 • Standards d'intégrité numérique.
+                Accréditation professionnelle • Standards d'intégrité numérique.
               </p>
             </div>
           </div>
@@ -563,7 +563,7 @@ export default function App() {
                   Facilitation Internationale : « Ne Payez Que Lorsque Vous Gagnez »
                 </h2>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-900/60 text-emerald-300 border border-emerald-700 font-bold">
-                  Compte BNC 11-496-06 (Canada)
+                  Domiciliation BNC (Canada)
                 </span>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-950 text-sky-300 border border-sky-800">
                   Subventions PNUD & Bailleurs
@@ -611,7 +611,7 @@ export default function App() {
 
             <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
               <span className="text-[10px] text-slate-400 block uppercase">3. Domiciliation Devises</span>
-              <strong className="text-sky-300 text-sm">BNC N° 11-496-06</strong>
+              <strong className="text-sky-300 text-sm">BNC International</strong>
               <p className="text-[11px] text-slate-500 font-sans mt-0.5">Banque Nationale du Canada</p>
             </div>
 
@@ -709,7 +709,7 @@ export default function App() {
         hasNext={activeServiceIndex >= 0 && activeServiceIndex < SERVICES_LIST.length - 1}
       />
 
-      {/* Legal Certified Contribution Attestation Modal (208 000 MAD) */}
+      {/* Dossier d'Évaluation d'Apport en Nature (Bureau des méthodes Objectio) */}
       <AttestationModal
         isOpen={isAttestationOpen}
         onClose={() => setIsAttestationOpen(false)}
@@ -727,7 +727,7 @@ export default function App() {
         onClose={() => setIsShareModalOpen(false)}
       />
 
-      {/* International Billing & BNC / PNUD Facilitation Modal (Compte 11-496-06) */}
+      {/* International Billing & BNC / PNUD Facilitation Modal */}
       <InternationalBillingModal
         isOpen={isInternationalBillingOpen}
         onClose={() => setIsInternationalBillingOpen(false)}

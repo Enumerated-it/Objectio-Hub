@@ -77,7 +77,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
   const [newDateSoumission, setNewDateSoumission] = useState('2026-09-08');
   const [newStatut, setNewStatut] = useState<'en_cours_developpement' | 'actif_operationnel' | 'recherche_continue'>('en_cours_developpement');
   const [newSourceType, setNewSourceType] = useState<'dossier_local' | 'aistudio_google' | 'github_repo' | 'vercel' | 'deepseek_ai' | 'plateforme_sans_api' | 'autre'>('dossier_local');
-  const [newSourceReference, setNewSourceReference] = useState('D:/MesProjets/MonProjet');
+  const [newSourceReference, setNewSourceReference] = useState('projets/mon-projet');
   const [newJustification, setNewJustification] = useState('Droit des Obligations et des Contrats (D.O.C) & Protection des œuvres de l’esprit');
   const [hasNoApi, setHasNoApi] = useState(false);
 
@@ -174,7 +174,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
     );
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `rapport_inventaire_global_${LEGAL_IDENTITY.founderName.replace(/\s+/g, '_')}_964R1970.json`);
+    downloadAnchor.setAttribute("download", `rapport_inventaire_global_${LEGAL_IDENTITY.founderName.replace(/\s+/g, '_')}_RC16894.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -204,7 +204,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
   };
 
   const handleCopyWhatsapp = async () => {
-    const text = `Bonjour,\n\nLe Cabinet de Consulting / Conseil Social Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033) met à votre disposition son portail officiel :\n\n👉 Accès Général : ${LEGAL_IDENTITY.cloudRunUrl}\n\nAccès directs par pôle :\n🤝 Pôle Accompagnement & Entraide : ${LEGAL_IDENTITY.cloudRunUrl}/#entraide\n⚖️ 0. Écosystème OBJECTIO (Apport en Nature & Certification) : ${LEGAL_IDENTITY.cloudRunUrl}/#objectio\n🛡️ 1. Cyber-Défense & Loi 31-08 : ${LEGAL_IDENTITY.cloudRunUrl}/#cyber\n🚗 2. Plateforme Flotte & Location COO-DRIVE-IT : ${LEGAL_IDENTITY.cloudRunUrl}/#transport\n📖 3. Bureau Méthodes Magazine (BMM) : ${LEGAL_IDENTITY.cloudRunUrl}/#BMM\n✍️ 4. Cabinet Rédacteur Public (Actes & Requêtes) : ${LEGAL_IDENTITY.cloudRunUrl}/#Rédacteur\n🏢 5. Fiduciaires MORCHID (Compta, Fiscal & Paie) : ${LEGAL_IDENTITY.cloudRunUrl}/#Fiduciaires\n\nCabinet de Conseil Social Mohamed MORCHID | Settat (Maroc)\nRC 16894 Settat (04/03/2013) | ICE 003707910000033 | IF 14412126\nCompte Pro CIH Bank : RIB 230 610 4704161211026600 95`;
+    const text = `Bonjour,\n\nLe Cabinet de Consulting / Conseil Social Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033) met à votre disposition son portail officiel :\n\n👉 Accès Général : ${LEGAL_IDENTITY.cloudRunUrl}\n\nAccès directs par pôle :\n🤝 Pôle Accompagnement & Entraide : ${LEGAL_IDENTITY.cloudRunUrl}/#entraide\n⚖️ 0. Écosystème OBJECTIO (Apport en Nature & Certification) : ${LEGAL_IDENTITY.cloudRunUrl}/#objectio\n🛡️ 1. Cyber-Défense & Loi 31-08 : ${LEGAL_IDENTITY.cloudRunUrl}/#cyber\n🚗 2. Plateforme Flotte & Location COO-DRIVE-IT : ${LEGAL_IDENTITY.cloudRunUrl}/#transport\n📖 3. Bureau Méthodes Magazine (BMM) : ${LEGAL_IDENTITY.cloudRunUrl}/#BMM\n✍️ 4. Cabinet Rédacteur Public (Actes & Requêtes) : ${LEGAL_IDENTITY.cloudRunUrl}/#Rédacteur\n🏢 5. Fiduciaires MORCHID (Compta, Fiscal & Paie) : ${LEGAL_IDENTITY.cloudRunUrl}/#Fiduciaires\n\nCabinet de Conseil Social Mohamed MORCHID | Settat (Maroc)\nRC 16894 Settat (04/03/2013) | ICE 003707910000033 | IF 14412126\nRèglement : Passerelle CIH Bank (RIB sur facture)`;
     const ok = await copyToClipboard(text);
     if (ok) {
       setCopiedWhatsapp(true);
@@ -568,7 +568,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                               </div>
                             </div>
                             <div className="text-right text-amber-300 font-bold text-xs pt-1 border-t border-slate-800">
-                              Total Général Apport du Dossier : 662 550 MAD (~61 347,22 €)
+                              Valorisation de l'apport : {LEGAL_IDENTITY.certifiedContribution}
                             </div>
                           </div>
 
@@ -586,7 +586,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                             </div>
                             <div className="flex flex-wrap gap-1.5 text-[10px]">
                               <a
-                                href="https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app"
+                                href={typeof window !== 'undefined' ? window.location.origin : LEGAL_IDENTITY.cloudRunUrl}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="px-2 py-1 rounded bg-slate-950 hover:bg-slate-800 border border-amber-500/30 text-amber-300 inline-flex items-center gap-1"
@@ -605,7 +605,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                               ].map((pole) => (
                                 <a
                                   key={pole.hash}
-                                  href={`https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app/${pole.hash}`}
+                                  href={`${typeof window !== 'undefined' ? window.location.origin : LEGAL_IDENTITY.cloudRunUrl}/${pole.hash}`}
                                   target="_blank"
                                   rel="noreferrer"
                                   className="px-2 py-1 rounded bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white"
@@ -733,7 +733,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                         const val = e.target.value as any;
                         setNewSourceType(val);
                         if (val === 'dossier_local') {
-                          setNewSourceReference('D:/MesProjets/MonProjet');
+                          setNewSourceReference('projets/mon-projet');
                           setHasNoApi(true);
                         } else if (val === 'deepseek_ai') {
                           setNewSourceReference('DeepSeek Workspace / Session de conception');
@@ -770,7 +770,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                     <input
                       type="text"
                       required
-                      placeholder="Ex: D:/Objectio/Projets/2026 ou Chat DeepSeek 'Architecture Doctrinale'..."
+                      placeholder="Ex: projets/2026 ou Chat DeepSeek 'Architecture Doctrinale'..."
                       value={newSourceReference}
                       onChange={(e) => setNewSourceReference(e.target.value)}
                       className="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs focus:border-amber-400 outline-none font-mono"

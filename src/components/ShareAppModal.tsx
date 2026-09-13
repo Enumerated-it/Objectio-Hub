@@ -105,10 +105,10 @@ Accès directs par pôle :
    ${LEGAL_IDENTITY.cloudRunUrl}/#academie
 
 Cabinet de Conseil Social Mohamed MORCHID | Settat (Maroc)
-Titulaire : Mohamed MORCHID (État civil 964 R/1970 • CIN BK71155)
+Titulaire : Mohamed MORCHID (Fondateur)
 RC 16894 Settat (04/03/2013) • ICE 003707910000033 • IF 14412126
 Internet Society ISOC N° 2374734
-Compte Pro CIH Bank : RIB 230 610 4704161211026600 95`;
+Règlement : Passerelle CIH Bank (RIB sur facture)`;
   };
 
   const handleCopyWhatsapp = async () => {
@@ -547,7 +547,7 @@ Compte Pro CIH Bank : RIB 230 610 4704161211026600 95`;
               </div>
 
               <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-between text-xs text-slate-400">
-                <span>Contient la mention de l'État Civil (964 R/1970), CIN (BK71155), RC 16894 Settat et RIB CIH.</span>
+                <span>Contient la mention légale RC 16894 Settat, ICE et accréditation ISOC.</span>
                 <span className="text-emerald-400 font-bold font-mono">100% Conforme D.O.C</span>
               </div>
             </div>

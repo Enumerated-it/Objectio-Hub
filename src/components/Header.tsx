@@ -95,10 +95,10 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="text-emerald-300 hover:text-white bg-emerald-950/70 hover:bg-emerald-900/90 px-2 py-0.5 rounded border border-emerald-600/60 flex items-center gap-1 cursor-pointer transition-colors"
-              title="Consulter la facilité d'envoi de factures BNC (Compte 11-496-06) et la prise en charge PNUD (0,00 MAD débours)"
+              title="Consulter la facilité d'envoi de factures BNC et la prise en charge PNUD (0,00 MAD débours)"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>BNC 11-496-06 (Auto-Alimentation Cloud 0 MAD)</span>
+              <span>BNC International (Auto-Alimentation Cloud 0 MAD)</span>
             </button>
             <span className="text-slate-500">|</span>
             <button
@@ -138,14 +138,14 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="text-sm sm:text-base font-semibold text-slate-400 font-['Plus_Jakarta_Sans',sans-serif]">
                 par <span className="text-amber-200 underline decoration-amber-500/40 underline-offset-4">{LEGAL_IDENTITY.founderName}</span>{' '}
                 <span className="text-slate-400 text-xs sm:text-sm font-mono bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
-                  (CIN {LEGAL_IDENTITY.cin} • État civil {LEGAL_IDENTITY.matricule})
+                  ({LEGAL_IDENTITY.cin} • {LEGAL_IDENTITY.matricule})
                 </span>
               </span>
             </div>
 
             <p className="text-slate-300 max-w-3xl text-sm sm:text-base leading-relaxed">
-              Architecture centrale et portail de Droit Positif fédérant 15 services d’ingénierie juridique, financière et technologique, adossée à une{' '}
-              <strong className="text-amber-300 font-semibold">valeur d'apport certifiée de {LEGAL_IDENTITY.certifiedContribution}</strong>.
+              Architecture centrale et portail de Droit Positif fédérant 15 services d’ingénierie juridique, financière et technologique, adossée à un{' '}
+              <strong className="text-amber-300 font-semibold">patrimoine applicatif évalué à {LEGAL_IDENTITY.certifiedContribution}</strong>.
             </p>
 
             {/* Official Badges Pills */}
@@ -245,7 +245,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Accès Réservé : Fondateur & Secrétaire Général
                 </span>
                 <span className="block text-[10px] font-normal text-amber-300/90 font-mono">
-                  Plein Pouvoir (15 Services) • BMM* • BNC 11-496-06
+                  Plein Pouvoir (15 Services) • BMM* • Domiciliation BNC
                 </span>
               </div>
             </button>
@@ -253,12 +253,12 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 font-bold text-xs shadow-md transition-all active:scale-[0.98] cursor-pointer"
-              title="Ouvrir la facilité d'envoi de factures BNC (Compte 11-496-06) et prise en charge PNUD (0,00 MAD débours)"
+              title="Ouvrir la facilité d'envoi de factures BNC et prise en charge PNUD (0,00 MAD débours)"
             >
               <Building2 className="w-4 h-4 text-emerald-400 shrink-0" />
               <div className="text-left">
                 <span className="block leading-tight text-white">Facilité BNC & PNUD ($6 600)</span>
-                <span className="block text-[10px] font-normal text-emerald-400">Compte 11-496-06 • 0,00 MAD Débours</span>
+                <span className="block text-[10px] font-normal text-emerald-400">Prise en charge Bailleurs • 0 MAD Débours</span>
               </div>
             </button>
 

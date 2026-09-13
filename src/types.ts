@@ -31,7 +31,7 @@ export interface InventoryItem {
   dateSoumissionInventaire: string; // Date d'arrêté de l'inventaire (non définitive : travaux en cours)
   statutDeveloppement: 'en_cours_developpement' | 'actif_operationnel' | 'recherche_continue';
   sourceType: 'dossier_local' | 'aistudio_google' | 'github_repo' | 'vercel' | 'deepseek_ai' | 'plateforme_sans_api' | 'autre';
-  sourceReference: string; // Nom de dossier local (ex: D:/Objectio), URL repo, chat ID, ou référence sans API
+  sourceReference: string; // Chemin de projet, dépôt distant, ou référence probatoire
   hasNoPublicApi?: boolean; // Signal probatoire : plateforme fermée sans API, protocole d'empreinte probatoire
   legalJustification: string;
   valeurMAD: number;
@@ -56,20 +56,20 @@ export interface MarketTarget {
 
 export interface LegalIdentity {
   founderName: string;
-  matricule: string; // État civil marocain officiel : 964 R/1970
-  cin: string; // BK71155
-  birthInfo: string; // Né le 05/04/1970 à Settat
-  rcNumber: string; // 16894 Settat (04/03/2013)
-  ifNumber: string; // 14412126
-  officialDomain: string; // morchidit.morchidi.digital
-  cloudRunUrl: string; // https://ais-pre-cb4jpr2celshkxfrc45eva-72607106913.europe-west1.run.app
+  matricule: string;
+  cin: string;
+  birthInfo: string;
+  rcNumber: string;
+  ifNumber: string;
+  officialDomain: string;
+  cloudRunUrl: string;
   valeurApportVariable: string;
   valeurApportMontant: number;
   certifiedContribution: string;
   iceNumber: string;
   isocNumber: string;
   officialEmail?: string;
-  rib: string; // 230 610 4704161211026600 95
+  rib: string;
   portalDesignation: string;
   jurisdiction: string;
   doctrinalNotice: {
@@ -104,7 +104,7 @@ export interface DnsRecordConfig {
 
 export interface BncAccountConfig {
   bankName: string; // Banque Nationale du Canada (National Bank of Canada)
-  accountNumber: string; // 11-496-06
+  accountNumber: string; // Domiciliation BNC
   accountHolder: string; // Mohamed MORCHID
   currencySupported: string[]; // CAD, USD, EUR
   sigleCertification: string; // BMM* (Bureau Méthodes Magazine / Mohamed MORCHID)

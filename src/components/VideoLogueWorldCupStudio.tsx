@@ -51,7 +51,7 @@ export const INITIAL_AD_SPOTS: AdSpot[] = [
     sponsorName: 'OBJECTIO DROIT POSITIF',
     category: 'Régie Propre • Actif Certifié',
     tagline: 'Certification d\'Apport en Nature & Actes Opposables aux Tiers',
-    callToAction: 'Consulter l\'Inventaire Réel (208 000 MAD)',
+    callToAction: 'Consulter l\'Inventaire d\'Apport Analysé',
     badge: 'OFFICIEL BMM*',
     bgColor: 'from-amber-950/90 via-slate-900 to-amber-900/60',
     accentColor: 'text-amber-400 border-amber-500/60',
@@ -65,7 +65,7 @@ export const INITIAL_AD_SPOTS: AdSpot[] = [
     sponsorName: 'PASSERELLE PAIEMENT CIH',
     category: 'Régie Propre • Finance & QR',
     tagline: 'Règlement Instantané Sécurisé par QR Code Bancaire National',
-    callToAction: 'RIB 230 610 4704161211026600 95',
+    callToAction: 'Passerelle CIH Bank',
     badge: 'SCAN & PAY',
     bgColor: 'from-blue-950/90 via-slate-900 to-cyan-950/60',
     accentColor: 'text-cyan-400 border-cyan-500/60',
@@ -163,7 +163,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
       bgColor: 'from-amber-950/90 via-slate-900 to-rose-950/60',
       accentColor: 'text-rose-400 border-rose-500/60',
       targetLink: '#contact',
-      legalNotice: `Facture de régie émise sous BMM* • Dépôt au compte BNC 11-496-06 • Montant: ${newBudget} MAD`,
+      legalNotice: `Facture de régie émise sous BMM* • Dépôt au compte BNC International • Montant: ${newBudget} MAD`,
       ratePerMatchMAD: parseInt(newBudget) || 1800
     };
 
@@ -575,8 +575,8 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
             <div className="overflow-hidden whitespace-nowrap text-[11px] text-slate-300 flex-1">
               <span className="inline-block animate-marquee">
                 🍪 <strong>Kokises d'audience & personnalisation d'annonces :</strong> Respect strict de la Loi 09-08 (CNDP) • Aucune revente de données sans consentement • 
-                Régie Publicitaire Objectio Hub agréée BMM* • Titulaire légal : Mohamed MORCHID (964 R/1970) • Publication pour compte de tiers active • 
-                Facturation internationale adossée au compte Banque Nationale du Canada (BNC 11-496-06).
+                Régie Publicitaire Objectio Hub agréée BMM* • Titulaire légal : Mohamed MORCHID (Cabinet de Conseil Social) • Publication pour compte de tiers active • 
+                Facturation internationale adossée à la Banque Nationale du Canada (Compte BNC).
               </span>
             </div>
           </div>
@@ -616,7 +616,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
               <button onClick={() => setShowCookieDetails(false)} className="text-slate-400 hover:text-white">✕</button>
             </div>
             <p className="text-[11px] text-slate-300 leading-relaxed">
-              Le cadrage subdivisé télévisé intègre la traçabilité des <strong>« kokises » techniques et publicitaires</strong> pour permettre la diffusion équilibrée entre les annonces en <em>Régie Propre</em> (services Objectio, inventaire 208 000 MAD, QR CIH) et les <em>Publications pour Autrui</em> (entreprises partenaires, sponsors agrées).
+              Le cadrage subdivisé télévisé intègre la traçabilité des <strong>« kokises » techniques et publicitaires</strong> pour permettre la diffusion équilibrée entre les annonces en <em>Régie Propre</em> (services Objectio, inventaire d'apport analysé, QR CIH) et les <em>Publications pour Autrui</em> (entreprises partenaires, sponsors agrées).
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 font-mono text-[10px]">
               <div className="p-2 rounded bg-slate-950 border border-slate-800">

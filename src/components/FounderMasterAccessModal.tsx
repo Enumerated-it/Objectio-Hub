@@ -474,7 +474,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                       Facturation BNC & Prise en Charge PNUD ($6 600)
                     </h4>
                     <p className="text-xs text-slate-300 leading-relaxed mt-1">
-                      Note d'honoraires officielle BMM* adossée au compte Banque Nationale du Canada (Compte 11-496-06), générateur de lettres de transmission aux bailleurs (0,00 MAD débours).
+                      Note d'honoraires officielle BMM* adossée à la Banque Nationale du Canada (Compte BNC), générateur de lettres de transmission aux bailleurs (0,00 MAD débours).
                     </p>
                   </div>
                   <button
@@ -706,7 +706,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] font-mono text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2">
                 <span>Réf Rapport : BMM-AUDIT-MAÎTRE-2026</span>
                 <span className="text-emerald-400 font-bold">15 Services Opposables • BMM* Settat</span>
-                <span>Titulaire : Mohamed MORCHID (964 R/1970)</span>
+                <span>Titulaire : Mohamed MORCHID (Fondateur)</span>
               </div>
             </div>
           )}
@@ -723,7 +723,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
             <span>•</span>
             <span>RC 16894 Settat</span>
             <span>•</span>
-            <span className="text-slate-300">BNC 11-496-06</span>
+            <span className="text-slate-300">Domiciliation BNC</span>
           </div>
 
           <div className="flex items-center gap-2">

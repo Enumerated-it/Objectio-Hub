@@ -1,7 +1,7 @@
 /**
  * Données, personas et scénarios pour le module Argane-Sekyat V2
  * Développé sur la base de la modélisation cognitive DeepSeek & passerelle Discord
- * Cabinet de Consulting BMM* - Mohamed MORCHID (964 R/1970)
+ * Cabinet de Consulting BMM* - Mohamed MORCHID (Fondateur)
  */
 
 export interface AgentPersona {
@@ -45,12 +45,12 @@ export const AGENT_SEKYAT: AgentPersona = {
     'Chrono-analyse industrielle & postes de travail',
     'Méthode SMED (Single-Minute Exchange of Die)',
     'Minute d’Occupation Convertible (MOC / MOC+)',
-    'Équilibre financier international (Compte BNC 11-496-06)',
+    'Équilibre financier international (Domiciliation BNC)',
     'Élimination des gaspillages & R.O.I anti-inflation'
   ],
   systemPrompt: `Tu es Sekyat, ingénieur méthodes industrielles certifié sous le sigle BMM* (Bureau Méthodes Magazine) et analyste d'efficience économique.
 Ton rôle est d'analyser la faisabilité opérationnelle, le temps d'exécution (mesuré en MOC - Minute d'Occupation Convertible), l'élimination des goulots d'étranglement par la chrono-analyse SMED, et la rentabilité financière des actifs incorporels.
-Tu garantis que les engagements juridiques reposent sur un équilibre économique soutenable, adossé à l'auto-alimentation des flux bancaires (BNC Canada 11-496-06).`
+Tu garantis que les engagements juridiques reposent sur un équilibre économique soutenable, adossé à l'auto-alimentation des flux bancaires (BNC Canada Domiciliation).`
 };
 
 export interface ChatMessage {
@@ -103,7 +103,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       },
       {
         speaker: 'argane',
-        text: `Cette quantification mathématique est juridiquement recevable devant le tribunal de commerce car elle écarte l'aléa spéculatif. De plus, la clause d'agrément et la certification de non-subordination salariale protègent le fondateur (Mohamed MORCHID, 964 R/1970) contre toute requalification intempestive. L'apport est donc opposable aux tiers et aux créanciers.`,
+        text: `Cette quantification mathématique est juridiquement recevable devant le tribunal de commerce car elle écarte l'aléa spéculatif. De plus, la clause d'agrément et la certification de non-subordination salariale protègent le fondateur (Mohamed MORCHID, Fondateur) contre toute requalification intempestive. L'apport est donc opposable aux tiers et aux créanciers.`,
         metrics: { loiReference: 'D.O.C Art. 230 & Loi 53-05' }
       },
       {
@@ -158,7 +158,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       },
       {
         speaker: 'sekyat',
-        text: `Pour financer les serveurs Cloud Run et les requêtes IA sans prélever 1 centime sur le citoyen, nous activons la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) adressée aux bailleurs multilatéraux (PNUD, Banque Mondiale, Union Européenne, Canada). Les fonds sont directement adossés sur le compte Banque Nationale du Canada (BNC Compte 11-496-06), créant un réservoir en devises dédié aux factures technologiques.`,
+        text: `Pour financer les serveurs Cloud Run et les requêtes IA sans prélever 1 centime sur le citoyen, nous activons la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) adressée aux bailleurs multilatéraux (PNUD, Banque Mondiale, Union Européenne, Canada). Les fonds sont directement adossés sur le compte Banque Nationale du Canada (Compte BNC International), créant un réservoir en devises dédié aux factures technologiques.`,
         metrics: { mocPonderee: 6600 }
       },
       {
@@ -169,7 +169,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       {
         speaker: 'sekyat',
         text: `L'équation financière et humaine est ainsi bouclée : l'intelligence artificielle Argane-Sekyat sert le bien commun, financée par la coopération internationale, garantie sous l'expertise BMM* de Mohamed MORCHID.`,
-        metrics: { mocPonderee: 6600, loiReference: 'Liaison BNC 11-496-06' }
+        metrics: { mocPonderee: 6600, loiReference: 'Liaison Domiciliation BNC' }
       }
     ],
     consensus: 'Consensus Certifié : Modèle pérenne d’auto-financement par tiers bailleur multilatéral avec domiciliation BNC, assurant la gratuité citoyenne perpétuelle.'
@@ -195,6 +195,6 @@ export const PRECONFIGURED_USER_PROMPTS: { title: string; category: string; prom
   {
     title: 'Liaison BNC 0,00 MAD Débours',
     category: 'Finance',
-    prompt: 'Expliquez comment fonctionne la prise en charge de la note d’honoraires de $6 600 USD avec le compte BNC N° 11-496-06.'
+    prompt: 'Expliquez comment fonctionne la prise en charge de la note d’honoraires de $6 600 USD avec le compte BNC International.'
   }
 ];

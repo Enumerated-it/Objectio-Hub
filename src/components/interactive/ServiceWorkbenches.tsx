@@ -61,7 +61,7 @@ export const PvCertifWorkbench: React.FC = () => {
   );
   const [copied, setCopied] = useState(false);
 
-  const hashStamp = `CERT-OBJ-${pvType.slice(0, 3).toUpperCase()}-964R-${Math.abs(
+  const hashStamp = `CERT-OBJ-${pvType.slice(0, 3).toUpperCase()}-RC16894-${Math.abs(
     entityName.length * 7919 + parseInt(quorum || '0') * 13
   ).toString(16).toUpperCase()}`;
 
@@ -209,7 +209,7 @@ CADRE : DROIT POSITIF DES AFFAIRES MAROCAIN (D.O.C & CODE DE COMMERCE)
 AUTHENTIFICATION : OBJECTIO REDAC • ICE ${LEGAL_IDENTITY.iceNumber}
 
 ENTRE LES SOUSSIGNÉS :
-1. Mohamed MORCHID (964 R/1970), agissant pour l'Écosystème Objectio (Apport 208 000 MAD).
+1. Mohamed MORCHID (Fondateur visionnaire, Conseiller Référent et Secrétaire Général), agissant pour l'Écosystème Objectio (${LEGAL_IDENTITY.certifiedContribution}).
 2. La Partie Contractante signataire.
 
 CLAUSES CONTRACTUELLES RETENUES :
@@ -370,7 +370,7 @@ export const BusinessPlanWorkbench: React.FC = () => {
   const handleCopyBusinessPlanSummary = () => {
     const summaryText = `ÉCOSYSTÈME OBJECTIO — SYNTHÈSE DU BUSINESS PLAN & SUIVI D'EXÉCUTION
 ===================================================================
-Fondateur : ${LEGAL_IDENTITY.founderName} (CIN ${LEGAL_IDENTITY.matricule} • État Civil 964 R/1970)
+Fondateur : ${LEGAL_IDENTITY.founderName} (Fondateur)
 Cabinet de Consulting BMM* • RC 16894 Settat • ICE ${LEGAL_IDENTITY.iceNumber}
 Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCOUNT_DATA.accountNumber}
 
@@ -380,7 +380,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
 - Réserve Commissariat aux Apports : Tribunal de Commerce de Settat
 
 2. PROJECTIONS FINANCIÈRES (${currentYearData.label}) :
-- CA Bailleurs Internationaux (BNC 11-496-06) : $${caBailleursUSD.toLocaleString()} USD (${caBailleursMAD.toLocaleString()} MAD)
+- CA Bailleurs Internationaux (Domiciliation BNC) : $${caBailleursUSD.toLocaleString()} USD (${caBailleursMAD.toLocaleString()} MAD)
 - CA Consulting B2B Méthodes BMM* : ${consultingB2B.toLocaleString()} MAD
 - CA Licences & Protocoles Probatoires : ${licencesMAD.toLocaleString()} MAD
 - Chiffre d'Affaires Global : ${caTotal.toLocaleString()} MAD ($${Math.round(caTotal / 10).toLocaleString()} USD)
@@ -416,7 +416,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
             </code>
           </div>
           <p className="text-[11px] text-slate-400">
-            Adossement bancaire international BNC 11-496-06 • Note initiale $6 600 USD • Doctrine 0,00 MAD décaissé
+            Adossement bancaire international BNC • Note initiale $6 600 USD • Doctrine 0,00 MAD décaissé
           </p>
         </div>
         <div className="flex items-center gap-2 shrink-0">
@@ -589,7 +589,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
                 className="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-sm font-mono text-slate-200 focus:border-amber-500 outline-none"
               />
               <span className="text-[10px] text-slate-500 mt-1 block">
-                Pris en charge à 100% par le forfait bailleurs via le compte BNC 11-496-06
+                Pris en charge à 100% par le forfait bailleurs via la domiciliation BNC
               </span>
             </div>
             <div>
@@ -762,7 +762,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               </div>
               <div className="font-mono text-sm font-bold text-cyan-300">$6 600 USD Transmis</div>
               <p className="text-[10px] text-slate-500">
-                Note BMM-INT-2026-001 sur compte BNC 11-496-06 (PNUD & Bailleurs)
+                Note BMM-INT-2026-001 sur domiciliation BNC (PNUD & Bailleurs)
               </p>
             </div>
 
@@ -909,7 +909,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-amber-400">○ Prochain Jalon :</span>
-                <span>Raccordement Google Cloud Billing sur BNC 11-496-06 (Pay-Per-Request sécurisé).</span>
+                <span>Raccordement Google Cloud Billing sur domiciliation BNC (Pay-Per-Request sécurisé).</span>
               </div>
             </div>
           </div>
@@ -927,7 +927,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               </strong>
             </div>
             <p className="text-emerald-300/90 leading-relaxed">
-              Le Business Plan du Cabinet Mohamed MORCHID (BMM*) repose sur une séparation hermétique entre la consommation technologique Cloud IA et les finances personnelles. Grâce à l'adossement sur la Banque Nationale du Canada (BNC Compte 11-496-06), l'infrastructure s'autofinance par les subventions internationales tout en offrant la gratuité d'accès universelle aux citoyens marocains.
+              Le Business Plan du Cabinet Mohamed MORCHID (BMM*) repose sur une séparation hermétique entre la consommation technologique Cloud IA et les finances personnelles. Grâce à l'adossement sur la Banque Nationale du Canada (Domiciliation BNC), l'infrastructure s'autofinance par les subventions internationales tout en offrant la gratuité d'accès universelle aux citoyens marocains.
             </p>
           </div>
 
@@ -947,7 +947,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               </p>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 font-mono text-[11px] space-y-1">
                 <div className="text-cyan-300 font-bold">$6 600 USD / tranche</div>
-                <div className="text-slate-400">Compte BNC : 11-496-06</div>
+                <div className="text-slate-400">Compte BNC International</div>
                 <div className="text-[10px] text-slate-500">Auto-alimente Google Cloud</div>
               </div>
             </div>
@@ -1004,7 +1004,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               <span className="text-slate-600 font-bold">➔</span>
               <div className="p-2 bg-slate-950 rounded border border-cyan-500/40 text-cyan-300">
                 2. Banque Nationale du Canada<br />
-                <span className="text-[10px] text-slate-400">Compte BNC 11-496-06</span>
+                <span className="text-[10px] text-slate-400">Domiciliation BNC</span>
               </div>
               <span className="text-slate-600 font-bold">➔</span>
               <div className="p-2 bg-slate-950 rounded border border-amber-500/40 text-amber-300">
@@ -1341,13 +1341,12 @@ export const AlerteSecuriteWorkbench: React.FC = () => {
 
 // S07: Gestion Licences
 export const GestionLicencesWorkbench: React.FC = () => {
-  // Rectification stricte : concordance exacte avec l'immatriculation d'état civil marocaine [964 R/1970]
-  const [licenseKey, setLicenseKey] = useState(`OBJ-LIC-2026-964R1970-ISOC`);
+  const [licenseKey, setLicenseKey] = useState(`OBJ-LIC-2026-RC16894-ISOC`);
   const [clientName, setClientName] = useState('Partenaire Exploitant');
 
   const generateNewKey = () => {
     const randomHex = Math.random().toString(16).substring(2, 6).toUpperCase();
-    setLicenseKey(`OBJ-LIC-2026-964R1970-${randomHex}`);
+    setLicenseKey(`OBJ-LIC-2026-RC16894-${randomHex}`);
   };
 
   return (
@@ -1863,7 +1862,7 @@ export const SuiviSequencesWorkbench: React.FC = () => {
   const [steps, setSteps] = useState([
     { id: 1, label: 'Rédaction Préliminaire & Formalisation de l\'Acte', done: true, delay: 'J+0' },
     { id: 2, label: 'Certification Probatoire & Scellement d\'Intégrité', done: true, delay: 'J+1' },
-    { id: 3, label: 'Émargement Numérique & Vérification d\'Identité (964 R/1970)', done: true, delay: 'J+2' },
+    { id: 3, label: 'Émargement Numérique & Vérification d\'Identité Fondateur', done: true, delay: 'J+2' },
     { id: 4, label: 'Enregistrement Fiscal & Droits de Timbre', done: false, delay: 'J+7' },
     { id: 5, label: 'Dépôt au Greffe du Tribunal de Commerce & Parution B.O', done: false, delay: 'J+15' },
   ]);
@@ -1962,7 +1961,7 @@ export const GenerateurQrWorkbench: React.FC = () => {
             <button
               onClick={() =>
                 setContent(
-                  `https://objectio-hub.ma/#pv-certif?ice=${LEGAL_IDENTITY.iceNumber}&matricule=964R1970`
+                  `https://objectio-hub.ma/#pv-certif?ice=${LEGAL_IDENTITY.iceNumber}&matricule=RC16894`
                 )
               }
               className="px-2.5 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-300"
@@ -1972,7 +1971,7 @@ export const GenerateurQrWorkbench: React.FC = () => {
             <button
               onClick={() =>
                 setContent(
-                  `ATTESTATION-APPORT:208000MAD;MOHAMED_MORCHID;964R/1970;ICE:003707910000033`
+                  `ATTESTATION-APPORT:208000MAD;MOHAMED_MORCHID;RC16894;ICE:003707910000033`
                 )
               }
               className="px-2.5 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-300"

@@ -79,11 +79,11 @@ export const Footer: React.FC<FooterProps> = ({
             <span>OBJECTIO HUB — PORTAIL DE DROIT POSITIF</span>
           </div>
           <p className="text-slate-400 text-xs leading-relaxed max-w-xl">
-            Propriété exclusive de <strong>{LEGAL_IDENTITY.founderName} ({LEGAL_IDENTITY.matricule})</strong>. 
-            Écosystème fondé sur une valeur d'apport certifiée de <span className="text-amber-300 font-mono font-semibold">{LEGAL_IDENTITY.certifiedContribution}</span>.
+            Propriété exclusive de <strong>{LEGAL_IDENTITY.founderName}</strong>. 
+            Écosystème structuré avec un portefeuille technologique de <span className="text-amber-300 font-mono font-semibold">{LEGAL_IDENTITY.certifiedContribution}</span>.
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-[11px] font-mono text-slate-500">
-            <span>CIN : {LEGAL_IDENTITY.cin}</span>
+            <span>Structure : {LEGAL_IDENTITY.cin}</span>
             <span>•</span>
             <span>RC : {LEGAL_IDENTITY.rcNumber}</span>
             <span>•</span>
@@ -133,7 +133,7 @@ export const Footer: React.FC<FooterProps> = ({
           <button
             onClick={onOpenInternationalBilling}
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-950/70 hover:bg-emerald-900/90 border border-emerald-500/50 text-emerald-300 text-xs font-semibold transition-colors cursor-pointer"
-            title="Consulter la facilité d'envoi de factures BNC (Compte 11-496-06) et prise en charge PNUD (0,00 MAD débours)"
+            title="Consulter la facilité d'envoi de factures BNC et prise en charge PNUD (0,00 MAD débours)"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
             <span>Facilité BNC & PNUD ($6 600)</span>
@@ -168,7 +168,7 @@ export const Footer: React.FC<FooterProps> = ({
 
       {/* Bottom bar */}
       <div className="border-t border-slate-900 bg-slate-950/80 py-3 text-center text-[11px] text-slate-600 font-mono">
-        © {new Date().getFullYear()} Objectio Hub • Mohamed MORCHID (964 R/1970) • Conformité D.O.C & Droit Positif
+        © {new Date().getFullYear()} Objectio Hub • Mohamed MORCHID • Conformité D.O.C & Droit Positif
       </div>
     </footer>
   );

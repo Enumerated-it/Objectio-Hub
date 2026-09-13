@@ -22,7 +22,7 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-amber-400" />
             <span className="font-semibold text-sm tracking-wide text-amber-200 font-['Cinzel',serif]">
-              Acte Certifié d'Apport • Objectio Hub
+              Dossier Méthodologique d'Apport • Objectio Hub
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -50,10 +50,10 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
               Royaume du Maroc • Droit Positif
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold font-['Cinzel',serif] text-white tracking-wide print:text-black">
-              ATTESTATION DE VALEUR D'APPORT CERTIFIÉE
+              DOSSIER D'ÉVALUATION D'APPORT EN NATURE
             </h2>
-            <p className="text-sm font-mono text-amber-300 print:text-gray-700">
-              Écosystème Numérique & Juridique OBJECTIO
+            <p className="text-xs font-mono text-amber-300/90 print:text-gray-700 max-w-xl mx-auto">
+              Analysé par le Bureau des méthodes Objectio — valeur soumise à l'appréciation du commissaire aux apports
             </p>
           </div>
 
@@ -156,13 +156,13 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
             </div>
           </div>
 
-          {/* Legal Certification Statement */}
+          {/* Methodological Evaluation Statement */}
           <div className="text-xs text-slate-400 leading-relaxed space-y-2 border-t border-slate-800 pt-4 print:border-black print:text-gray-700">
             <p>
-              Le présent document atteste que l’ensemble des 15 services référencés sur le portail <strong>Objectio Hub</strong> constituent le socle d’exploitation directe et certifiée de <strong>M. Mohamed MORCHID (964 R/1970)</strong>.
+              Le présent dossier consigne que l’ensemble des 15 services référencés sur le portail <strong>Objectio Hub</strong> constituent le socle d’exploitation directe développé par <strong>M. Mohamed MORCHID (Fondateur visionnaire, Conseiller Référent et Secrétaire Général)</strong>.
             </p>
-            <p className="text-[11px] italic">
-              La valorisation de l'apport en nature est rigoureusement indexée sur la variable d'inventaire <strong>{LEGAL_IDENTITY.valeurApportVariable}</strong> conformément aux principes de sincérité comptable et aux règles du Droit Positif marocain.
+            <p className="text-[11px] italic text-amber-300/80">
+              Analysé par le Bureau des méthodes Objectio — valeur soumise à l'appréciation du commissaire aux apports, indexée sur la variable d'inventaire <strong>{LEGAL_IDENTITY.valeurApportVariable}</strong> conformément aux principes de sincérité comptable et aux règles du Droit Positif marocain.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
               <CheckCircle2 className="w-5 h-5 text-emerald-400" />
               <div>
                 <div className="font-semibold text-slate-200 print:text-black">Horodatage d’Intégrité</div>
-                <div className="text-[11px] text-slate-500 font-mono">Code Réf : OBJ-INV-964R</div>
+                <div className="text-[11px] text-slate-500 font-mono">Code Réf : OBJ-INV-RC16894</div>
               </div>
             </div>
 
@@ -181,7 +181,7 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
               <div className="font-bold text-amber-300 font-['Cinzel',serif] text-sm print:text-black">
                 Mohamed MORCHID
               </div>
-              <div className="text-[10px] text-slate-500 font-mono">Fondateur • Objectio Hub</div>
+              <div className="text-[10px] text-slate-500 font-mono">Fondateur Visionnaire • Conseiller Référent & Secrétaire Général</div>
             </div>
           </div>
         </div>
