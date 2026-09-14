@@ -11,6 +11,7 @@ import { InternationalBillingModal } from './components/InternationalBillingModa
 import { ArganeSekyatModal } from './components/ArganeSekyatModal';
 import { FounderMasterAccessModal } from './components/FounderMasterAccessModal';
 import { VideoLogueWorldCupStudio } from './components/VideoLogueWorldCupStudio';
+import { MorchidiDigitalModal } from './components/MorchidiDigitalModal';
 import { Footer } from './components/Footer';
 import { getAnchorFromUrl, setAnchorInUrl, copyToClipboard, getFullDeepLink } from './utils/deepLink';
 import { 
@@ -53,6 +54,7 @@ export default function App() {
   const [isInternationalBillingOpen, setIsInternationalBillingOpen] = useState(false);
   const [isArganeSekyatOpen, setIsArganeSekyatOpen] = useState(false);
   const [isLogueVideoOpen, setIsLogueVideoOpen] = useState(false);
+  const [isMorchidiDigitalOpen, setIsMorchidiDigitalOpen] = useState(false);
   const [isFounderMasterAccessOpen, setIsFounderMasterAccessOpen] = useState(false);
   const [activeSiteId, setActiveSiteId] = useState('site-0');
   const [copiedSiteId, setCopiedSiteId] = useState<string | null>(null);
@@ -84,6 +86,12 @@ export default function App() {
           if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
+          return;
+        }
+
+        // Check for Morchidi Digital dashboard deep link (18 Bureaux des méthodes, AGENT_SYNC)
+        if (lower === 'morchidi-digital' || lower === 'morchidi' || lower === 'bureaux' || lower === 'agent-sync') {
+          setIsMorchidiDigitalOpen(true);
           return;
         }
 
@@ -289,6 +297,16 @@ export default function App() {
             >
               <Tv className="w-3.5 h-3.5 text-rose-400" />
               <span>#logue-video (beIN 2026)</span>
+            </button>
+
+            {/* Quick button to open Morchidi Digital (18 Bureaux des méthodes) */}
+            <button
+              onClick={() => { setIsMorchidiDigitalOpen(true); setAnchorInUrl('morchidi-digital'); }}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold whitespace-nowrap bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-500/70 text-emerald-200 shadow-sm transition-all cursor-pointer mr-1"
+              title="Ouvrir Morchidi Digital : tableau de bord unifié, 18 Bureaux des méthodes, AGENT_SYNC"
+            >
+              <Building2 className="w-3.5 h-3.5 text-emerald-400" />
+              <span>#morchidi-digital (18 Bureaux)</span>
             </button>
 
             {/* Quick button to launch Argane-Sekyat V2 */}
@@ -725,6 +743,12 @@ export default function App() {
       <ShareAppModal
         isOpen={isShareModalOpen}
         onClose={() => setIsShareModalOpen(false)}
+      />
+
+      {/* Morchidi Digital — Tableau de bord unifié (recyclage C:\Morchidi\index.html) */}
+      <MorchidiDigitalModal
+        isOpen={isMorchidiDigitalOpen}
+        onClose={() => { setIsMorchidiDigitalOpen(false); setAnchorInUrl(''); }}
       />
 
       {/* International Billing & BNC / PNUD Facilitation Modal */}
