@@ -49,8 +49,8 @@ export const INITIAL_AD_SPOTS: AdSpot[] = [
     id: 'ad-objectio-01',
     type: 'propre',
     sponsorName: 'OBJECTIO DROIT POSITIF',
-    category: 'Régie Propre • Actif Certifié',
-    tagline: 'Certification d\'Apport en Nature & Actes Opposables aux Tiers',
+    category: 'Régie Propre • Actif déclaré',
+    tagline: 'Inventaire d\'Apport en Nature & Actes Opposables aux Tiers',
     callToAction: 'Consulter l\'Inventaire d\'Apport Analysé',
     badge: 'OFFICIEL BMM*',
     bgColor: 'from-amber-950/90 via-slate-900 to-amber-900/60',
@@ -81,7 +81,7 @@ export const INITIAL_AD_SPOTS: AdSpot[] = [
     category: 'Publication pour Autrui • Flotte Partagée',
     tagline: 'Gestion Coopérative de Flottes, Taxis & Billetterie Touristique',
     callToAction: 'Réserver un Véhicule Vérifié',
-    badge: 'ANNONCEUR CERTIFIÉ',
+    badge: 'ANNONCEUR DÉCLARÉ',
     bgColor: 'from-emerald-950/90 via-slate-900 to-teal-950/60',
     accentColor: 'text-emerald-400 border-emerald-500/60',
     targetLink: '#transport',
@@ -370,7 +370,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
             </div>
           </form>
           <p className="text-[11px] text-slate-400 font-mono mt-2">
-            ℹ️ Les publications pour autrui font l'objet d'un contrat de régie publicitaire conforme au D.O.C et sont intégrées dans le cadre subdivisé avec mention d'identification légale certifiée.
+            ℹ️ Les publications pour autrui font l'objet d'un contrat de régie publicitaire conforme au D.O.C et sont intégrées dans le cadre subdivisé avec mention d'identification légale.
           </p>
         </div>
       )}
@@ -735,7 +735,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
             </div>
           </div>
           <div className="flex items-center gap-2 shrink-0 font-mono text-[11px] text-slate-400">
-            <span>Régie BMM* certifiée</span>
+            <span>Régie BMM*</span>
             <span>•</span>
             <span className="text-amber-400">RC 16894 Settat</span>
           </div>

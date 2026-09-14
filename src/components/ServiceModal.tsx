@@ -187,7 +187,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
         {/* Footer */}
         <div className="px-6 py-3.5 border-t border-slate-800 bg-slate-950 flex flex-wrap items-center justify-between gap-3 shrink-0 text-xs">
           <div className="text-slate-500 font-mono text-[11px]">
-            Valeur d'apport certifiée : <strong className="text-amber-400">{LEGAL_IDENTITY.certifiedContribution}</strong>
+            Valeur d'apport : <strong className="text-amber-400">{LEGAL_IDENTITY.certifiedContribution}</strong> — <em>{LEGAL_IDENTITY.statutValeurApport}</em>
           </div>
           <button
             onClick={onClose}

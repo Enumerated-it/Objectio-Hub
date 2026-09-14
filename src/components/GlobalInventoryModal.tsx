@@ -105,7 +105,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
       dateSoumissionInventaire: newDateSoumission || '2026-09-08',
       statutDeveloppement: newStatut,
       sourceType: newSourceType,
-      sourceReference: newSourceReference.trim() || 'Dossier de travail certifié',
+      sourceReference: newSourceReference.trim() || 'Dossier de travail déclaré',
       hasNoPublicApi: hasNoApi,
       legalJustification: newJustification.trim() || 'Droit des Obligations et des Contrats & Protection des œuvres de l’esprit',
       valeurMAD: Number(newValeurMAD) || 0,
@@ -168,7 +168,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
         totalHeuresConverties: totalHeures,
         projetsInventorie: items,
         etudeMarcheROI: CIBLES_MARCHE_ROI,
-        signatureCertification: `Certifié conforme par ${LEGAL_IDENTITY.founderName} (${LEGAL_IDENTITY.matricule}) au titre du Droit Positif`,
+        signatureCertification: `Déclaré conforme par ${LEGAL_IDENTITY.founderName} (${LEGAL_IDENTITY.matricule}) — ${LEGAL_IDENTITY.statutValeurApport}`,
         dateGeneration: new Date().toISOString(),
       }, null, 2)
     );
@@ -441,7 +441,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                 </div>
 
                 <span className="text-[11px] text-slate-500 font-mono">
-                  Certification : <strong>{LEGAL_IDENTITY.matricule}</strong>
+                  Immatriculation : <strong>{LEGAL_IDENTITY.matricule}</strong>
                 </span>
               </div>
 
@@ -568,7 +568,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                               </div>
                             </div>
                             <div className="text-right text-amber-300 font-bold text-xs pt-1 border-t border-slate-800">
-                              Valorisation de l'apport : {LEGAL_IDENTITY.certifiedContribution}
+                              Valorisation de l'apport : {LEGAL_IDENTITY.certifiedContribution} — {LEGAL_IDENTITY.statutValeurApport}
                             </div>
                           </div>
 
@@ -717,7 +717,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                     >
                       <option value="incorporel">Incorporel (Propriété Intellectuelle, Modèle)</option>
                       <option value="technologique">Technologique (Logiciel, Code, Algorithme)</option>
-                      <option value="operationnel">Opérationnel (Protocole, Procédure certifiée)</option>
+                      <option value="operationnel">Opérationnel (Protocole, Procédure déclarée)</option>
                     </select>
                   </div>
                 </div>
@@ -748,7 +748,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                           setNewSourceReference('mon-app.vercel.app');
                           setHasNoApi(false);
                         } else {
-                          setNewSourceReference('Plateforme fermée / Archive certifiée');
+                          setNewSourceReference('Plateforme fermée / Archive déclarée');
                           setHasNoApi(true);
                         }
                       }}
@@ -913,7 +913,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                     <div>Date d'Ouverture : <strong className="text-slate-200">{RAPPORT_INVENTAIRE_PERIODE.dateOuverture}</strong></div>
                     <div>Date de Clôture / Arrêté : <strong className="text-amber-300">{RAPPORT_INVENTAIRE_PERIODE.dateClotureRapport}</strong></div>
                     <div className="text-slate-400 text-[11px] pt-1">
-                      Note doctrinale : La clôture de rapport n'arrête pas la production intellectuelle ; elle consacre le quantum certifié éligible à l'apport en nature.
+                      Note doctrinale : La clôture de rapport n'arrête pas la production intellectuelle ; elle consacre le quantum déclaré éligible à l'apport en nature, soumis à l'appréciation du commissaire aux apports.
                     </div>
                   </div>
 
@@ -1018,7 +1018,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                   <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-[11px] font-mono text-slate-400 flex flex-wrap items-center justify-between gap-2">
                     <span>Moteur : <strong>Gemini Flash (Google AI Studio)</strong></span>
                     <span>Dernier Build Continu : <strong className="text-amber-300">{MULTI_DEVICE_BUILD_EFFORT.lastBuildDurationSeconds}s</strong> (~5,25 min machine)</span>
-                    <span>Statut : <strong className="text-emerald-400 font-bold">Certifié & Conforme</strong></span>
+                    <span>Statut : <strong className="text-amber-300 font-bold">{LEGAL_IDENTITY.statutValeurApport}</strong></span>
                   </div>
 
                   {/* Réserve solennelle pour le Commissariat aux apports */}
@@ -1052,7 +1052,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                   <span>Étude d'Adéquation Marché : « Qui achète ce service et pourquoi ? »</span>
                 </div>
                 <p className="text-slate-300 text-xs leading-relaxed">
-                  L'apport en nature certifié par l'inventaire réel et la métrique MOC/MOC+ répond à une <strong>demande économique et juridique majeure</strong> : comment valoriser le travail intellectuel, protéger son capital contre l'inflation monétaire et réussir des levées de fonds ou des augmentations de capital sans dilution de contrôle.
+                  L'apport en nature établi par l'inventaire réel et la métrique MOC/MOC+ répond à une <strong>demande économique et juridique majeure</strong> : comment valoriser le travail intellectuel, protéger son capital contre l'inflation monétaire et réussir des levées de fonds ou des augmentations de capital sans dilution de contrôle.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-[11px]">

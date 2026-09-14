@@ -1,6 +1,6 @@
 // =============================================================================
 //  MORCHIDI DIGITAL — Tableau de bord unifié (AGENT_SYNC)
-//  Recyclage du fichier C:\Morchidi\index.html (30/07/2026, 1 323 lignes)
+//  Recyclage du tableau de bord autonome index.html (30/07/2026, 1 323 lignes)
 //  en module du Hub. Source unique : LEGAL_IDENTITY + INVENTAIRE_REEL_APPORT.
 //  Vocabulaire : aucun « certifié » — « Déclaré » (par le fondateur) ou
 //  « Analysé par le Bureau des méthodes Objectio ».
@@ -199,7 +199,7 @@ export const MD_PROGRESS: { label: string; pct: number }[] = [
 ];
 
 export const MD_ORIGIN = {
-  fichier: 'C:\\Morchidi\\index.html',
+  fichier: 'index.html (tableau de bord autonome, poste du fondateur)',
   dateCreation: '30/07/2026',
   lignes: 1323,
   recycleLe: '13/09/2026',

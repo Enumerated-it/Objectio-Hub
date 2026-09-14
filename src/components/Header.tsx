@@ -114,6 +114,10 @@ export const Header: React.FC<HeaderProps> = ({
               <Award className="w-3.5 h-3.5" /> Apport : {LEGAL_IDENTITY.certifiedContribution}
             </span>
             <span className="text-slate-500">|</span>
+            <span className="text-slate-400 italic truncate max-w-[22rem]" title={LEGAL_IDENTITY.statutValeurApport}>
+              {LEGAL_IDENTITY.statutValeurApport}
+            </span>
+            <span className="text-slate-500">|</span>
             <span className="text-slate-300">RC : {LEGAL_IDENTITY.rcNumber}</span>
             <span className="text-slate-500">|</span>
             <span className="text-slate-300">ICE : {LEGAL_IDENTITY.iceNumber}</span>
@@ -128,7 +132,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold tracking-wider uppercase">
               <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              Écosystème Certifié de Droit Positif
+              Écosystème de Droit Positif — inventaire d’apport en cours
             </div>
 
             <div className="flex items-baseline gap-3 flex-wrap">
@@ -145,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
 
             <p className="text-slate-300 max-w-3xl text-sm sm:text-base leading-relaxed">
               Architecture centrale et portail de Droit Positif fédérant 15 services d’ingénierie juridique, financière et technologique, adossée à un{' '}
-              <strong className="text-amber-300 font-semibold">patrimoine applicatif évalué à {LEGAL_IDENTITY.certifiedContribution}</strong>.
+              <strong className="text-amber-300 font-semibold">patrimoine applicatif en cours d’inventaire : {LEGAL_IDENTITY.certifiedContribution}</strong> — {LEGAL_IDENTITY.statutValeurApport}.
             </p>
 
             {/* Official Badges Pills */}

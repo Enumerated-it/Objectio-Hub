@@ -34,7 +34,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08', // Arrêté d'inventaire - travaux en cours
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'objectio-core/hub-master',
+    sourceReference: 'Dépôts GitHub Enumerated-it (Spire-Stable, Objectio-Hub) — journaux git horodatés (strate S1)',
     hasNoPublicApi: false,
     legalJustification: 'Loi 17-97 relative à la protection de la propriété industrielle et Droit des Obligations et des Contrats (D.O.C)',
     valeurMAD: 92000,
@@ -46,13 +46,13 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     projectCategory: 'droit_positif',
     category: 'incorporel',
     categoryLabel: 'Fonds Doctrinal & Référentiels d’Actes',
-    designation: 'Corpus d’actes juridiques certifiés, clauses d’arbitrage, conventions d’entraide sans subordination et référentiels de Droit Positif marocain.',
+    designation: 'Corpus d’actes juridiques analysés par le Bureau des méthodes, clauses d’arbitrage, conventions d’entraide sans subordination et référentiels de Droit Positif marocain.',
     effortHeuresMOC: 24000, // 400h = 24 000 MOC
     dateDebut: '2024-06-01',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'juris-docs/maroc-droit-positif-2026',
+    sourceReference: 'Documents juridiques du fonds Bibliothèque H+ — pièces datées (strate S2), référence à confirmer à l’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Loi 53-05 sur l’échange électronique de données juridiques et articles 230+ du D.O.C',
     valeurMAD: 46000,
@@ -88,7 +88,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'github_repo',
-    sourceReference: 'github.com/objectio-project/lsf-lsa-legal-bridge',
+    sourceReference: 'Travaux préparatoires — référence à établir à l’inventaire (strate S3 tant qu’aucune pièce n’est produite)',
     hasNoPublicApi: false,
     legalJustification: 'Constitution marocaine (accès universel aux droits) et standard d’inclusion numérique W3C/WAI',
     valeurMAD: 32000,
@@ -106,7 +106,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
     sourceType: 'autre',
-    sourceReference: 'modules/cih-qr-isoc-bridge',
+    sourceReference: 'Module QR / ISOC du Hub — code source Objectio-Hub (strate S1) ; adhésion ISOC n° 2374734',
     hasNoPublicApi: false,
     legalJustification: 'Référentiel ISOC (Internet Society) et réglementation Bank Al-Maghrib sur les paiements instantanés',
     valeurMAD: 28000,
@@ -157,7 +157,7 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     besoinFondamental: 'Augmenter le capital social de l’entreprise sans avoir à mobiliser du numéraire liquide.',
     beneficeROI: 'R.O.I immédiat : Conversion d’heures de R&D/conception en capital officiel bilantiel, crédibilisant la société auprès des banquiers et financeurs sans dilution de parts.',
     couvertureAntiInflation: 'Bouclier anti-inflation absolu : Le capital est assis sur des actifs intellectuels pérennes et des algorithmes dont la valeur résiste à la dépréciation monétaire.',
-    modaliteAcquisition: 'Souscription au pack de certification d’inventaire réel & PV d’assemblée générale certifié (Service S01 & S03).',
+    modaliteAcquisition: 'Souscription au pack d’inventaire réel & PV d’assemblée générale analysé par le Bureau des méthodes (Service S01 & S03).',
   },
   {
     id: 'target-2',
@@ -166,7 +166,7 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     besoinFondamental: 'Prouver l’antériorité de leurs travaux et valoriser leur temps de recherche (MOC) face aux donneurs d’ordre.',
     beneficeROI: 'Rémunération équitable : Fixation indiscutable du prix de revient (S04) avec coefficients MOC+ et protection de leurs droits moraux d’auteur inaliénables.',
     couvertureAntiInflation: 'La Minute d’Occupation Convertible (MOC) s’indexe sur la rareté du temps et de l’expertise humaine face à l’automatisation brute.',
-    modaliteAcquisition: 'Licence d’exploitation de la méthodologie MOC & Certification probatoire d’inventaire (S04 & S07).',
+    modaliteAcquisition: 'Licence d’exploitation de la méthodologie MOC & inventaire probatoire analysé par le Bureau des méthodes (S04 & S07).',
   },
   {
     id: 'target-3',
@@ -184,7 +184,7 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     besoinFondamental: 'Disposer d’un référentiel mathématique probatoire, transparent et vérifiable pour motiver leur rapport officiel.',
     beneficeROI: 'Sécurité juridique totale : Décharge de responsabilité grâce à une traçabilité granulaire de chaque projet (dates début, arrêtés d’inventaire, logs MOC, identifiants d’état civil).',
     couvertureAntiInflation: 'Standardisation des barèmes d’évaluation des actifs technologiques à l’abri des fluctuations boursières ou monétaires.',
-    modaliteAcquisition: 'Convention d’utilisation du portail de vérification et des matrices d’actes certifiées (S01 & S02).',
+    modaliteAcquisition: 'Convention d’utilisation du portail de vérification et des matrices d’actes analysées par le Bureau des méthodes (S01 & S02).',
   },
 ];
 
@@ -204,6 +204,9 @@ export const OBJ_TOTAL_EFFORT_HEURES: number = Math.round(OBJ_TOTAL_EFFORT_MOC /
 
 export const OBJ_VALEUR_APPORT_NATURE_FORMATTED = `${OBJ_VALEUR_APPORT_NATURE.toLocaleString('fr-FR')} MAD`;
 
+// Statut unique de toute valeur d'apport affichée (aucune valeur n'est « certifiée » avant le rapport du commissaire)
+export const OBJ_STATUT_VALEUR_APPORT = 'Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports';
+
 export const LEGAL_IDENTITY: LegalIdentity = {
   founderName: 'Mohamed MORCHID',
   matricule: 'RC 16894 Settat',
@@ -215,7 +218,8 @@ export const LEGAL_IDENTITY: LegalIdentity = {
   cloudRunUrl: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app',
   valeurApportVariable: 'OBJ_VALEUR_APPORT_NATURE',
   valeurApportMontant: OBJ_VALEUR_APPORT_NATURE,
-  certifiedContribution: OBJ_VALEUR_APPORT_NATURE_FORMATTED,
+  certifiedContribution: `${OBJ_VALEUR_APPORT_NATURE_FORMATTED} (en cours d’inventaire)`,
+  statutValeurApport: OBJ_STATUT_VALEUR_APPORT,
   iceNumber: '003707910000033',
   isocNumber: 'ISOC N° 2374734',
   officialEmail: 'contact@morchidi.digital',
@@ -234,17 +238,17 @@ export const SERVICES_LIST: ServiceItem[] = [
   {
     id: 's01',
     code: 'S01',
-    title: 'PV / Certification',
+    title: 'PV / Analyse probatoire',
     anchor: 'pv-certif',
     category: 'juridique',
     categoryLabel: 'Droit & Actes',
-    tagline: 'Procès-Verbaux probatoires et certification d’intégrité juridique',
-    shortDesc: 'Établissement, horodatage et certification probatoire des procès-verbaux d’assemblée, constats et déclarations sous seing privé.',
+    tagline: 'Procès-Verbaux probatoires et analyse d’intégrité juridique',
+    shortDesc: 'Établissement, horodatage et analyse probatoire des procès-verbaux d’assemblée, constats et déclarations sous seing privé.',
     legalBasis: 'Droit des Obligations et des Contrats (D.O.C) • Loi 53-05 relative à l’échange électronique de données juridiques.',
     features: [
       'Génération automatisée de PV d’Assemblée Générale Ordinaire et Extraordinaire',
       'Empreinte de conformité probatoire avec horodatage scellé',
-      'Registre d’émargement certifié avec vérification d’identité',
+      'Registre d’émargement analysé avec vérification d’identité',
       'Exportation au format opposable aux tiers et institutions'
     ],
     primaryMetric: {
@@ -260,7 +264,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'juridique',
     categoryLabel: 'Droit & Actes',
     tagline: 'Formalisme contractuel normé et rédaction d’actes de Droit Positif',
-    shortDesc: 'Suite rédactionnelle certifiée pour contrats commerciaux, pactes d’associés, protocoles de cession et conventions spécifiques.',
+    shortDesc: 'Suite rédactionnelle analysée par le Bureau des méthodes pour contrats commerciaux, pactes d’associés, protocoles de cession et conventions spécifiques.',
     legalBasis: 'Code de Commerce marocain • Principes généraux du Droit Positif des affaires.',
     features: [
       'Bibliothèque de clauses pénales, de réserve de propriété et de confidentialité',
@@ -281,7 +285,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'finance',
     categoryLabel: 'Finance & Stratégie',
     tagline: 'Modélisation financière triennale, structure tripartite de revenus et suivi des jalons',
-    shortDesc: `Architecture prévisionnelle 2024-2027 conforme CGNC, intégration de l'apport certifié OBJ_VALEUR_APPORT_NATURE (${OBJ_VALEUR_APPORT_NATURE_FORMATTED}), adossement international BNC ($6 600 USD) et tableau de bord de suivi d'exécution des jalons d'affaires.`,
+    shortDesc: `Architecture prévisionnelle 2024-2027 conforme CGNC, intégration de l'apport en cours d’inventaire OBJ_VALEUR_APPORT_NATURE (${OBJ_VALEUR_APPORT_NATURE_FORMATTED}, Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), adossement international BNC ($6 600 USD) et tableau de bord de suivi d'exécution des jalons d'affaires.`,
     legalBasis: 'Plan Comptable Général Marocain (CGNC) • Normes d’évaluation des apports en nature et incorporels (Lois 17-95 et 5-96).',
     features: [
       'Projections financières pluriannuelles triennales (An 1, An 2, An 3) et CAF',
@@ -396,8 +400,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     anchor: 'grille-tarifaire',
     category: 'finance',
     categoryLabel: 'Finance & Stratégie',
-    tagline: 'Barème transparent des prestations certifiées et forfaits d’actes',
-    shortDesc: 'Consultez la grille tarifaire officielle en Dirhams (MAD) : rédaction d’actes, audits de conformité, forfaits annuels et certifications.',
+    tagline: 'Barème transparent des prestations et forfaits d’actes',
+    shortDesc: 'Consultez la grille tarifaire officielle en Dirhams (MAD) : rédaction d’actes, audits de conformité, forfaits annuels et analyses probatoires.',
     legalBasis: 'Transparence tarifaire et information précontractuelle • Pratiques commerciales loyales.',
     features: [
       'Barème détaillé par typologie de prestation juridique et technique',
@@ -439,7 +443,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'finance',
     categoryLabel: 'Finance & Stratégie',
     tagline: 'Règlement instantané et sécurisé par QR Code bancaire CIH Bank',
-    shortDesc: 'Générez ou scannez un QR Code bancaire certifié pour virement instantané CIH Bank (RIB officiel transmis sur facture).',
+    shortDesc: 'Générez ou scannez un QR Code bancaire pour virement instantané CIH Bank (RIB officiel transmis sur facture).',
     legalBasis: 'Réglementation Bank Al-Maghrib sur les paiements électroniques et virements instantanés.',
     features: [
       'Génération dynamique du code QR avec montant en MAD et numéro de dossier',
@@ -534,7 +538,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Timeline dynamique par étapes clés de constitution ou modification',
       'Détection automatique des dépassements de délais réglementaires',
       'Rappels proactifs des formalités subséquentes',
-      'Exportation du rapport séquentiel certifié conforme'
+      'Exportation du rapport séquentiel analysé par le Bureau des méthodes'
     ],
     primaryMetric: {
       label: 'Contrôle Procédural',
@@ -548,8 +552,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     anchor: 'generateur-qr',
     category: 'tech',
     categoryLabel: 'Propriété & Tech',
-    tagline: 'Empreintes QR haute définition pour actes, certifications et traçabilité',
-    shortDesc: 'Générez des codes QR sécurisés contenant les signatures d’actes, métadonnées légales, liens profonds d’intégrité et certificats Objectio.',
+    tagline: 'Empreintes QR haute définition pour actes, analyses probatoires et traçabilité',
+    shortDesc: 'Générez des codes QR sécurisés contenant les signatures d’actes, métadonnées légales, liens profonds d’intégrité et attestations préparatoires Objectio.',
     legalBasis: 'Standard ISO/IEC 18004 • Norme de traçabilité documentaire et signature électronique.',
     features: [
       'Génération instantanée en direct avec prévisualisation et correction d’erreur',
@@ -584,7 +588,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
     name: 'Écosystème OBJECTIO (Apport en Nature)',
     nameAr: 'منظومة أوبجيكتيو (الحصص العينية)',
     hash: '#objectio',
-    tagline: 'Certification d’apport en nature & Scellement d’actifs immatériels',
+    tagline: 'Inventaire d’apport en nature & Scellement d’actifs immatériels — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports',
     desc: 'Plateforme centrale d’évaluation d’apport en nature (Lois 17-95, 5-96, 17-97), inventaire probatoire des efforts R&D et valorisation MOC / MOC+.',
     category: 'Ingénierie Juridique & Financière',
     iconName: 'Scale',
@@ -725,7 +729,7 @@ export const MULTI_DEVICE_BUILD_EFFORT: MultiDeviceBuildEffort = {
   tauxHoraireExpertiseMAD: 650, // Barème légal de consultation d'ingénierie sociale & technologique
   valeurSessionMAD: 21450, // 33h * 650 MAD
   mentionReserveCommissariat: "RÉSERVE SOLENNELLE POUR LE COMMISSARIAT AUX APPORTS (Lois 17-95 art. 24 & 5-96 art. 53) : Il est expressément déclaré que l'ensemble des 8 pôles et 15 services consolidés à ce jour ne constitue qu'une tranche initiale d'actifs immatériels. Un portefeuille additionnel de projets d'ingénierie, algorithmes de justice prédictive et matrices contractuelles est expressément maintenu en réserve d'instruction pour être soumis au Commissariat aux apports officiel lors du dépôt d'augmentation de capital au Tribunal de Commerce de Settat.",
-  statutApprobation: 'certifie_fondateur'
+  statutApprobation: 'declare_fondateur'
 };
 
 export const INTERNATIONAL_INVOICE_DEFAULT: InternationalInvoiceData = {
@@ -789,7 +793,7 @@ export const BUSINESS_PLAN_PROJECTIONS: BusinessPlanYearProjection[] = [
     caBailleursUSD: 19800, // 3 tranches de $6 600 USD
     caBailleursMAD: 198000,
     caConsultingB2BMAD: 280000, // Consulting Méthodes Industrielles BMM* (SMED, chrono-analyse)
-    caLicencesMAD: 80000, // Actes certifiés, licences ISOC N° 2374734
+    caLicencesMAD: 80000, // Actes analysés, licences ISOC N° 2374734
     caTotalMAD: 558000,
     chargesDirectesMAD: 135000, // Serveurs, Cloud, déplacements terrain Settat
     chargesFixesMAD: 110000, // Amortissements, télécoms, abonnements pros
@@ -839,8 +843,8 @@ export const BUSINESS_PLAN_TRACKING_MILESTONES: BusinessPlanMilestone[] = [
     deadline: '2026-09-08',
     status: 'termine',
     completionPercent: 100,
-    deliverable: 'Rapport d\'inventaire probatoire (OBJ_VALEUR_APPORT_NATURE : 436 000 MAD / 3 747 000 MAD cible)',
-    details: 'Recensement certifié de 6 catégories d’actifs immatériels, méthodes MOC/MOC+ et protocoles D.O.C.'
+    deliverable: 'Rapport d\'inventaire probatoire (OBJ_VALEUR_APPORT_NATURE : valeur en cours d\'inventaire — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports)',
+    details: 'Recensement déclaré de 6 catégories d’actifs immatériels, méthodes MOC/MOC+ et protocoles D.O.C.'
   },
   {
     id: 'mil-02',
@@ -856,7 +860,7 @@ export const BUSINESS_PLAN_TRACKING_MILESTONES: BusinessPlanMilestone[] = [
   {
     id: 'mil-03',
     code: 'JALON-03',
-    title: 'Audit Multi-Terminaux Certifié (33h MOC) & Scellement BMM*',
+    title: 'Audit Multi-Terminaux déclaré (33h MOC) & Scellement BMM*',
     category: 'technologie',
     deadline: '2026-09-09',
     status: 'termine',

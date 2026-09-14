@@ -152,10 +152,10 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
       const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
       if (answeringMode === 'argane' || (answeringMode === 'duo' && !lower.includes('smed') && !lower.includes('chrono'))) {
-        let arganeText = `Sur le plan du Droit Positif marocain (Lois 17-95 et 5-96, et dispositions du D.O.C), votre démarche requiert la rédaction d'un procès-verbal certifié. L'antériorité de conception sous le titulaire Mohamed MORCHID (État Civil ${LEGAL_IDENTITY.matricule}, CIN ${LEGAL_IDENTITY.cin}) confère une force probante pleine et entière devant le greffe du Tribunal de Commerce de Settat (RC ${LEGAL_IDENTITY.rcNumber}). L'usager citoyen bénéficie de la gratuité constitutionnelle (0,00 MAD usager selon l'Art. 37 de la Constitution).`;
+        let arganeText = `Sur le plan du Droit Positif marocain (Lois 17-95 et 5-96, et dispositions du D.O.C), votre démarche requiert la rédaction d'un procès-verbal analysé par le Bureau des méthodes. L'antériorité de conception sous le titulaire Mohamed MORCHID (${LEGAL_IDENTITY.matricule}, ICE ${LEGAL_IDENTITY.iceNumber}) confère une force probante pleine et entière devant le greffe du Tribunal de Commerce de Settat (RC ${LEGAL_IDENTITY.rcNumber}). L'usager citoyen bénéficie de la gratuité constitutionnelle (0,00 MAD usager selon l'Art. 37 de la Constitution).`;
         
         if (lower.includes('capital') || lower.includes('apport')) {
-          arganeText = `Pour incorporer des actifs incorporels au capital social (Loi 17-95 Art. 24 / Loi 5-96 Art. 53), il convient d'annexer l'inventaire contradictoire des travaux en cours certifiés, garantissant l'absence de passif et la non-subordination salariale.`;
+          arganeText = `Pour incorporer des actifs incorporels au capital social (Loi 17-95 Art. 24 / Loi 5-96 Art. 53), il convient d'annexer l'inventaire contradictoire des travaux en cours (Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), garantissant l'absence de passif et la non-subordination salariale.`;
         } else if (lower.includes('deepseek') || lower.includes('sans api') || lower.includes('ia')) {
           arganeText = `Concernant les recherches développées sur plateformes IA fermées sans API (comme DeepSeek), le protocole probatoire repose sur l'empreinte de dates de séances, le scellement d'antériorité doctrinale et la conservation des journaux de requêtes (IAP - Information Attention Pénible), protégeant vos droits moraux inaliénables d'auteur.`;
         }
@@ -215,7 +215,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
         if (step.metrics?.mocPonderee) transcript += `   -> Effort MOC : ${step.metrics.mocPonderee} MOC\n`;
       });
       if (debateStep >= currentScenario.steps.length) {
-        transcript += `\nSYNTHÈSE CONSENSUELLE CERTIFIÉE :\n${currentScenario.consensus}\n`;
+        transcript += `\nSYNTHÈSE CONSENSUELLE :\n${currentScenario.consensus}\n`;
       }
     } else {
       transcript += `SESSION DE CONSULTATION DIRECTE USAGER :\n\n`;
@@ -224,7 +224,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
       });
     }
 
-    transcript += `\nCertifié conforme sous le sceau méthodologique d'ingénierie BMM*.\n`;
+    transcript += `\nÉtabli sous le sceau méthodologique d'ingénierie BMM* — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports.\n`;
     transcript += `Date de scellement : ${new Date().toLocaleDateString('fr-FR')} à ${new Date().toLocaleTimeString('fr-FR')}\n`;
 
     await copyToClipboard(transcript);
@@ -517,7 +517,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                       <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400" />
                         <span className="text-xs font-bold text-white font-mono uppercase tracking-wide">
-                          Synthèse & Consensus Final Certifié
+                          Synthèse & Consensus Final
                         </span>
                       </div>
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
@@ -586,7 +586,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                 </div>
 
                 <span className="text-[11px] text-slate-400 font-mono">
-                  Réponse instantanée certifiée • Gratuité 0 MAD
+                  Réponse instantanée • Gratuité 0 MAD
                 </span>
               </div>
 

@@ -80,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
           <p className="text-slate-400 text-xs leading-relaxed max-w-xl">
             Propriété exclusive de <strong>{LEGAL_IDENTITY.founderName}</strong>. 
-            Écosystème structuré avec un portefeuille technologique de <span className="text-amber-300 font-mono font-semibold">{LEGAL_IDENTITY.certifiedContribution}</span>.
+            Écosystème structuré avec un portefeuille technologique de <span className="text-amber-300 font-mono font-semibold">{LEGAL_IDENTITY.certifiedContribution}</span> — {LEGAL_IDENTITY.statutValeurApport}.
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-[11px] font-mono text-slate-500">
             <span>Structure : {LEGAL_IDENTITY.cin}</span>

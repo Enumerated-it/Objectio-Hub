@@ -12,6 +12,7 @@ import { ArganeSekyatModal } from './components/ArganeSekyatModal';
 import { FounderMasterAccessModal } from './components/FounderMasterAccessModal';
 import { VideoLogueWorldCupStudio } from './components/VideoLogueWorldCupStudio';
 import { MorchidiDigitalModal } from './components/MorchidiDigitalModal';
+import { DossierApportModal } from './components/DossierApportModal';
 import { Footer } from './components/Footer';
 import { getAnchorFromUrl, setAnchorInUrl, copyToClipboard, getFullDeepLink } from './utils/deepLink';
 import { 
@@ -41,7 +42,8 @@ import {
   Send,
   KeyRound,
   Bot,
-  Tv
+  Tv,
+  FolderCheck
 } from 'lucide-react';
 
 export default function App() {
@@ -55,6 +57,7 @@ export default function App() {
   const [isArganeSekyatOpen, setIsArganeSekyatOpen] = useState(false);
   const [isLogueVideoOpen, setIsLogueVideoOpen] = useState(false);
   const [isMorchidiDigitalOpen, setIsMorchidiDigitalOpen] = useState(false);
+  const [isDossierApportOpen, setIsDossierApportOpen] = useState(false);
   const [isFounderMasterAccessOpen, setIsFounderMasterAccessOpen] = useState(false);
   const [activeSiteId, setActiveSiteId] = useState('site-0');
   const [copiedSiteId, setCopiedSiteId] = useState<string | null>(null);
@@ -92,6 +95,12 @@ export default function App() {
         // Check for Morchidi Digital dashboard deep link (18 Bureaux des méthodes, AGENT_SYNC)
         if (lower === 'morchidi-digital' || lower === 'morchidi' || lower === 'bureaux' || lower === 'agent-sync') {
           setIsMorchidiDigitalOpen(true);
+          return;
+        }
+
+        // Check for Dossier d'apport deep link (état d'avancement, commissaire aux apports)
+        if (lower === 'apport' || lower === 'dossier-apport' || lower === 'commissaire') {
+          setIsDossierApportOpen(true);
           return;
         }
 
@@ -309,6 +318,16 @@ export default function App() {
               <span>#morchidi-digital (18 Bureaux)</span>
             </button>
 
+            {/* Quick button to open Dossier d'apport (état d'avancement) */}
+            <button
+              onClick={() => { setIsDossierApportOpen(true); setAnchorInUrl('apport'); }}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold whitespace-nowrap bg-amber-950/90 hover:bg-amber-900 border border-amber-500/70 text-amber-200 shadow-sm transition-all cursor-pointer mr-1"
+              title="Dossier d'apport en nature : état d'avancement, chronologie, méthode, demande du dossier"
+            >
+              <FolderCheck className="w-3.5 h-3.5 text-amber-400" />
+              <span>#apport (Dossier commissaire)</span>
+            </button>
+
             {/* Quick button to launch Argane-Sekyat V2 */}
             <button
               onClick={() => setIsArganeSekyatOpen(true)}
@@ -355,7 +374,7 @@ export default function App() {
                 {LEGAL_IDENTITY.certifiedContribution}
               </strong>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                Consacrée aux 15 services Objectio par Mohamed MORCHID.
+                {LEGAL_IDENTITY.statutValeurApport}.
               </p>
             </div>
           </div>
@@ -745,10 +764,16 @@ export default function App() {
         onClose={() => setIsShareModalOpen(false)}
       />
 
-      {/* Morchidi Digital — Tableau de bord unifié (recyclage C:\Morchidi\index.html) */}
+      {/* Morchidi Digital — Tableau de bord unifié (recyclage du tableau de bord autonome) */}
       <MorchidiDigitalModal
         isOpen={isMorchidiDigitalOpen}
         onClose={() => { setIsMorchidiDigitalOpen(false); setAnchorInUrl(''); }}
+      />
+
+      {/* Dossier d'apport — état d'avancement (#apport) */}
+      <DossierApportModal
+        isOpen={isDossierApportOpen}
+        onClose={() => { setIsDossierApportOpen(false); setAnchorInUrl(''); }}
       />
 
       {/* International Billing & BNC / PNUD Facilitation Modal */}

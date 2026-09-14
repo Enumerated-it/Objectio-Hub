@@ -353,7 +353,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                       <button
                         onClick={() => handleOpenDirectService(service)}
                         className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-bold text-xs shadow-sm transition-all cursor-pointer"
-                        title="Ouvrir la fiche complète et les actes certifiés"
+                        title="Ouvrir la fiche complète et les actes"
                       >
                         <span>Fiche & Actes</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -494,7 +494,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono font-bold">
-                        ACTIF JURIDIQUE CERTIFIÉ
+                        ACTIF JURIDIQUE EN COURS D’INVENTAIRE
                       </span>
                       <Award className="w-4 h-4 text-amber-400" />
                     </div>
@@ -502,7 +502,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                       Attestation d'Apport & Inventaire MOC
                     </h4>
                     <p className="text-xs text-slate-300 leading-relaxed mt-1">
-                      Rapport consolidé des 7 actifs certifiés opposables (Lois 17-95 et 5-96) d'une valeur réelle de {OBJ_VALEUR_APPORT_NATURE_FORMATTED} et valorisation analytique MOC/MOC+.
+                      Rapport consolidé des 7 actifs déclarés (Lois 17-95 et 5-96) — {OBJ_VALEUR_APPORT_NATURE_FORMATTED} en cours d'inventaire, {LEGAL_IDENTITY.statutValeurApport} — et valorisation analytique MOC/MOC+.
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -615,7 +615,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                 <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2.5">
                   <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider border-b border-slate-800 pb-1.5 flex items-center gap-1.5">
                     <DollarSign className="w-3.5 h-3.5" />
-                    <span>Canaux de Règlement Bancaire Certifiés</span>
+                    <span>Canaux de Règlement Bancaire</span>
                   </h4>
                   <div className="space-y-2 text-slate-300">
                     <div className="p-2 rounded bg-slate-900 border border-slate-800">

@@ -50,7 +50,7 @@ interface WorkbenchProps {
   service: ServiceItem;
 }
 
-// S01: PV / Certification
+// S01: PV / Analyse probatoire
 export const PvCertifWorkbench: React.FC = () => {
   const [pvType, setPvType] = useState('AGO (Ordinaire)');
   const [entityName, setEntityName] = useState('Société Écosystème Objectio');
@@ -66,12 +66,13 @@ export const PvCertifWorkbench: React.FC = () => {
   ).toString(16).toUpperCase()}`;
 
   const generatedPvText = `=====================================================
-PROCES-VERBAL OFFICIEL • CERTIFICATION PROBATOIRE
+PROCES-VERBAL OFFICIEL • ANALYSE PROBATOIRE
 ÉCOSYSTÈME OBJECTIO — PORTAIL DE DROIT POSITIF
 =====================================================
 Titulaire du Registre : ${LEGAL_IDENTITY.founderName} (${LEGAL_IDENTITY.matricule})
 ICE : ${LEGAL_IDENTITY.iceNumber} | ${LEGAL_IDENTITY.isocNumber}
-Valeur d'apport certifiée de référence : ${LEGAL_IDENTITY.certifiedContribution}
+Valeur d'apport de référence : ${LEGAL_IDENTITY.certifiedContribution}
+${LEGAL_IDENTITY.statutValeurApport}
 
 TYPE D'ACTE : ${pvType}
 ENTITÉ CONCERNÉE : ${entityName}
@@ -86,7 +87,7 @@ Conforme aux dispositions du Droit des Obligations et des Contrats (D.O.C)
 et aux règles de la Loi 53-05 sur l'échange électronique de données juridiques.
 
 EMPREINTE PROBATOIRE : ${hashStamp}
-STATUT : CERTIFIÉ & OPPOSABLE AUX TIERS
+STATUT : ÉTABLI PAR LE BUREAU DES MÉTHODES — SOUMIS À L'APPRÉCIATION DU COMMISSAIRE AUX APPORTS
 =====================================================`;
 
   const handleCopy = async () => {
@@ -166,7 +167,7 @@ STATUT : CERTIFIÉ & OPPOSABLE AUX TIERS
       <div className="p-4 rounded-xl bg-slate-950 border border-amber-500/30 font-mono text-xs space-y-2">
         <div className="flex items-center justify-between text-slate-400 border-b border-slate-800 pb-2">
           <span className="flex items-center gap-1.5 text-amber-400 font-semibold">
-            <ShieldCheck className="w-4 h-4" /> Prévisualisation de l'Acte Certifié
+            <ShieldCheck className="w-4 h-4" /> Prévisualisation de l'Acte
           </span>
           <span className="text-[11px] text-emerald-400">Sceau Probatoire : {hashStamp}</span>
         </div>
@@ -181,7 +182,7 @@ STATUT : CERTIFIÉ & OPPOSABLE AUX TIERS
           className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors cursor-pointer"
         >
           {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-          {copied ? 'PV Copié dans le presse-papier' : 'Copier le PV Certifié'}
+          {copied ? 'PV Copié dans le presse-papier' : 'Copier le PV'}
         </button>
       </div>
     </div>
@@ -331,8 +332,8 @@ export const BusinessPlanWorkbench: React.FC = () => {
   const resultatExploitation = margeBrute - chargesFixes;
   const tauxMargeNette = caTotal > 0 ? Math.round((resultatExploitation / caTotal) * 100) : 0;
   const caf = resultatExploitation + Math.round(chargesFixes * 0.25); // Amortissements estimés à 25% des charges fixes
-  const certifiedApport = OBJ_VALEUR_APPORT_NATURE;
-  const rentabiliteApport = certifiedApport > 0 ? Math.round((resultatExploitation / certifiedApport) * 100) : 0;
+  const apportDeclare = OBJ_VALEUR_APPORT_NATURE;
+  const rentabiliteApport = apportDeclare > 0 ? Math.round((resultatExploitation / apportDeclare) * 100) : 0;
   
   // Seuil de rentabilité (Point Mort)
   // SR = Charges Fixes / Taux de Marge Brute
@@ -376,7 +377,8 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
 
 1. SOCLE D'APPORT EN NATURE AUDITÉ :
 - Variable Comptable : ${LEGAL_IDENTITY.valeurApportVariable}
-- Valeur Actuelle Certifiée : ${LEGAL_IDENTITY.certifiedContribution}
+- Valeur Actuelle (en cours d'inventaire) : ${LEGAL_IDENTITY.certifiedContribution}
+- Statut : ${LEGAL_IDENTITY.statutValeurApport}
 - Réserve Commissariat aux Apports : Tribunal de Commerce de Settat
 
 2. PROJECTIONS FINANCIÈRES (${currentYearData.label}) :
@@ -388,7 +390,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
 - Résultat d'Exploitation (EBITDA) : ${resultatExploitation.toLocaleString()} MAD (Marge : ${tauxMargeNette}%)
 - Capacité d'Autofinancement (CAF) : ${caf.toLocaleString()} MAD
 - Seuil de Rentabilité : ${seuilRentabiliteMAD.toLocaleString()} MAD (Atteint à J+${pointMortJours})
-- Rentabilité sur Apport Certifié : ${rentabiliteApport}% / an
+- Rentabilité sur Apport déclaré : ${rentabiliteApport}% / an
 
 3. SUIVI D'EXÉCUTION DES JALONS D'AFFAIRES :
 - Taux de Réalisation Global : ${globalCompletionRate}% (${completedMilestonesCount}/${totalMilestonesCount} jalons terminés)
@@ -557,7 +559,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
 
             <div className="p-3 bg-slate-950 border border-slate-800 rounded-xl space-y-1.5">
               <div className="flex justify-between items-center text-xs">
-                <span className="text-slate-400 font-semibold">Licences & Actes Certifiés</span>
+                <span className="text-slate-400 font-semibold">Licences & Actes</span>
                 <span className="font-mono text-emerald-300 font-bold">{licencesMAD.toLocaleString()} MAD</span>
               </div>
               <input
@@ -637,7 +639,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
           {/* Strategic Indicators */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-3 bg-slate-900/50 border border-slate-800/80 rounded-xl text-xs font-mono">
             <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800">
-              <span className="text-slate-500 text-[10px] block">Rendement s/ Apport Certifié</span>
+              <span className="text-slate-500 text-[10px] block">Rendement s/ Apport déclaré</span>
               <span className="text-amber-300 font-bold text-sm">{rentabiliteApport}% / an</span>
               <p className="text-[10px] text-slate-400 mt-0.5">Rapporté à {LEGAL_IDENTITY.valeurApportVariable}</p>
             </div>
@@ -649,7 +651,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
             <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800">
               <span className="text-slate-500 text-[10px] block">Délai de Récupération (Payback)</span>
               <span className="text-emerald-300 font-bold text-sm">
-                {resultatExploitation > 0 ? (certifiedApport / resultatExploitation).toFixed(1) + ' ans' : 'N/A'}
+                {resultatExploitation > 0 ? (apportDeclare / resultatExploitation).toFixed(1) + ' ans' : 'N/A'}
               </span>
               <p className="text-[10px] text-slate-400 mt-0.5">Amortissement complet de l'apport</p>
             </div>
@@ -688,7 +690,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
                     <td className="p-2.5 text-right text-slate-300">750 000 MAD</td>
                   </tr>
                   <tr>
-                    <td className="p-2.5 text-slate-300">Licences & Actes Certifiés</td>
+                    <td className="p-2.5 text-slate-300">Licences & Actes</td>
                     <td className="p-2.5 text-right text-slate-300">80 000 MAD</td>
                     <td className="p-2.5 text-right text-slate-300">180 000 MAD</td>
                     <td className="p-2.5 text-right text-slate-300">320 000 MAD</td>
@@ -782,7 +784,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
                 <span className="text-slate-400 text-[11px] font-semibold">Audit Ingénierie MOC</span>
                 <Clock className="w-3.5 h-3.5 text-amber-400" />
               </div>
-              <div className="font-mono text-sm font-bold text-amber-300">33,0h MOC Certifiées</div>
+              <div className="font-mono text-sm font-bold text-amber-300">33,0h MOC déclarées</div>
               <p className="text-[10px] text-slate-500">
                 14h30 mobile + 18h30 ordi = 1 980 MOC d'efforts vérifiables
               </p>
@@ -901,7 +903,7 @@ Domiciliation Bailleurs : Banque Nationale du Canada (BNC) Compte N° ${BNC_ACCO
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-emerald-400">✓ 2026-09-09 :</span>
-                <span>Audit multi-terminaux (33h MOC) certifié : 14h30 smartphone + 18h30 ordi.</span>
+                <span>Audit multi-terminaux (33h MOC) déclaré : 14h30 smartphone + 18h30 ordi.</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-cyan-400">⟳ 2026-09-10 :</span>
@@ -1304,7 +1306,7 @@ export const AlerteSecuriteWorkbench: React.FC = () => {
   const [alerts, setAlerts] = useState([
     { id: 1, title: 'Déclaration CNDP Traitement Données', level: 'Conforme', status: 'À jour au 01/2026', badge: 'bg-emerald-950 border-emerald-800 text-emerald-400' },
     { id: 2, title: 'Renouvellement Accréditation ISOC (N° 2374734)', level: 'Actif', status: 'Valide pour le cycle en cours', badge: 'bg-cyan-950 border-cyan-800 text-cyan-400' },
-    { id: 3, title: 'Dépôt Annuel des Actes Certifiés au Greffe', level: 'Vigilance', status: 'Échéance légale : sous 45 jours', badge: 'bg-amber-950 border-amber-800 text-amber-400' },
+    { id: 3, title: 'Dépôt Annuel des Actes au Greffe', level: 'Vigilance', status: 'Échéance légale : sous 45 jours', badge: 'bg-amber-950 border-amber-800 text-amber-400' },
   ]);
 
   return (
@@ -1390,7 +1392,7 @@ export const GestionLicencesWorkbench: React.FC = () => {
 // S08: Grille Tarifaire
 export const GrilleTarifaireWorkbench: React.FC = () => {
   const tariffItems = [
-    { id: 'pv', name: 'Certification & Scellement PV (S01)', price: 1500 },
+    { id: 'pv', name: 'Analyse probatoire & Scellement PV (S01)', price: 1500 },
     { id: 'redac', name: 'Rédaction d\'Acte Juridique Normé (S02)', price: 3800 },
     { id: 'bp', name: 'Audit & Modélisation Business Plan (S03)', price: 6500 },
     { id: 'prix', name: 'Étude Analytique Prix de Revient (S04)', price: 1200 },
@@ -1488,7 +1490,7 @@ export const SkillGeneratorWorkbench: React.FC = () => {
 
         <div>
           <div className="flex justify-between text-slate-300 mb-1">
-            <span>Formalisme & Certification d'Actes :</span>
+            <span>Formalisme & Analyse d'Actes :</span>
             <span className="text-amber-400">{skills.formalismDoc}%</span>
           </div>
           <input
@@ -1682,17 +1684,17 @@ export const CarnetQuestionsWorkbench: React.FC = () => {
   const [questions, setQuestions] = useState([
     {
       q: 'Quelle est la valeur probatoire des PV sous seing privé au Maroc ?',
-      r: 'Sous réserve du respect de la Loi 53-05 et de l\'horodatage certifié, ils font foi entre les parties jusqu\'à preuve littérale contraire.',
+      r: 'Sous réserve du respect de la Loi 53-05 et de l\'horodatage fiable, ils font foi entre les parties jusqu\'à preuve littérale contraire.',
       cat: 'Droit des Sociétés',
     },
     {
       q: 'Comment est protégée la valeur d\'apport issue de l\'inventaire réel (OBJ_VALEUR_APPORT_NATURE) ?',
-      r: 'Elle est adossée à l\'inventaire réel des actifs incorporels, technologiques et opérationnels (OBJ_VALEUR_APPORT_NATURE), inscrite aux statuts, opposable au Registre du Commerce et consolidée par les actes de certification probatoire d\'Objectio.',
+      r: 'Elle est adossée à l\'inventaire réel des actifs incorporels, technologiques et opérationnels (OBJ_VALEUR_APPORT_NATURE), inscrite aux statuts, opposable au Registre du Commerce et consolidée par les actes d\'analyse probatoire d\'Objectio — Analysé par le Bureau des méthodes Objectio — valeur soumise à l\'appréciation du commissaire aux apports.',
       cat: 'Capital & Finance',
     },
     {
       q: 'Quelle est la portée de l\'accréditation ISOC N° 2374734 ?',
-      r: 'Elle certifie l\'adhésion aux standards internationaux de gouvernance numérique et d\'intégrité des données électroniques.',
+      r: 'Elle atteste l\'adhésion aux standards internationaux de gouvernance numérique et d\'intégrité des données électroniques.',
       cat: 'Standards ISOC',
     },
   ]);
@@ -1861,7 +1863,7 @@ export const TriProjetWorkbench: React.FC = () => {
 export const SuiviSequencesWorkbench: React.FC = () => {
   const [steps, setSteps] = useState([
     { id: 1, label: 'Rédaction Préliminaire & Formalisation de l\'Acte', done: true, delay: 'J+0' },
-    { id: 2, label: 'Certification Probatoire & Scellement d\'Intégrité', done: true, delay: 'J+1' },
+    { id: 2, label: 'Analyse Probatoire & Scellement d\'Intégrité', done: true, delay: 'J+1' },
     { id: 3, label: 'Émargement Numérique & Vérification d\'Identité Fondateur', done: true, delay: 'J+2' },
     { id: 4, label: 'Enregistrement Fiscal & Droits de Timbre', done: false, delay: 'J+7' },
     { id: 5, label: 'Dépôt au Greffe du Tribunal de Commerce & Parution B.O', done: false, delay: 'J+15' },
@@ -1920,7 +1922,7 @@ export const SuiviSequencesWorkbench: React.FC = () => {
 // S15: Générateur de QR
 export const GenerateurQrWorkbench: React.FC = () => {
   const [content, setContent] = useState(
-    `OBJECTIO:ACTE-CERTIFIE;TITULAIRE=${LEGAL_IDENTITY.founderName};MATRICULE=${LEGAL_IDENTITY.matricule};ICE=${LEGAL_IDENTITY.iceNumber};APPORT=${LEGAL_IDENTITY.certifiedContribution};ISOC=2374734`
+    `OBJECTIO:ACTE-ANALYSE-BM;TITULAIRE=${LEGAL_IDENTITY.founderName};MATRICULE=${LEGAL_IDENTITY.matricule};ICE=${LEGAL_IDENTITY.iceNumber};APPORT=${LEGAL_IDENTITY.certifiedContribution};ISOC=2374734`
   );
   const [qrUrl, setQrUrl] = useState('');
 
@@ -1937,7 +1939,7 @@ export const GenerateurQrWorkbench: React.FC = () => {
   const handleDownload = () => {
     const a = document.createElement('a');
     a.href = qrUrl;
-    a.download = `QR-Objectio-Certifie-${Date.now()}.png`;
+    a.download = `QR-Objectio-${Date.now()}.png`;
     a.click();
   };
 
@@ -1971,12 +1973,12 @@ export const GenerateurQrWorkbench: React.FC = () => {
             <button
               onClick={() =>
                 setContent(
-                  `ATTESTATION-APPORT:208000MAD;MOHAMED_MORCHID;RC16894;ICE:003707910000033`
+                  `ATTESTATION-APPORT:${OBJ_VALEUR_APPORT_NATURE}MAD-EN-COURS-INVENTAIRE;MOHAMED_MORCHID;RC16894;ICE:003707910000033`
                 )
               }
               className="px-2.5 py-1.5 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-300"
             >
-              Données Apport 208K
+              Données Apport (inventaire)
             </button>
           </div>
 

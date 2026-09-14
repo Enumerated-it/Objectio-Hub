@@ -65,7 +65,8 @@ export interface LegalIdentity {
   cloudRunUrl: string;
   valeurApportVariable: string;
   valeurApportMontant: number;
-  certifiedContribution: string;
+  certifiedContribution: string; // libellé du montant en cours d’inventaire (nom historique conservé)
+  statutValeurApport: string;    // « Analysé par le Bureau des méthodes Objectio — … »
   iceNumber: string;
   isocNumber: string;
   officialEmail?: string;
@@ -148,7 +149,7 @@ export interface MultiDeviceBuildEffort {
   tauxHoraireExpertiseMAD: number; // 650 MAD/h
   valeurSessionMAD: number; // 21 450 MAD
   mentionReserveCommissariat: string;
-  statutApprobation: 'certifie_fondateur' | 'en_reserve_commissariat';
+  statutApprobation: 'declare_fondateur' | 'en_reserve_commissariat';
 }
 
 export interface BusinessPlanYearProjection {

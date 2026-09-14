@@ -96,7 +96,7 @@ ${subject}
 
 [NOTE DE TRANSMISSION : L'intégralité du texte officiel de la lettre, les références légales et les coordonnées de domiciliation BNC ont été automatiquement copiés dans votre presse-papiers. Vous pouvez faire Ctrl+V pour les coller directement ci-dessous.]
 
---- DÉBUT DE LA LETTRE OFFICIELLE CERTIFIÉE BMM* ---
+--- DÉBUT DE LA LETTRE OFFICIELLE BMM* ---
 ${fullLetter.slice(0, 900)}...
 [Suite complète dans le presse-papiers ou en pièce jointe]
 --- FIN DE L'EXTRAIT ---`;
@@ -128,7 +128,7 @@ ${fullLetter.slice(0, 900)}...
 
   const getInvoiceFormattedText = () => {
     return `================================================================================
-NOTE D'HONORAIRES & FACTURE INTERNATIONALE CERTIFIÉE BMM*
+NOTE D'HONORAIRES & FACTURE INTERNATIONALE BMM*
 ================================================================================
 Facture N° : ${INTERNATIONAL_INVOICE_DEFAULT.invoiceNumber}
 Date d'Émission : ${INTERNATIONAL_INVOICE_DEFAULT.dateEmission}
@@ -233,7 +233,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
               }`}
             >
               <DollarSign className="w-3.5 h-3.5" />
-              <span>Facture Certifiée BMM* ($6 600 USD)</span>
+              <span>Facture BMM* ($6 600 USD)</span>
             </button>
 
             <button
@@ -563,7 +563,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
             </div>
           )}
 
-          {/* TAB 2: FACTURE INTERNATIONALE CERTIFIÉE BMM* */}
+          {/* TAB 2: FACTURE INTERNATIONALE BMM* */}
           {activeTab === 'invoice' && (
             <div className="space-y-5 animate-in fade-in duration-150">
               
@@ -598,7 +598,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
               {/* Invoice Lines Table */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
-                  <span>DÉTAIL DES LIGNES DE CONSULTING CERTIFIÉES BMM* :</span>
+                  <span>DÉTAIL DES LIGNES DE CONSULTING BMM* :</span>
                   <span>Domiciliation BNC International</span>
                 </div>
 
@@ -719,7 +719,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                   <div className="space-y-2 text-xs flex-1">
                     <div className="flex items-center justify-between flex-wrap gap-1">
                       <h4 className="font-bold text-white">
-                        Étape B : Envoi de la note d’honoraires certifiée BMM* aux Bailleurs
+                        Étape B : Envoi de la note d’honoraires BMM* aux Bailleurs
                       </h4>
                       <span className="text-[10px] font-mono text-sky-400 font-bold bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">
                         ${INTERNATIONAL_INVOICE_DEFAULT.totalUSD.toLocaleString()} USD • Domiciliation BNC
@@ -782,7 +782,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                       <p className="text-slate-400 leading-relaxed">
                         • <strong>Titulaire :</strong> Honoraires de consulting de <strong>Monsieur Mohamed MORCHID</strong> (immatriculé au <strong>RC 16894 Settat</strong> depuis le 04/03/2013, ICE 003707910000033).<br />
                         • <strong>Sollicitations & Commanditaires :</strong> Consulté par les délégations de programmes de modernisation administrative, d'inclusion citoyenne, les partenaires socio-économiques et institutionnels pour la facilitation du Guichet Unique Citoyen (Art. 37 Constitution).<br />
-                        • <strong>Période & Volume d'Intervention :</strong> Période continue <strong>2024-2026</strong> totalisant <strong>55 heures d'ingénierie certifiée</strong> (dont 33 heures d'intervention multi-terminaux MOC, 18.5h d'architecture système, 14.5h de chrono-analyse industrielle SMED BMM*, 12h de cyber-défense bancaire Loi 31-08, et 10h d'intégration et supervision IA).<br />
+                        • <strong>Période & Volume d'Intervention :</strong> Période continue <strong>2024-2026</strong> totalisant <strong>55 heures d'ingénierie déclarées</strong> (dont 33 heures d'intervention multi-terminaux MOC, 18.5h d'architecture système, 14.5h de chrono-analyse industrielle SMED BMM*, 12h de cyber-défense bancaire Loi 31-08, et 10h d'intégration et supervision IA).<br />
                         • <strong>Valeur des Services d'IA Prévus & Sollicités :</strong> Utilisation des modèles Google Gemini 1.5/2.0 Pro & Flash (Google AI Studio) pour le raisonnement de droit positif, l'analyse vectorielle des 15 services, la chrono-analyse industrielle et la protection Mīzān Al-Qisṭ, hébergés sur cluster Cloud Run conteneurisé.
                       </p>
                     </div>
@@ -859,7 +859,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                           <span>Quoi Couvrir dans la Prise en Charge ?</span>
                         </span>
                         <ul className="list-disc list-inside space-y-1 text-slate-400">
-                          <li>Rémunération de l'expertise de <strong>Monsieur Mohamed MORCHID</strong> (55 heures d'ingénierie certifiée BMM*).</li>
+                          <li>Rémunération de l'expertise de <strong>Monsieur Mohamed MORCHID</strong> (55 heures d'ingénierie déclarées BMM*).</li>
                           <li>Facturation Google Cloud (AI Studio, API Gemini, conteneurs Cloud Run en Pay-Per-Request).</li>
                           <li>Routage de sécurité CDN mondial et certificat SSL via Cloudflare.</li>
                           <li>Garantie de gratuité inconditionnelle au guichet pour tous les usagers citoyens.</li>
@@ -897,7 +897,7 @@ Règlement attendu sur le compte BNC N° ${BNC_ACCOUNT_DATA.accountNumber}.`;
                     Gouvernance Stratégique : Business Plan Triennal & Suivi d'Exécution
                   </h4>
                   <p className="text-slate-300 leading-relaxed">
-                    Ce module consolide les prévisions financières triennales (2025-2027), le modèle de revenus tripartite (Bailleurs, B2B BMM*, Gratuité Citoyenne), l'inventaire d'apport en nature certifié ({LEGAL_IDENTITY.certifiedContribution}), et le jalonnement de déploiement opérationnel.
+                    Ce module consolide les prévisions financières triennales (2025-2027), le modèle de revenus tripartite (Bailleurs, B2B BMM*, Gratuité Citoyenne), l'inventaire d'apport en nature en cours ({LEGAL_IDENTITY.certifiedContribution} — {LEGAL_IDENTITY.statutValeurApport}), et le jalonnement de déploiement opérationnel.
                   </p>
                 </div>
               </div>

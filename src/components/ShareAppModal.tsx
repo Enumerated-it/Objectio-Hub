@@ -83,7 +83,7 @@ Accès directs par pôle :
 🤝 1. Pôle Accompagnement & Entraide (Orientation & Écoute) :
    ${LEGAL_IDENTITY.cloudRunUrl}/#entraide
 
-⚖️ • Écosystème OBJECTIO (Apport en Nature & Certification 208K MAD) :
+⚖️ • Écosystème OBJECTIO (Apport en Nature — inventaire en cours, valeur soumise au commissaire aux apports) :
    ${LEGAL_IDENTITY.cloudRunUrl}/#objectio
 
 🛡️ 2. Cyber-Défense Bancaire & Loi 31-08 (Mīzān Al-Qisṭ) :

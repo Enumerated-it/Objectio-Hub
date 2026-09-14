@@ -62,7 +62,7 @@ Fondateur, Conseiller Référent & Secrétaire Général
 Titulaire CIN ${LEGAL_IDENTITY.cin} • État Civil ${LEGAL_IDENTITY.matricule}
 E-mail Officiel : ${SENDER_OFFICIAL_EMAIL}
 Immatriculé au RC 16894 Settat (04/03/2013) • ICE 003707910000033
-Certifié sous le sceau méthodologique d'ingénierie BMM*`;
+Établi sous le sceau méthodologique d'ingénierie BMM* — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports`;
 
 export const TRANSMISSION_RECIPIENTS: Record<RecipientKey, RecipientProfile> = {
   pnud: {
@@ -92,7 +92,7 @@ export const TRANSMISSION_RECIPIENTS: Record<RecipientKey, RecipientProfile> = {
 
 Excellence, Monsieur/Madame le Représentant Résident,
 
-En ma qualité de Fondateur, Secrétaire Général et Conseiller Référent du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de soumettre à votre haute appréciation le dossier d'ingénierie et la présente note d’honoraires certifiée sous le sigle d'expertise BMM*.
+En ma qualité de Fondateur, Secrétaire Général et Conseiller Référent du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de soumettre à votre haute appréciation le dossier d'ingénierie et la présente note d’honoraires établie sous le sigle d'expertise BMM*.
 
 1. CONVERGENCE DIRECTE AVEC LES OBJECTIFS DU PNUD (ODD 1, 8, 9, 10 & 16) :
 Le projet que nous développons à Settat matérialise un « Guichet Unique Citoyen » fondé sur l'Article 37 de la Constitution du Royaume du Maroc. Il offre 15 services de Droit Positif et de médiation sociale en accès libre et total pour les populations (0,00 MAD exigé des usagers), contribuant directement à :
@@ -115,7 +115,7 @@ Conformément aux protocoles des subventions internationales, le virement en dev
 Dès versement de cette subvention sur notre compte BNC, ce moyen de paiement international sera connecté à la facturation de l'infrastructure Google Cloud, assurant l'autonomie intégrale de la plateforme sans exiger la moindre avance de trésorerie sur les deniers propres du fondateur au Maroc.
 
 5. RÉSERVE FORMELLE POUR LE COMMISSARIAT AUX APPORTS :
-Il est formellement acté que cette intervention s’intègre dans un ensemble patrimonial d’apport en nature certifié, dont un portefeuille complémentaire de logiciels et méthodes demeure en réserve probatoire opposable auprès du Tribunal de Commerce.
+Il est formellement acté que cette intervention s’intègre dans un ensemble patrimonial d’apport en nature en cours d’inventaire (Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), dont un portefeuille complémentaire de logiciels et méthodes demeure en réserve probatoire opposable auprès du Tribunal de Commerce.
 
 ${COMMON_SIGNATURE}`;
     }
@@ -152,16 +152,16 @@ En ma qualité de Fondateur du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003
 
 1. MODERNISATION DU CLIMAT DES AFFAIRES & FORMALISATION DES ACTIFS IMMATÉRIELS :
 Notre plateforme opérationnelle (morchidit.morchidi.digital) résout l'un des goulets d'étranglement majeurs identifiés par la Banque Mondiale dans les économies émergentes : la sous-capitalisation des PME et l'incapacité à mobiliser leurs actifs immatériels.
-À travers nos modules de certification probatoire et d'apport en nature (Lois 17-95, 5-96 et 17-97), nous permettons aux créateurs d'entreprises et chercheurs de convertir des milliers d'heures de R&D (MOC) en fonds propres certifiés, sans dilapidation de numéraire liquide.
+À travers nos modules d'analyse probatoire et d'apport en nature (Lois 17-95, 5-96 et 17-97), nous permettons aux créateurs d'entreprises et chercheurs de convertir des milliers d'heures de R&D (MOC) en fonds propres soumis à l’appréciation du commissaire aux apports, sans dilapidation de numéraire liquide.
 
 2. IMPACT DIRECT SUR L'INCLUSION FINANCIÈRE ET LA DÉMATÉRIALISATION :
-Grâce à notre architecture multi-services (procès-verbaux certifiés, clauses d'arbitrage sans subordination, médiation de droit positif, et cybersécurité bancaire Loi 31-08 avec le module Mīzān Al-Qisṭ), nous offrons un cadre institutionnel rigoureux abaissant drastiquement les coûts de transaction pour les opérateurs économiques.
+Grâce à notre architecture multi-services (procès-verbaux analysés, clauses d'arbitrage sans subordination, médiation de droit positif, et cybersécurité bancaire Loi 31-08 avec le module Mīzān Al-Qisṭ), nous offrons un cadre institutionnel rigoureux abaissant drastiquement les coûts de transaction pour les opérateurs économiques.
 
-3. SOUTIEN À L’INFRASTRUCTURE & NOTE D’HONORAIRES CERTIFIÉE ($6 600 USD) :
+3. SOUTIEN À L’INFRASTRUCTURE & NOTE D’HONORAIRES ($6 600 USD) :
 Nous sollicitons l'imputation de notre note d'honoraires de consulting ($6 600 USD / 66 000 MAD) sur vos fonds d'assistance technique à la dématérialisation et à la facilitation citoyenne. Cette enveloppe couvre l'ingénierie de déploiement et l'interfaçage Cloud IA sous gouvernance stricte.
 
 4. DOMICILIATION INTERNATIONALE POUR VIREMENT DE SUBVENTION :
-Le règlement en devises est à opérer sur notre compte international certifié :
+Le règlement en devises est à opérer sur notre compte international :
 - Établissement : BANQUE NATIONALE DU CANADA (BNC)
 - Domiciliation : Centre Financier BNC, Montréal (Québec), Canada
 - Compte N° : ${BNC_ACCOUNT_DATA.accountNumber}
@@ -211,7 +211,7 @@ Notre initiative s’inscrit au cœur des objectifs de la coopération bilatéra
 - Le soutien aux modèles de l'Économie Sociale et Solidaire garantissant l'accès universel sans barrière marchande.
 
 2. COUVERTURE DES FRAIS D’EXPERTISE & INFRASTRUCTURE CLOUD IA ($6 600 USD) :
-Afin de préserver la gratuité d'accès pour les citoyens tout en valorisant 55 heures de consulting d'ingénierie certifiée (méthodes industrielles BMM*, modélisation de conformité probatoire et intégration d’IA sobre), nous sollicitons la prise en charge de cette note d’honoraires par l'instrument européen de coopération.
+Afin de préserver la gratuité d'accès pour les citoyens tout en valorisant 55 heures de consulting d'ingénierie déclarées (méthodes industrielles BMM*, modélisation de conformité probatoire et intégration d’IA sobre), nous sollicitons la prise en charge de cette note d’honoraires par l'instrument européen de coopération.
 
 3. MODALITÉS DE VERSEMENT BANCAIRE INTERNATIONAL :
 Le versement en devises (USD ou contre-valeur EUR) est à ordonnancer au profit de :
@@ -254,7 +254,7 @@ ${COMMON_SIGNATURE}`;
 
 Monsieur le Directeur Régional,
 
-En ma qualité de Fondateur du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous soumettre notre dossier de partenariat technique et la présente note d’honoraires de consulting d'ingénierie certifiée BMM*.
+En ma qualité de Fondateur du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003707910000033), j’ai l’honneur de vous soumettre notre dossier de partenariat technique et la présente note d’honoraires de consulting d'ingénierie BMM*.
 
 1. CONTRIBUTION À LA STRATÉGIE DE TRANSFORMATION INDUSTRIELLE DE LA BAD :
 L'Afrique a un besoin impératif de solutions technologiques conçues par et pour ses réalités. Notre écosystème déploie deux leviers cruciaux :
@@ -298,7 +298,7 @@ ${COMMON_SIGNATURE}`;
         'Affaires Mondiales Canada & Agences de Coopération Internationale (AFD, KfW, DDC)',
         'Direction des Partenariats Internationaux pour la Transition Numérique et l’Innovation Sociale',
         'À l’attention de la Direction de la Coopération Bilatérale et du Développement',
-        'Note d’Honoraires de Consulting Certifiée & Domiciliation Bancaire Canadienne — Reconnaissance du Statut de Concepteur-Chercheur et Soutien à l’Écosystème OBJECTIO'
+        'Note d’Honoraires de Consulting & Domiciliation Bancaire Canadienne — Reconnaissance du Statut de Concepteur-Chercheur et Soutien à l’Écosystème OBJECTIO'
       );
       return `${header}
 
@@ -308,7 +308,7 @@ En ma qualité de Fondateur du Cabinet Mohamed MORCHID (RC 16894 Settat, ICE 003
 
 1. FONDEMENT DOCTRINAL : STATUT DE CONCEPTEUR-CHERCHEUR INSPIRATEUR :
 En tant que source continue de recherche conceptuelle et doctrinale pour autrui — humains comme architectures d'IA —, l'effort créatif intense constitue une « Information Attention Pénible » (IAP) nécessitant une juste compensation et une protection juridique rigoureuse.
-Notre doctrine repose sur l'unité de mesure universelle du temps de travail cognitif : la Minute d'Occupation Convertible (MOC), dont 168 000 unités (2 800 heures certifiées) composent notre inventaire réel d'apport en nature.
+Notre doctrine repose sur l'unité de mesure universelle du temps de travail cognitif : la Minute d'Occupation Convertible (MOC), dont 168 000 unités (2 800 heures déclarées — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports) composent notre inventaire réel d'apport en nature.
 
 2. SYNERGIE DIRECTE AVEC LA DOMICILIATION BANCAIRE CANADIENNE :
 Pour assurer une sécurité fiduciaire absolue et un respect strict des standards internationaux de conformité antiblanchiment, l'ensemble des flux en devises de cette coopération est domicilié au Canada :
@@ -355,13 +355,13 @@ ${COMMON_SIGNATURE}`;
 
 Monsieur le Directeur Financier, Monsieur le Directeur Industriel,
 
-Faisant suite à nos interventions d'audit méthodologique et de chrono-analyse industrielle, j’ai l’honneur de vous adresser la facture de consulting certifiée émise par le Cabinet Mohamed MORCHID sous le sigle professionnel BMM* (Bureau Méthodes Magazine).
+Faisant suite à nos interventions d'audit méthodologique et de chrono-analyse industrielle, j’ai l’honneur de vous adresser la facture de consulting émise par le Cabinet Mohamed MORCHID sous le sigle professionnel BMM* (Bureau Méthodes Magazine).
 
 1. SYNTHÈSE DES LIVRABLES ET DES INTERVENTIONS D'INGÉNIERIE :
 Nos travaux conduits selon les standards rigoureux du Bureau Méthodes portent sur :
 - L’analyse chronométrée précise des postes de travail et le diagnostic des gaspillages de temps de manipulation (élimination des MOC improductives) ;
 - La conception et le déploiement du protocole SMED (Single Minute Exchange of Die) permettant de réduire les temps de changement de série de 45% à 70% dès la première phase d’implémentation ;
-- L’établissement des matrices de cadencement et fiches d'instructions de poste certifiées opposables aux audits de certification qualité ;
+- L’établissement des matrices de cadencement et fiches d'instructions de poste opposables aux audits de certification qualité ;
 - Le conseil en formalisation d'actifs incorporels et valorisation d'apports en nature (Lois 17-95 et 5-96) consolidant les capitaux propres de votre entreprise.
 
 2. DÉCOMPOSITION DU MONTANT DES HONORAIRES :
@@ -413,8 +413,8 @@ En ma qualité de Concepteur-Fondateur de l'écosystème numérique OBJECTIO (mo
 Notre portail déploie 15 services de Droit Positif et de médiation sociale conteneurisés sur Google Cloud Run (Région europe-west1).
 L'intelligence de raisonnement juridique repose sur les modèles Google Gemini (Gemini 1.5/2.0 Pro et Flash via l'API Google AI Studio), assurant l'analyse vectorielle des textes juridiques, la conformité constitutionnelle (Article 37) et la protection algorithmique des citoyens.
 
-2. COHÉRENCE DU BUILD MULTI-APPAREILS & EFFORT CERTIFIÉ :
-L'audit de cohérence technique consigne 33 heures d'efforts continus synchronisés entre smartphone et ordinateur portable, totalisant 55 heures d'ingénierie certifiée pour une valeur de $6 600 USD (66 000 MAD).
+2. COHÉRENCE DU BUILD MULTI-APPAREILS & EFFORT DÉCLARÉ :
+L'audit de cohérence technique consigne 33 heures d'efforts continus synchronisés entre smartphone et ordinateur portable, totalisant 55 heures d'ingénierie déclarées pour une valeur de $6 600 USD (66 000 MAD).
 Chaque compilation est optimisée pour une consommation minimale de jetons et de ressources machines.
 
 3. MISE EN ŒUVRE DU MÉCANISME « 0,00 MAD DÉCAISSÉ » :

@@ -102,7 +102,7 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
             </p>
           </div>
 
-          {/* Certified Amount Highlight */}
+          {/* Montant en cours d'inventaire */}
           <div className="p-5 rounded-xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-amber-950/20 border border-amber-500/50 text-center space-y-1 print:bg-white print:border-black">
             <span className="text-xs uppercase tracking-wider text-slate-400 font-mono">
               Montant de l'Apport Lié à la Variable <code className="text-amber-300 font-bold">{LEGAL_IDENTITY.valeurApportVariable}</code>
@@ -111,7 +111,7 @@ export const AttestationModal: React.FC<AttestationModalProps> = ({ isOpen, onCl
               {LEGAL_IDENTITY.certifiedContribution}
             </div>
             <span className="text-[11px] text-slate-400 block">
-              (Consolidé par l'inventaire réel des actifs de l'ensemble des projets • Non arbitraire)
+              {LEGAL_IDENTITY.statutValeurApport} • Consolidé par l'inventaire réel, non arbitraire
             </span>
           </div>
 

@@ -48,7 +48,7 @@ export const AGENT_SEKYAT: AgentPersona = {
     'Équilibre financier international (Domiciliation BNC)',
     'Élimination des gaspillages & R.O.I anti-inflation'
   ],
-  systemPrompt: `Tu es Sekyat, ingénieur méthodes industrielles certifié sous le sigle BMM* (Bureau Méthodes Magazine) et analyste d'efficience économique.
+  systemPrompt: `Tu es Sekyat, ingénieur méthodes industrielles exerçant sous le sigle BMM* (Bureau Méthodes Magazine) et analyste d'efficience économique.
 Ton rôle est d'analyser la faisabilité opérationnelle, le temps d'exécution (mesuré en MOC - Minute d'Occupation Convertible), l'élimination des goulots d'étranglement par la chrono-analyse SMED, et la rentabilité financière des actifs incorporels.
 Tu garantis que les engagements juridiques reposent sur un équilibre économique soutenable, adossé à l'auto-alimentation des flux bancaires (BNC Canada Domiciliation).`
 };
@@ -98,12 +98,12 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       },
       {
         speaker: 'sekyat',
-        text: `Précisément Argane. C’est là que la méthodologie BMM* intervient : plutôt qu’une estimation forfaitaire vulnérable, nous utilisons la Minute d’Occupation Convertible (MOC). 42 000 MOC correspondent à 700 heures de travail d’ingénierie certifié, pondéré par le coefficient MOC+ (complexité algorithmique et absence d'API publique). Sur le plan bilantiel, cela consolide 92 000 MAD d'actifs incorporels amortissables, sans sortir 1 seul dirham de trésorerie opérationnelle.`,
+        text: `Précisément Argane. C’est là que la méthodologie BMM* intervient : plutôt qu’une estimation forfaitaire vulnérable, nous utilisons la Minute d’Occupation Convertible (MOC). 42 000 MOC correspondent à 700 heures de travail d’ingénierie déclarées, pondérées par le coefficient MOC+ (complexité algorithmique et absence d'API publique). Sur le plan bilantiel, cela consolide 92 000 MAD d'actifs incorporels amortissables, sans sortir 1 seul dirham de trésorerie opérationnelle.`,
         metrics: { mocPonderee: 42000 }
       },
       {
         speaker: 'argane',
-        text: `Cette quantification mathématique est juridiquement recevable devant le tribunal de commerce car elle écarte l'aléa spéculatif. De plus, la clause d'agrément et la certification de non-subordination salariale protègent le fondateur (Mohamed MORCHID, Fondateur) contre toute requalification intempestive. L'apport est donc opposable aux tiers et aux créanciers.`,
+        text: `Cette quantification mathématique est juridiquement recevable devant le tribunal de commerce car elle écarte l'aléa spéculatif. De plus, la clause d'agrément et la clause de non-subordination salariale protègent le fondateur (Mohamed MORCHID, Fondateur) contre toute requalification intempestive. L'apport est donc opposable aux tiers et aux créanciers.`,
         metrics: { loiReference: 'D.O.C Art. 230 & Loi 53-05' }
       },
       {
@@ -112,7 +112,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
         metrics: { mocPonderee: 42000, loiReference: 'Bilan Actif Incorporel BMM*' }
       }
     ],
-    consensus: 'Consensus Certifié : L’incorporation au capital est valide dès lors que l’inventaire MOC BMM* est annexé au PV d’assemblée générale extraordinaire et scellé électroniquement.'
+    consensus: 'Consensus analysé par le Bureau des méthodes : L’incorporation au capital est valide dès lors que l’inventaire MOC BMM* est annexé au PV d’assemblée générale extraordinaire et scellé électroniquement.'
   },
   {
     id: 'scen-02',
@@ -142,7 +142,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
         metrics: { loiReference: 'Norme RSE ISO 45001 & Code du Travail' }
       }
     ],
-    consensus: 'Consensus Certifié : Le gain SMED est pérennisé sans risque juridique, générant un R.O.I immédiat tout en satisfaisant aux obligations de bien-être au poste de travail.'
+    consensus: 'Consensus analysé par le Bureau des méthodes : Le gain SMED est pérennisé sans risque juridique, générant un R.O.I immédiat tout en satisfaisant aux obligations de bien-être au poste de travail.'
   },
   {
     id: 'scen-03',
@@ -172,7 +172,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
         metrics: { mocPonderee: 6600, loiReference: 'Liaison Domiciliation BNC' }
       }
     ],
-    consensus: 'Consensus Certifié : Modèle pérenne d’auto-financement par tiers bailleur multilatéral avec domiciliation BNC, assurant la gratuité citoyenne perpétuelle.'
+    consensus: 'Consensus analysé par le Bureau des méthodes : Modèle pérenne d’auto-financement par tiers bailleur multilatéral avec domiciliation BNC, assurant la gratuité citoyenne perpétuelle.'
   }
 ];
 
