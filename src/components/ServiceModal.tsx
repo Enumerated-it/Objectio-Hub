@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { ServiceWorkbench } from './interactive/ServiceWorkbenches';
+import { AgentChat } from './AgentChat';
+import { getAgent } from '../data/agents';
 import { copyToClipboard, getFullDeepLink } from '../utils/deepLink';
 import { LEGAL_IDENTITY } from '../data/servicesData';
 
@@ -162,6 +164,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
 
             <div className="p-5 rounded-2xl bg-slate-950/90 border border-slate-800 shadow-inner">
               <ServiceWorkbench service={service} />
+              {getAgent(service.id) && <AgentChat agentId={service.id} />}
             </div>
           </div>
 

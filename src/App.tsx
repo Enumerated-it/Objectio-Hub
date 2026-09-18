@@ -13,6 +13,7 @@ import { FounderMasterAccessModal } from './components/FounderMasterAccessModal'
 import { VideoLogueWorldCupStudio } from './components/VideoLogueWorldCupStudio';
 import { MorchidiDigitalModal } from './components/MorchidiDigitalModal';
 import { DossierApportModal } from './components/DossierApportModal';
+import { SourcesInspirationModal } from './components/SourcesInspirationModal';
 import { Footer } from './components/Footer';
 import { getAnchorFromUrl, setAnchorInUrl, copyToClipboard, getFullDeepLink } from './utils/deepLink';
 import { 
@@ -43,8 +44,7 @@ import {
   KeyRound,
   Bot,
   Tv,
-  FolderCheck
-} from 'lucide-react';
+  FolderCheck, Lightbulb } from 'lucide-react';
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -58,6 +58,7 @@ export default function App() {
   const [isLogueVideoOpen, setIsLogueVideoOpen] = useState(false);
   const [isMorchidiDigitalOpen, setIsMorchidiDigitalOpen] = useState(false);
   const [isDossierApportOpen, setIsDossierApportOpen] = useState(false);
+  const [isSourcesOpen, setIsSourcesOpen] = useState(false);
   const [isFounderMasterAccessOpen, setIsFounderMasterAccessOpen] = useState(false);
   const [activeSiteId, setActiveSiteId] = useState('site-0');
   const [copiedSiteId, setCopiedSiteId] = useState<string | null>(null);
@@ -101,6 +102,12 @@ export default function App() {
         // Check for Dossier d'apport deep link (état d'avancement, commissaire aux apports)
         if (lower === 'apport' || lower === 'dossier-apport' || lower === 'commissaire') {
           setIsDossierApportOpen(true);
+          return;
+        }
+
+        // Check for « Aux sources d'inspiration » deep link (orientation vers les guichets réels)
+        if (lower === 'sources-inspiration' || lower === 'sources' || lower === 'guichet' || lower === 'inspiration') {
+          setIsSourcesOpen(true);
           return;
         }
 
@@ -326,6 +333,16 @@ export default function App() {
             >
               <FolderCheck className="w-3.5 h-3.5 text-amber-400" />
               <span>#apport (Dossier commissaire)</span>
+            </button>
+
+            {/* Quick button to open « Aux sources d'inspiration » */}
+            <button
+              onClick={() => { setIsSourcesOpen(true); setAnchorInUrl('sources-inspiration'); }}
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold whitespace-nowrap bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-500/70 text-emerald-200 shadow-sm transition-all cursor-pointer mr-1"
+              title="Accès réservé : Aux sources d'inspiration — orientation vers le guichet compétent, dépôt de situation, agent"
+            >
+              <Lightbulb className="w-3.5 h-3.5 text-emerald-400" />
+              <span>#sources-inspiration</span>
             </button>
 
             {/* Quick button to launch Argane-Sekyat V2 */}
@@ -774,6 +791,12 @@ export default function App() {
       <DossierApportModal
         isOpen={isDossierApportOpen}
         onClose={() => { setIsDossierApportOpen(false); setAnchorInUrl(''); }}
+      />
+
+      {/* Accès réservé : Aux sources d'inspiration (#sources-inspiration) */}
+      <SourcesInspirationModal
+        isOpen={isSourcesOpen}
+        onClose={() => { setIsSourcesOpen(false); setAnchorInUrl(''); }}
       />
 
       {/* International Billing & BNC / PNUD Facilitation Modal */}
