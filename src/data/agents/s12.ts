@@ -1,6 +1,6 @@
 // Agent S12 — Carnet de questions. Source unique : lue par le client (intro, mode hors ligne)
 // ET par la fonction serveur api/agent.ts (systemPrompt). Aucune clé ici.
-import type { AgentDefinition } from './types';
+import type { AgentDefinition } from './types.js';
 
 export const AGENT_S12: AgentDefinition = {
   id: 's12',

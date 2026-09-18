@@ -1,6 +1,6 @@
-import type { AgentDefinition } from './types';
-import { AGENT_S12 } from './s12';
-import { AGENT_SOURCES } from './sources';
+import type { AgentDefinition } from './types.js';
+import { AGENT_S12 } from './s12.js';
+import { AGENT_SOURCES } from './sources.js';
 
 export const AGENTS: Record<string, AgentDefinition> = {
   [AGENT_S12.id]: AGENT_S12,
@@ -8,4 +8,4 @@ export const AGENTS: Record<string, AgentDefinition> = {
 };
 
 export const getAgent = (id: string): AgentDefinition | undefined => AGENTS[id];
-export type { AgentDefinition, ChatMessage } from './types';
+export type { AgentDefinition, ChatMessage } from './types.js';

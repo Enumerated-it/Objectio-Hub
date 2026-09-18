@@ -1,7 +1,7 @@
 // Vercel Function — POST /api/agent
 // La clé GEMINI_API_KEY vit UNIQUEMENT dans Vercel → Settings → Environment Variables.
 // Sans clé : réponse "offline" (texte fixe de l'agent). Aucun contenu n'est journalisé.
-import { getAgent } from '../src/data/agents/index';
+import { getAgent } from '../src/data/agents/index.js';
 
 type Role = 'user' | 'agent';
 interface Msg { role: Role; content: string }

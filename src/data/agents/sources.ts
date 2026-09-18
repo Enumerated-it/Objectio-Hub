@@ -1,5 +1,5 @@
 // Agent de la rubrique « Aux sources d'inspiration » — oriente vers le guichet réel et prépare le dossier.
-import type { AgentDefinition } from './types';
+import type { AgentDefinition } from './types.js';
 
 export const AGENT_SOURCES: AgentDefinition = {
   id: 'sources',
