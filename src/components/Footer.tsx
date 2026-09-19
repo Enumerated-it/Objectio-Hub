@@ -12,6 +12,7 @@ interface FooterProps {
   onOpenArganeSekyat: () => void;
   onOpenLogueVideo?: () => void;
   onOpenFounderMasterAccess?: () => void;
+  onOpenMentionsLegales?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ 
@@ -22,7 +23,8 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenInternationalBilling,
   onOpenArganeSekyat,
   onOpenLogueVideo,
-  onOpenFounderMasterAccess
+  onOpenFounderMasterAccess,
+  onOpenMentionsLegales
 }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -94,6 +96,20 @@ export const Footer: React.FC<FooterProps> = ({
             <span className="text-cyan-400">{LEGAL_IDENTITY.isocNumber}</span>
             <span>•</span>
             <span className="text-amber-400">{LEGAL_IDENTITY.officialDomain}</span>
+            {onOpenMentionsLegales && (
+              <>
+                <span>•</span>
+                <a
+                  href="#mentions-legales"
+                  id="lnk-footer-mentions-legales"
+                  onClick={(e) => { e.preventDefault(); onOpenMentionsLegales(); }}
+                  className="text-slate-300 underline decoration-dotted hover:text-amber-300"
+                  title="Mentions légales et données personnelles (loi 09-08)"
+                >
+                  Mentions légales · Données personnelles (loi 09-08)
+                </a>
+              </>
+            )}
           </div>
         </div>
 

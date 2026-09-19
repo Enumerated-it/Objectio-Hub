@@ -15,6 +15,7 @@ import { MorchidiDigitalModal } from './components/MorchidiDigitalModal';
 import { DossierApportModal } from './components/DossierApportModal';
 import { SourcesInspirationModal } from './components/SourcesInspirationModal';
 import { Footer } from './components/Footer';
+import { MentionsLegalesModal } from './components/MentionsLegalesModal';
 import { getAnchorFromUrl, setAnchorInUrl, copyToClipboard, getFullDeepLink } from './utils/deepLink';
 import { 
   ShieldCheck, 
@@ -59,6 +60,7 @@ export default function App() {
   const [isMorchidiDigitalOpen, setIsMorchidiDigitalOpen] = useState(false);
   const [isDossierApportOpen, setIsDossierApportOpen] = useState(false);
   const [isSourcesOpen, setIsSourcesOpen] = useState(false);
+  const [isMentionsOpen, setIsMentionsOpen] = useState(false);
   const [isFounderMasterAccessOpen, setIsFounderMasterAccessOpen] = useState(false);
   const [activeSiteId, setActiveSiteId] = useState('site-0');
   const [copiedSiteId, setCopiedSiteId] = useState<string | null>(null);
@@ -102,6 +104,12 @@ export default function App() {
         // Check for Dossier d'apport deep link (état d'avancement, commissaire aux apports)
         if (lower === 'apport' || lower === 'dossier-apport' || lower === 'commissaire') {
           setIsDossierApportOpen(true);
+          return;
+        }
+
+        // Mentions légales & données personnelles (loi 09-08) — prérequis des agents en ligne
+        if (lower === 'mentions-legales' || lower === 'mentions' || lower === 'legal' || lower === 'donnees-personnelles') {
+          setIsMentionsOpen(true);
           return;
         }
 
@@ -799,6 +807,12 @@ export default function App() {
         onClose={() => { setIsSourcesOpen(false); setAnchorInUrl(''); }}
       />
 
+      {/* Mentions légales & données personnelles (#mentions-legales) */}
+      <MentionsLegalesModal
+        isOpen={isMentionsOpen}
+        onClose={() => { setIsMentionsOpen(false); setAnchorInUrl(''); }}
+      />
+
       {/* International Billing & BNC / PNUD Facilitation Modal */}
       <InternationalBillingModal
         isOpen={isInternationalBillingOpen}
@@ -832,6 +846,7 @@ export default function App() {
 
       {/* Complete Legal Footer */}
       <Footer
+        onOpenMentionsLegales={() => { setIsMentionsOpen(true); setAnchorInUrl('mentions-legales'); }}
         onSelectService={handleSelectService}
         onOpenAttestation={() => setIsAttestationOpen(true)}
         onOpenGlobalInventory={() => setIsGlobalInventoryOpen(true)}
