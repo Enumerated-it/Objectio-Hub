@@ -45,12 +45,12 @@ export const AGENT_SEKYAT: AgentPersona = {
     'Chrono-analyse industrielle & postes de travail',
     'Méthode SMED (Single-Minute Exchange of Die)',
     'Minute d’Occupation Convertible (MOC / MOC+)',
-    'Équilibre financier international (Domiciliation BNC)',
+    'Équilibre financier international (Initiative Canada)',
     'Élimination des gaspillages & R.O.I anti-inflation'
   ],
   systemPrompt: `Tu es Sekyat, ingénieur méthodes industrielles exerçant sous le sigle BMM* (Bureau Méthodes Magazine) et analyste d'efficience économique.
 Ton rôle est d'analyser la faisabilité opérationnelle, le temps d'exécution (mesuré en MOC - Minute d'Occupation Convertible), l'élimination des goulots d'étranglement par la chrono-analyse SMED, et la rentabilité financière des actifs incorporels.
-Tu garantis que les engagements juridiques reposent sur un équilibre économique soutenable, adossé à l'auto-alimentation des flux bancaires (BNC Canada Domiciliation).`
+Tu vérifies que les hypothèses économiques sont sourcées, soutenables et ne présentent aucun financement comme acquis.`
 };
 
 export interface ChatMessage {
@@ -108,7 +108,7 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       },
       {
         speaker: 'sekyat',
-        text: `Conclusion d'atelier : En combinant le scellement juridique d'Argane et le chrono-métrage MOC de Sekyat, l'entreprise augmente ses fonds propres, améliore son ratio de solvabilité bancaire auprès de la Banque Nationale du Canada (BNC), et sécurise son droit à subvention auprès des bailleurs (PNUD / UE).`,
+        text: `Conclusion d'atelier : En combinant le scellement juridique d'Argane et le chrono-métrage MOC de Sekyat, l'entreprise augmente ses fonds propres, améliore son ratio de solvabilité bancaire auprès de la expérience bancaire personnelle historique au Canada (BNC), et sécurise son droit à subvention auprès des bailleurs (PNUD / UE).`,
         metrics: { mocPonderee: 42000, loiReference: 'Bilan Actif Incorporel BMM*' }
       }
     ],
@@ -143,36 +143,6 @@ export const DEBATE_SCENARIOS: DebateScenario[] = [
       }
     ],
     consensus: 'Consensus analysé par le Bureau des méthodes : Le gain SMED est pérennisé sans risque juridique, générant un R.O.I immédiat tout en satisfaisant aux obligations de bien-être au poste de travail.'
-  },
-  {
-    id: 'scen-03',
-    title: 'Mécanisme « 0,00 MAD Décaissé » & Infrastructure Cloud IA',
-    category: 'Architecture Numérique & Financement International',
-    description: 'Démonstration du bouclage financier BNC Canada et Google Cloud sans débours pour le citoyen usager.',
-    initialQuestion: 'Comment maintenir le portail Objectio Hub et ses 15 services 100% gratuits pour les citoyens (0 MAD) tout en absorbant les coûts Cloud IA ?',
-    steps: [
-      {
-        speaker: 'argane',
-        text: `L'article 37 de la Constitution marocaine et l'article 31 imposent la démocratisation de l'accès à l'information juridique et administrative. Si nous facturions les usagers modestes, nous détruirions la vocation inclusive du guichet unique. Le modèle économique doit impérativement respecter la gratuité au point d'usage.`,
-        metrics: { loiReference: 'Constitution Art. 31 & 37' }
-      },
-      {
-        speaker: 'sekyat',
-        text: `Pour financer les serveurs Cloud Run et les requêtes IA sans prélever 1 centime sur le citoyen, nous activons la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) adressée aux bailleurs multilatéraux (PNUD, Banque Mondiale, Union Européenne, Canada). Les fonds sont directement adossés sur le compte Banque Nationale du Canada (Compte BNC International), créant un réservoir en devises dédié aux factures technologiques.`,
-        metrics: { mocPonderee: 6600 }
-      },
-      {
-        speaker: 'argane',
-        text: `Juridiquement, cette convention triangulaire est irréprochable : le bailleur honore la prise en charge dans le cadre de ses programmes d'inclusion numérique (ODD 1, 8, 9, 10, 16), la BNC encaisse en toute transparence sans transfert de change prohibitif, et le citoyen accède à un service souverain à 0,00 MAD.`,
-        metrics: { loiReference: 'Convention Internationale Partenariat ODD' }
-      },
-      {
-        speaker: 'sekyat',
-        text: `L'équation financière et humaine est ainsi bouclée : l'intelligence artificielle Argane-Sekyat sert le bien commun, financée par la coopération internationale, garantie sous l'expertise BMM* de Mohamed MORCHID.`,
-        metrics: { mocPonderee: 6600, loiReference: 'Liaison Domiciliation BNC' }
-      }
-    ],
-    consensus: 'Consensus analysé par le Bureau des méthodes : Modèle pérenne d’auto-financement par tiers bailleur multilatéral avec domiciliation BNC, assurant la gratuité citoyenne perpétuelle.'
   }
 ];
 
@@ -193,8 +163,8 @@ export const PRECONFIGURED_USER_PROMPTS: { title: string; category: string; prom
     prompt: 'Comment prouver l’antériorité de mes recherches développées sur DeepSeek sans API publique selon le protocole de scellement probatoire ?'
   },
   {
-    title: 'Liaison BNC 0,00 MAD Débours',
+    title: 'Initiative Canada — état à vérifier',
     category: 'Finance',
-    prompt: 'Expliquez comment fonctionne la prise en charge de la note d’honoraires de $6 600 USD avec le compte BNC International.'
+    prompt: 'Présentez uniquement l’état documenté de l’initiative Canada et les vérifications restant à accomplir.'
   }
 ];

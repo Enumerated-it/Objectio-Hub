@@ -34,10 +34,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08', // Arrêté d'inventaire - travaux en cours
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'Dépôts GitHub Enumerated-it (Spire-Stable, Objectio-Hub) — journaux git horodatés (strate S1)',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Loi 17-97 relative à la protection de la propriété industrielle et Droit des Obligations et des Contrats (D.O.C)',
-    valeurMAD: 92000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-02',
@@ -52,10 +52,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'dossier_local',
-    sourceReference: 'Documents juridiques du fonds Bibliothèque H+ — pièces datées (strate S2), référence à confirmer à l’inventaire',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Loi 53-05 sur l’échange électronique de données juridiques et articles 230+ du D.O.C',
-    valeurMAD: 46000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-03',
@@ -70,10 +70,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
     sourceType: 'aistudio_google',
-    sourceReference: 'Google AI Studio Workspace [dd0a6b93-ff76-4c09-a63c-937e390b7537]',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Comptabilité analytique de gestion et règles d’évaluation de la valeur ajoutée intellectuelle',
-    valeurMAD: 38000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-04',
@@ -88,10 +88,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'github_repo',
-    sourceReference: 'Travaux préparatoires — référence à établir à l’inventaire (strate S3 tant qu’aucune pièce n’est produite)',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Constitution marocaine (accès universel aux droits) et standard d’inclusion numérique W3C/WAI',
-    valeurMAD: 32000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-05',
@@ -106,10 +106,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
     sourceType: 'autre',
-    sourceReference: 'Module QR / ISOC du Hub — code source Objectio-Hub (strate S1) ; adhésion ISOC n° 2374734',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: false,
     legalJustification: 'Référentiel ISOC (Internet Society) et réglementation Bank Al-Maghrib sur les paiements instantanés',
-    valeurMAD: 28000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-06',
@@ -124,10 +124,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'recherche_continue',
     sourceType: 'deepseek_ai',
-    sourceReference: 'Sessions de Recherche Doctrinale DeepSeek & Modèles Hybrides (Sans API publique requise)',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: true, // Plateforme fermée sans API : formalisation par protocole probatoire
     legalJustification: 'Protection des œuvres de l’esprit, droits moraux inaliénables de l’auteur et propriété intellectuelle pré-normative',
-    valeurMAD: 44000,
+    valeurMAD: 0,
   },
   {
     id: 'inv-07',
@@ -142,10 +142,10 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
     sourceType: 'plateforme_sans_api',
-    sourceReference: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app (morchidit.morchidi.digital)',
+    sourceReference: 'Référence conservée dans le dossier privé d’inventaire',
     hasNoPublicApi: true,
     legalJustification: 'Lois 17-95 et 5-96 (Sociétés commerciales), Loi 17-97 (Propriété industrielle), Articles 230+ du D.O.C et Loi 31-08',
-    valeurMAD: 25000,
+    valeurMAD: 0,
   },
 ];
 
@@ -155,8 +155,8 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     title: 'Fondateurs de Startups & Porteurs de Projets Innovants',
     profilAcheteur: 'Créateurs d’entreprises (SARL, SAS, Auto-entrepreneurs) cherchant à consolider leurs fonds propres.',
     besoinFondamental: 'Augmenter le capital social de l’entreprise sans avoir à mobiliser du numéraire liquide.',
-    beneficeROI: 'R.O.I immédiat : Conversion d’heures de R&D/conception en capital officiel bilantiel, crédibilisant la société auprès des banquiers et financeurs sans dilution de parts.',
-    couvertureAntiInflation: 'Bouclier anti-inflation absolu : Le capital est assis sur des actifs intellectuels pérennes et des algorithmes dont la valeur résiste à la dépréciation monétaire.',
+    beneficeROI: 'Bénéfice à évaluer : documenter les travaux et préparer leur examen par les professionnels compétents.',
+    couvertureAntiInflation: 'La valeur éventuelle des actifs dépend d’une évaluation indépendante et des conditions du marché.',
     modaliteAcquisition: 'Souscription au pack d’inventaire réel & PV d’assemblée générale analysé par le Bureau des méthodes (Service S01 & S03).',
   },
   {
@@ -164,7 +164,7 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     title: 'Consultants, Concepteurs IA & Chercheurs Indépendants',
     profilAcheteur: 'Experts et intellectuels sources d’inspiration pour des tiers ou des systèmes d’IA (Victimes de l’« Information Attention Pénible » - IAP).',
     besoinFondamental: 'Prouver l’antériorité de leurs travaux et valoriser leur temps de recherche (MOC) face aux donneurs d’ordre.',
-    beneficeROI: 'Rémunération équitable : Fixation indiscutable du prix de revient (S04) avec coefficients MOC+ et protection de leurs droits moraux d’auteur inaliénables.',
+    beneficeROI: 'Aide à la documentation du temps et des coûts ; aucun prix ni droit à rémunération n’est garanti.',
     couvertureAntiInflation: 'La Minute d’Occupation Convertible (MOC) s’indexe sur la rareté du temps et de l’expertise humaine face à l’automatisation brute.',
     modaliteAcquisition: 'Licence d’exploitation de la méthodologie MOC & inventaire probatoire analysé par le Bureau des méthodes (S04 & S07).',
   },
@@ -182,7 +182,7 @@ export const CIBLES_MARCHE_ROI: MarketTarget[] = [
     title: 'Commissaires aux Apports, Experts-Comptables & Notaires',
     profilAcheteur: 'Professionnels du chiffre et du droit chargés d’attester la valeur des apports en nature devant le Tribunal de Commerce.',
     besoinFondamental: 'Disposer d’un référentiel mathématique probatoire, transparent et vérifiable pour motiver leur rapport officiel.',
-    beneficeROI: 'Sécurité juridique totale : Décharge de responsabilité grâce à une traçabilité granulaire de chaque projet (dates début, arrêtés d’inventaire, logs MOC, identifiants d’état civil).',
+    beneficeROI: 'Traçabilité préparatoire à examiner par les professionnels compétents ; aucune décharge de responsabilité n’est délivrée.',
     couvertureAntiInflation: 'Standardisation des barèmes d’évaluation des actifs technologiques à l’abri des fluctuations boursières ou monétaires.',
     modaliteAcquisition: 'Convention d’utilisation du portail de vérification et des matrices d’actes analysées par le Bureau des méthodes (S01 & S02).',
   },
@@ -217,8 +217,8 @@ export const LEGAL_IDENTITY: LegalIdentity = {
   officialDomain: 'morchidit.morchidi.digital',
   cloudRunUrl: 'https://ais-pre-lwfoyx2sqftdrybjuojn4u-72607106913.europe-west1.run.app',
   valeurApportVariable: 'OBJ_VALEUR_APPORT_NATURE',
-  valeurApportMontant: OBJ_VALEUR_APPORT_NATURE,
-  certifiedContribution: `${OBJ_VALEUR_APPORT_NATURE_FORMATTED} (en cours d’inventaire)`,
+  valeurApportMontant: 0,
+  certifiedContribution: 'En cours d’inventaire et d’évaluation — aucune valeur arrêtée',
   statutValeurApport: OBJ_STATUT_VALEUR_APPORT,
   iceNumber: '003707910000033',
   isocNumber: 'ISOC N° 2374734',
@@ -253,7 +253,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     ],
     primaryMetric: {
       label: 'Valeur Probatoire',
-      value: '100% Opposable'
+      value: 'Portée à apprécier'
     }
   },
   {
@@ -284,24 +284,20 @@ export const SERVICES_LIST: ServiceItem[] = [
     anchor: 'business-plan',
     category: 'finance',
     categoryLabel: 'Finance & Stratégie',
-    tagline: 'Modélisation financière triennale, structure tripartite de revenus et suivi des jalons',
-    shortDesc: `Architecture prévisionnelle 2024-2027 conforme CGNC, intégration de l'apport en cours d’inventaire OBJ_VALEUR_APPORT_NATURE (${OBJ_VALEUR_APPORT_NATURE_FORMATTED}, Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), adossement international BNC ($6 600 USD) et tableau de bord de suivi d'exécution des jalons d'affaires.`,
-    legalBasis: 'Plan Comptable Général Marocain (CGNC) • Normes d’évaluation des apports en nature et incorporels (Lois 17-95 et 5-96).',
+    tagline: 'Structuration prudente des hypothèses, charges, recettes et jalons',
+    shortDesc: 'Outil méthodologique de préparation d’un Business Plan. Aucun montant, financement ou résultat n’est présenté comme acquis.',
+    legalBasis: 'Outil d’aide à la décision — validation comptable, fiscale et juridique externe selon le projet.',
     features: [
-      'Projections financières pluriannuelles triennales (An 1, An 2, An 3) et CAF',
-      'Structure tripartite de revenus : Bailleurs BNC ($6 600 USD), Consulting B2B BMM* et Citoyens (0,00 MAD)',
-      `Intégration comptable de l'apport lié à OBJ_VALEUR_APPORT_NATURE (${OBJ_VALEUR_APPORT_NATURE_FORMATTED})`,
-      'Tableau de bord de suivi des jalons opérationnels et dossier Commissariat aux apports'
+      'Hypothèses sourcées et datées',
+      'Scénarios prudent, central et favorable',
+      'Besoins de financement non présentés comme acquis',
+      'Données réelles conservées dans le dossier privé'
     ],
     primaryMetric: {
-      label: 'Apport Réel (OBJ)',
-      value: OBJ_VALEUR_APPORT_NATURE_FORMATTED
+      label: 'Statut public',
+      value: 'Aucune valeur arrêtée'
     },
-    sampleData: {
-      variable: 'OBJ_VALEUR_APPORT_NATURE',
-      source: 'Inventaire Réel des Actifs d’Apport',
-      valeurMAD: OBJ_VALEUR_APPORT_NATURE
-    }
+    sampleData: { statut: 'en_cours_inventaire_evaluation' }
   },
   {
     id: 's04',
@@ -711,13 +707,13 @@ export const DNS_CONFIGURATION_RECORDS: DnsRecordConfig[] = [
 ];
 
 export const BNC_ACCOUNT_DATA: BncAccountConfig = {
-  bankName: 'Banque Nationale du Canada (National Bank of Canada)',
-  accountNumber: 'Compte Pro BNC International',
+  bankName: 'Expérience bancaire personnelle historique au Canada',
+  accountNumber: 'Donnée privée non publiée',
   accountHolder: 'Mohamed MORCHID',
-  currencySupported: ['CAD', 'USD', 'EUR'],
-  sigleCertification: 'BMM* (Bureau Méthodes Magazine / Mohamed MORCHID)',
-  status: 'actif_recouvrement',
-  purpose: 'Compte de compensation et d’encaissement direct des honoraires internationaux et subventions bailleurs (PNUD, fonds multilatéraux), servant d’adossement direct au mode Pay-Per-Request de Google Cloud / AI Studio sans débours local.'
+  currencySupported: [],
+  sigleCertification: 'Aucune certification bancaire revendiquée',
+  status: 'historique_a_verifier',
+  purpose: 'Initiative Canada en cours de réexamen juridique et opérationnel. Aucun partenariat ni compte professionnel actif n’est annoncé.'
 };
 
 export const MULTI_DEVICE_BUILD_EFFORT: MultiDeviceBuildEffort = {
@@ -728,178 +724,17 @@ export const MULTI_DEVICE_BUILD_EFFORT: MultiDeviceBuildEffort = {
   totalEffortMOC: 1980, // 33h x 60 = 1 980 MOC
   tauxHoraireExpertiseMAD: 650, // Barème légal de consultation d'ingénierie sociale & technologique
   valeurSessionMAD: 21450, // 33h * 650 MAD
-  mentionReserveCommissariat: "RÉSERVE SOLENNELLE POUR LE COMMISSARIAT AUX APPORTS (Lois 17-95 art. 24 & 5-96 art. 53) : Il est expressément déclaré que l'ensemble des 8 pôles et 15 services consolidés à ce jour ne constitue qu'une tranche initiale d'actifs immatériels. Un portefeuille additionnel de projets d'ingénierie, algorithmes de justice prédictive et matrices contractuelles est expressément maintenu en réserve d'instruction pour être soumis au Commissariat aux apports officiel lors du dépôt d'augmentation de capital au Tribunal de Commerce de Settat.",
+  mentionReserveCommissariat: "INVENTAIRE EN COURS : les éléments et preuves sont conservés dans le dossier privé. Aucune valeur ni opération sur capital n’est arrêtée.",
   statutApprobation: 'declare_fondateur'
 };
 
 export const INTERNATIONAL_INVOICE_DEFAULT: InternationalInvoiceData = {
-  invoiceNumber: 'BMM-INT-2026-001',
-  dateEmission: '2026-09-09',
-  beneficiairePrincipal: 'Cabinet de Consulting & Conseil Social Mohamed MORCHID (Sigle BMM*)',
-  ice: '003707910000033',
-  rcSettat: 'RC 16894 Settat (04/03/2013) • IF 14412126',
-  destinataireOrganisation: 'Programme des Nations Unies pour le Développement (PNUD / UNDP) — Bureau Régional & Fonds d’Appui à l’Innovation Sociale',
-  destinataireAdresse: 'Division de l’Économie Sociale, Solidaire et de la Transition Numérique Durable',
-  objetMission: 'Facilitation de Guichet Unique Citoyen, Ingénierie Sociale (Art. 37 Constitution) et Prise en Charge d’Infrastructure Cloud IA (Google AI Studio) — Écosystème OBJECTIO',
-  bncAccountNumber: 'Banque Nationale du Canada (Compte Pro BNC)',
-  lines: [
-    {
-      id: 'line-1',
-      description: 'Ingénierie de Guichet Unique Dématérialisé & Accessibilité Citoyenne (Académie OBJECTIO • Art. 37 Constitution marocaine)',
-      effortHeures: 18.5,
-      tauxHoraireUSD: 120,
-      montantUSD: 2220,
-      equivalentMAD: 22200,
-      poleReference: 'Site 6 : Académie OBJECTIO (#academie)'
-    },
-    {
-      id: 'line-2',
-      description: 'Modélisation Chrono-Analyse Industrielle BMM* & Rationalisation des Flux Opérationnels (Méthode SMED)',
-      effortHeures: 14.5,
-      tauxHoraireUSD: 120,
-      montantUSD: 1740,
-      equivalentMAD: 17400,
-      poleReference: 'Site 4 : Bureau Méthodes Magazine (#BMM)'
-    },
-    {
-      id: 'line-3',
-      description: 'Audit & Sentinelle Cyber Loi 31-08 (Protection des usagers bancaires & Algorithme Mīzān Al-Qisṭ)',
-      effortHeures: 12.0,
-      tauxHoraireUSD: 120,
-      montantUSD: 1440,
-      equivalentMAD: 14400,
-      poleReference: 'Site 2 : Cyber-Défense Bancaire (#cyber)'
-    },
-    {
-      id: 'line-4',
-      description: 'Forfait de Couverture & Adossement Infrastructure Cloud IA (Auto-financement Google Cloud / AI Studio Pay-Per-Request)',
-      effortHeures: 10.0,
-      tauxHoraireUSD: 120,
-      montantUSD: 1200,
-      equivalentMAD: 12000,
-      poleReference: 'Hub 8 Pôles (morchidit.morchidi.digital)'
-    }
-  ],
-  totalUSD: 6600,
-  tauxChangeUSD_MAD: 10.0,
-  totalMAD: 66000,
-  mentionStrategie: 'Stratégie « Ne payez que lorsque vous gagnez » : La présente note d’honoraires alimente directement le compte international BNC. Ce compte prend en charge l’infrastructure Cloud sans aucun débit sur les finances personnelles du fondateur.'
+  invoiceNumber: 'NON-EMISE', dateEmission: '', beneficiairePrincipal: '', ice: '', rcSettat: '',
+  destinataireOrganisation: 'Aucun destinataire acquis', destinataireAdresse: '',
+  objetMission: 'Projet préparatoire privé — aucune facture transmise', bncAccountNumber: 'Donnée privée non publiée',
+  lines: [], totalUSD: 0, tauxChangeUSD_MAD: 0, totalMAD: 0,
+  mentionStrategie: 'Aucun financement, partenariat ou règlement n’est présenté comme acquis.'
 };
 
-export const BUSINESS_PLAN_PROJECTIONS: BusinessPlanYearProjection[] = [
-  {
-    annee: 'An 1',
-    label: 'Exercice 2024-2025 (Amorçage, Guichet Unique & Consolidation)',
-    caBailleursUSD: 19800, // 3 tranches de $6 600 USD
-    caBailleursMAD: 198000,
-    caConsultingB2BMAD: 280000, // Consulting Méthodes Industrielles BMM* (SMED, chrono-analyse)
-    caLicencesMAD: 80000, // Actes analysés, licences ISOC N° 2374734
-    caTotalMAD: 558000,
-    chargesDirectesMAD: 135000, // Serveurs, Cloud, déplacements terrain Settat
-    chargesFixesMAD: 110000, // Amortissements, télécoms, abonnements pros
-    resultatExploitationMAD: 313000,
-    cafMAD: 348000,
-    bfrMAD: 45000,
-    tresorerieFinExerciceMAD: 303000
-  },
-  {
-    annee: 'An 2',
-    label: 'Exercice 2025-2026 (Expansion, Partenariats Bailleurs & Régions)',
-    caBailleursUSD: 39600, // 6 tranches de $6 600 USD
-    caBailleursMAD: 396000,
-    caConsultingB2BMAD: 480000, // Consulting BMM* & Banques (Loi 31-08)
-    caLicencesMAD: 180000, // Intégration Guichet Unique & collectivités
-    caTotalMAD: 1056000,
-    chargesDirectesMAD: 240000,
-    chargesFixesMAD: 180000,
-    resultatExploitationMAD: 636000,
-    cafMAD: 696000,
-    bfrMAD: 80000,
-    tresorerieFinExerciceMAD: 760000
-  },
-  {
-    annee: 'An 3',
-    label: 'Exercice 2026-2027 (Maturité, Capitalisation sur Apport & Rayonnement)',
-    caBailleursUSD: 66000, // 10 tranches de $6 600 USD
-    caBailleursMAD: 660000,
-    caConsultingB2BMAD: 750000, // Missions internationales d'expertise
-    caLicencesMAD: 320000, // API, écosystème OBJECTIO & droits dérivés
-    caTotalMAD: 1730000,
-    chargesDirectesMAD: 390000,
-    chargesFixesMAD: 260000,
-    resultatExploitationMAD: 1080000,
-    cafMAD: 1180000,
-    bfrMAD: 120000,
-    tresorerieFinExerciceMAD: 1620000
-  }
-];
-
-export const BUSINESS_PLAN_TRACKING_MILESTONES: BusinessPlanMilestone[] = [
-  {
-    id: 'mil-01',
-    code: 'JALON-01',
-    title: 'Inventaire Réel des Actifs d’Apport en Nature',
-    category: 'legal',
-    deadline: '2026-09-08',
-    status: 'termine',
-    completionPercent: 100,
-    deliverable: 'Rapport d\'inventaire probatoire (OBJ_VALEUR_APPORT_NATURE : valeur en cours d\'inventaire — Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports)',
-    details: 'Recensement déclaré de 6 catégories d’actifs immatériels, méthodes MOC/MOC+ et protocoles D.O.C.'
-  },
-  {
-    id: 'mil-02',
-    code: 'JALON-02',
-    title: 'Déploiement et Interconnexion des 8 Pôles Cloud Run',
-    category: 'technologie',
-    deadline: '2026-09-09',
-    status: 'termine',
-    completionPercent: 100,
-    deliverable: 'Cluster Google Cloud Run conteneurisé + routage Cloudflare / DNS morchidit.morchidi.digital',
-    details: 'Mise en ligne accessible en multi-terminaux (ordinateur, tablette, smartphone) avec deep linking persistant.'
-  },
-  {
-    id: 'mil-03',
-    code: 'JALON-03',
-    title: 'Audit Multi-Terminaux déclaré (33h MOC) & Scellement BMM*',
-    category: 'technologie',
-    deadline: '2026-09-09',
-    status: 'termine',
-    completionPercent: 100,
-    deliverable: 'Attestation d’audit technique : 14h30 mobile + 18h30 ordinateur = 33h d’ingénierie collaborative',
-    details: 'Valorisation unitaire et scellement d’intégrité conforme aux référentiels BMM* et ISOC.'
-  },
-  {
-    id: 'mil-04',
-    code: 'JALON-04',
-    title: 'Transmission de la Note d’Honoraires ($6 600 USD) au PNUD & Bailleurs',
-    category: 'financement',
-    deadline: '2026-09-10',
-    status: 'en_cours',
-    completionPercent: 85,
-    deliverable: 'Dossier complet BMM-INT-2026-001 avec attestation BNC et lettre de transmission',
-    details: 'Transmission formelle au PNUD, Banque Mondiale, UE, BAD et AFD pour prise en charge directe.'
-  },
-  {
-    id: 'mil-05',
-    code: 'JALON-05',
-    title: 'Adossement Domiciliation BNC à Google Cloud Billing',
-    category: 'financement',
-    deadline: '2026-09-15',
-    status: 'en_cours',
-    completionPercent: 70,
-    deliverable: 'Moyen de paiement international en devises associé au projet Google Cloud Run / AI Studio',
-    details: 'Bascule fluide du Free Tier vers Pay-Per-Request auto-alimenté sans débit bancaire marocain personnel.'
-  },
-  {
-    id: 'mil-06',
-    code: 'JALON-06',
-    title: 'Dépôt du Dossier d’Apport au Tribunal de Commerce de Settat',
-    category: 'legal',
-    deadline: '2026-10-30',
-    status: 'planifie',
-    completionPercent: 45,
-    deliverable: 'Rapport officiel soumis au Commissariat aux apports désigné (Lois 17-95 art. 24 & 5-96 art. 53)',
-    details: 'Augmentation de capital social du Cabinet Mohamed MORCHID (RC 16894 Settat) par apport en nature audité.'
-  }
-];
-
+export const BUSINESS_PLAN_PROJECTIONS: BusinessPlanYearProjection[] = [];
+export const BUSINESS_PLAN_TRACKING_MILESTONES: BusinessPlanMilestone[] = [];

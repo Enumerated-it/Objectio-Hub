@@ -954,7 +954,7 @@ export const GlobalInventoryModal: React.FC<GlobalInventoryModalProps> = ({ isOp
                     Le présent rapport d'inventaire, dressé et clos au <strong>{RAPPORT_INVENTAIRE_PERIODE.dateClotureRapport}</strong>, constate la réalité et la consistance des projets développés par <strong>{LEGAL_IDENTITY.founderName} (immatriculé sous le numéro d'état civil marocain {LEGAL_IDENTITY.matricule})</strong>.
                   </p>
                   <p className="text-slate-400 text-[11px]">
-                    L'inventaire garantit l'opposabilité des droits de propriété intellectuelle, le respect des règles du D.O.C et permet la souscription au capital social ou la cession de licences régies par le standard ISOC N° 2374734.
+                    L'inventaire contribue à la traçabilité des droits de propriété intellectuelle, le respect des règles du D.O.C et permet la souscription au capital social ou la cession de licences régies par le standard ISOC N° 2374734.
                   </p>
                 </div>
 

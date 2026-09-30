@@ -163,7 +163,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
       bgColor: 'from-amber-950/90 via-slate-900 to-rose-950/60',
       accentColor: 'text-rose-400 border-rose-500/60',
       targetLink: '#contact',
-      legalNotice: `Facture de régie émise sous BMM* • Dépôt au compte BNC International • Montant: ${newBudget} MAD`,
+      legalNotice: `Facture de régie émise sous BMM* • Dépôt au compte Initiative Canada — étude en cours • Montant: ${newBudget} MAD`,
       ratePerMatchMAD: parseInt(newBudget) || 1800
     };
 
@@ -315,7 +315,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
                 Régie Publicitaire : Déposer une Publication Commerciale pour Autrui
               </h3>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-900/60 text-purple-300 border border-purple-700">
-                Facturation BMM* adossée BNC
+                Financement à définir — aucun tiers engagé
               </span>
             </div>
             <button
@@ -576,7 +576,7 @@ export const VideoLogueWorldCupStudio: React.FC = () => {
               <span className="inline-block animate-marquee">
                 🍪 <strong>Kokises d'audience & personnalisation d'annonces :</strong> Respect strict de la Loi 09-08 (CNDP) • Aucune revente de données sans consentement • 
                 Régie Publicitaire Objectio Hub agréée BMM* • Titulaire légal : Mohamed MORCHID (Cabinet de Conseil Social) • Publication pour compte de tiers active • 
-                Facturation internationale adossée à la Banque Nationale du Canada (Compte BNC).
+                Projet international en cours d’étude — aucun financement acquis.
               </span>
             </div>
           </div>

@@ -95,10 +95,10 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="text-emerald-300 hover:text-white bg-emerald-950/70 hover:bg-emerald-900/90 px-2 py-0.5 rounded border border-emerald-600/60 flex items-center gap-1 cursor-pointer transition-colors"
-              title="Consulter la facilité d'envoi de factures BNC et la prise en charge PNUD (0,00 MAD débours)"
+              title="Consulter la facilité d'envoi de factures BNC et la prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>BNC International (Auto-Alimentation Cloud 0 MAD)</span>
+              <span>Initiative Canada — étude en cours (Auto-Alimentation Cloud 0 MAD)</span>
             </button>
             <span className="text-slate-500">|</span>
             <button
@@ -249,7 +249,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Accès Réservé : Fondateur & Secrétaire Général
                 </span>
                 <span className="block text-[10px] font-normal text-amber-300/90 font-mono">
-                  Plein Pouvoir (15 Services) • BMM* • Domiciliation BNC
+                  Accès aux 15 services • espace de travail
                 </span>
               </div>
             </button>
@@ -257,11 +257,11 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 font-bold text-xs shadow-md transition-all active:scale-[0.98] cursor-pointer"
-              title="Ouvrir la facilité d'envoi de factures BNC et prise en charge PNUD (0,00 MAD débours)"
+              title="Ouvrir la facilité d'envoi de factures BNC et prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
             >
               <Building2 className="w-4 h-4 text-emerald-400 shrink-0" />
               <div className="text-left">
-                <span className="block leading-tight text-white">Facilité BNC & PNUD ($6 600)</span>
+                <span className="block leading-tight text-white">Initiative Canada — état public</span>
                 <span className="block text-[10px] font-normal text-emerald-400">Prise en charge Bailleurs • 0 MAD Débours</span>
               </div>
             </button>

@@ -149,10 +149,10 @@ export const Footer: React.FC<FooterProps> = ({
           <button
             onClick={onOpenInternationalBilling}
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-950/70 hover:bg-emerald-900/90 border border-emerald-500/50 text-emerald-300 text-xs font-semibold transition-colors cursor-pointer"
-            title="Consulter la facilité d'envoi de factures BNC et prise en charge PNUD (0,00 MAD débours)"
+            title="Consulter la facilité d'envoi de factures BNC et prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span>Facilité BNC & PNUD ($6 600)</span>
+            <span>Initiative Canada — état public</span>
           </button>
 
           <button

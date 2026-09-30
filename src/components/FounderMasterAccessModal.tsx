@@ -178,7 +178,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
             }`}
           >
             <Cpu className="w-4 h-4" />
-            <span>Pôles Satellites (Argane, Logue Vidéo, BNC...)</span>
+            <span>Pôles satellites et outils</span>
           </button>
 
           <button
@@ -461,7 +461,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                   </button>
                 </div>
 
-                {/* 3. Facilité BNC & PNUD ($6 600 USD) */}
+                {/* 3. Facilité BNC & PNUD (montant non arrêté) */}
                 <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-950/70 via-slate-900 to-slate-950 border border-emerald-500/50 flex flex-col justify-between space-y-3">
                   <div>
                     <div className="flex items-center justify-between mb-2">
@@ -471,10 +471,10 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                       <DollarSign className="w-4 h-4 text-emerald-400" />
                     </div>
                     <h4 className="text-base font-bold text-white">
-                      Facturation BNC & Prise en Charge PNUD ($6 600)
+                      Initiative Canada — état public
                     </h4>
                     <p className="text-xs text-slate-300 leading-relaxed mt-1">
-                      Note d'honoraires officielle BMM* adossée à la Banque Nationale du Canada (Compte BNC), générateur de lettres de transmission aux bailleurs (0,00 MAD débours).
+                      Note d'honoraires officielle BMM* adossée à la expérience bancaire personnelle historique au Canada (Compte BNC), générateur de lettres de transmission aux bailleurs (0,00 MAD débours).
                     </p>
                   </div>
                   <button
@@ -484,7 +484,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                     }}
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-all cursor-pointer"
                   >
-                    <span>Générateur de Factures & Lettres BNC</span>
+                    <span>Dossier Canada privé non publié</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 </div>
@@ -625,7 +625,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
                     </div>
 
                     <div className="p-2 rounded bg-slate-900 border border-slate-800">
-                      <div className="text-[10px] text-cyan-400 font-bold uppercase">Banque Nationale du Canada (International) :</div>
+                      <div className="text-[10px] text-cyan-400 font-bold uppercase">expérience bancaire personnelle historique au Canada (International) :</div>
                       <div className="text-slate-200 mt-0.5">{BNC_ACCOUNT_DATA.bankName} (Montréal / Ottawa)</div>
                       <div className="text-[11px] text-cyan-300 select-all font-bold">Compte N° {BNC_ACCOUNT_DATA.accountNumber}</div>
                       <div className="text-[10px] text-slate-400 mt-0.5">Auto-alimentation des serveurs Cloud (0,00 MAD débours)</div>
@@ -723,7 +723,7 @@ export const FounderMasterAccessModal: React.FC<FounderMasterAccessModalProps> =
             <span>•</span>
             <span>RC 16894 Settat</span>
             <span>•</span>
-            <span className="text-slate-300">Domiciliation BNC</span>
+            <span className="text-slate-300">Initiative Canada</span>
           </div>
 
           <div className="flex items-center gap-2">

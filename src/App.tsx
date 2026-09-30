@@ -607,81 +607,13 @@ export default function App() {
           </div>
         </section>
 
-        {/* ==================================================================== */}
-        {/* STRATÉGIE DE FACILITATION : "NE PAYEZ QUE LORSQUE VOUS GAGNEZ" (BNC) */}
-        {/* ==================================================================== */}
-        <section 
-          id="facilite-bnc-pnud" 
-          aria-label="Facilité Internationale BNC & Prise en Charge PNUD" 
-          className="p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-emerald-950/40 via-slate-900 to-slate-950 border border-emerald-500/40 shadow-xl space-y-4"
-        >
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-            <div className="space-y-1.5 max-w-3xl">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                  <DollarSign className="w-4 h-4" />
-                </span>
-                <h2 className="text-base sm:text-lg font-bold text-white font-['Cinzel',serif] tracking-wide">
-                  Facilitation Internationale : « Ne Payez Que Lorsque Vous Gagnez »
-                </h2>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-900/60 text-emerald-300 border border-emerald-700 font-bold">
-                  Domiciliation BNC (Canada)
-                </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-950 text-sky-300 border border-sky-800">
-                  Subventions PNUD & Bailleurs
-                </span>
-              </div>
-
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Passerelle de temporisation et de compensation : Pendant la phase de conception, le quota gratuit Google AI Studio maintient vos débours à <strong>0,00 MAD</strong>. Dès émission et règlement des factures de consulting <strong>BMM*</strong> par les bailleurs sur votre compte à la <strong>Banque Nationale du Canada</strong>, ce compte prend en charge l'infrastructure Cloud en mode <em>Pay-Per-Request</em>, appliquant strictement le <strong>Principe de Profusion</strong>.
-              </p>
+        <section id="initiative-canada" aria-label="Initiative Canada" className="p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-sky-950/30 via-slate-900 to-slate-950 border border-sky-500/30 shadow-xl">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="max-w-3xl">
+              <h2 className="text-base sm:text-lg font-bold text-white font-['Cinzel',serif]">Initiative Canada — en cours de reconstruction</h2>
+              <p className="mt-2 text-xs leading-relaxed text-slate-300">Cette initiative s’appuie sur une expérience bancaire personnelle historique documentée au Canada. Son état actuel doit être vérifié directement auprès de l’établissement concerné. Aucun partenariat, compte professionnel actif, financement, affiliation institutionnelle ou prise en charge n’est annoncé comme acquis.</p>
             </div>
-
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 shrink-0">
-              <button
-                onClick={() => setIsInternationalBillingOpen(true)}
-                className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/40 transition-all cursor-pointer"
-              >
-                <Send className="w-4 h-4" />
-                <span>Ouvrir la Facilité BNC / PNUD</span>
-              </button>
-
-              <button
-                onClick={() => setIsGlobalInventoryOpen(true)}
-                className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition-all cursor-pointer"
-                title="Consulter l'inventaire réel et la réserve pour le Commissariat aux apports"
-              >
-                <Clock className="w-3.5 h-3.5 text-amber-400" />
-                <span>Audit Build & Réserve (33h MOC)</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Quick Pillars of Facilitation */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 border-t border-slate-800/80 font-mono text-xs">
-            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-              <span className="text-[10px] text-slate-400 block uppercase">1. Forfait Développement</span>
-              <strong className="text-emerald-400 text-sm">0,00 MAD Débours</strong>
-              <p className="text-[11px] text-slate-500 font-sans mt-0.5">Quota gratuit Free Tier préservé</p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-              <span className="text-[10px] text-slate-400 block uppercase">2. Facture Consulting BMM*</span>
-              <strong className="text-white text-sm">$6 600 USD (66 000 MAD)</strong>
-              <p className="text-[11px] text-slate-500 font-sans mt-0.5">Couverture PNUD & bailleurs</p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80">
-              <span className="text-[10px] text-slate-400 block uppercase">3. Domiciliation Devises</span>
-              <strong className="text-sky-300 text-sm">BNC International</strong>
-              <p className="text-[11px] text-slate-500 font-sans mt-0.5">Banque Nationale du Canada</p>
-            </div>
-
-            <div className="p-3 rounded-xl bg-slate-950/70 border border-amber-500/30">
-              <span className="text-[10px] text-amber-400 block uppercase">4. Réserve Commissariat</span>
-              <strong className="text-amber-300 text-sm">Lois 17-95 & 5-96</strong>
-              <p className="text-[11px] text-slate-500 font-sans mt-0.5">Projets additionnels en instance</p>
-            </div>
+            <button onClick={() => setIsInternationalBillingOpen(true)} className="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-700 px-4 py-2.5 text-xs font-bold text-white hover:bg-sky-600"><Globe className="h-4 w-4"/><span>Consulter l’état public</span></button>
           </div>
         </section>
 
@@ -706,7 +638,7 @@ export default function App() {
                     Accès Réservé : Fondateur & Secrétaire Général (Mohamed MORCHID)
                   </h3>
                   <p className="text-xs text-amber-200/80 mt-0.5">
-                    Console Maître Fondateur : Accédez à l'ensemble des 15 services, workbenches, note d'honoraires BMM* ($6 600 USD) et prise en charge Cloud :
+                    Console Maître Fondateur : Accédez à l'ensemble des 15 services, workbenches, note d'honoraires BMM* (montant non arrêté) et prise en charge Cloud :
                   </p>
                 </div>
               </div>

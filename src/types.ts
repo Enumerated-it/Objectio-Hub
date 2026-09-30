@@ -104,12 +104,12 @@ export interface DnsRecordConfig {
 }
 
 export interface BncAccountConfig {
-  bankName: string; // Banque Nationale du Canada (National Bank of Canada)
-  accountNumber: string; // Domiciliation BNC
+  bankName: string; // expérience bancaire personnelle historique au Canada (National Bank of Canada)
+  accountNumber: string; // Initiative Canada
   accountHolder: string; // Mohamed MORCHID
   currencySupported: string[]; // CAD, USD, EUR
   sigleCertification: string; // BMM* (Bureau Méthodes Magazine / Mohamed MORCHID)
-  status: 'actif_recouvrement' | 'reactivation_flux_internationaux';
+  status: 'historique_a_verifier' | 'actif_recouvrement' | 'reactivation_flux_internationaux';
   purpose: string;
 }
 

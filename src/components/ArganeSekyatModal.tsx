@@ -65,7 +65,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
       id: 'init-2',
       sender: 'sekyat',
       senderName: 'Sekyat (Méthodes BMM*)',
-      text: `Et moi, Sekyat, j'interviens sur la quantification des efforts (Minute d'Occupation Convertible - MOC), la chrono-analyse industrielle SMED et l'équilibre financier BNC. Posez votre question, nous vous répondrons en duo ou individuellement.`,
+      text: `Et moi, Sekyat, j'interviens sur la quantification des efforts (Minute d'Occupation Convertible - MOC), la chrono-analyse industrielle SMED et la structuration prudente des hypothèses financières. Posez votre question, nous vous répondrons en duo ou individuellement.`,
       timestamp: '11:01',
       metrics: { mocPonderee: 100 }
     }
@@ -152,10 +152,10 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
       const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
       if (answeringMode === 'argane' || (answeringMode === 'duo' && !lower.includes('smed') && !lower.includes('chrono'))) {
-        let arganeText = `Sur le plan du Droit Positif marocain (Lois 17-95 et 5-96, et dispositions du D.O.C), votre démarche requiert la rédaction d'un procès-verbal analysé par le Bureau des méthodes. L'antériorité de conception sous le titulaire Mohamed MORCHID (${LEGAL_IDENTITY.matricule}, ICE ${LEGAL_IDENTITY.iceNumber}) confère une force probante pleine et entière devant le greffe du Tribunal de Commerce de Settat (RC ${LEGAL_IDENTITY.rcNumber}). L'usager citoyen bénéficie de la gratuité constitutionnelle (0,00 MAD usager selon l'Art. 37 de la Constitution).`;
+        let arganeText = `Sur le plan du Droit Positif marocain (Lois 17-95 et 5-96, et dispositions du D.O.C), votre démarche requiert la rédaction d'un procès-verbal analysé par le Bureau des méthodes. Les pièces d’antériorité doivent être conservées et leur portée appréciée par l’autorité ou le professionnel compétent. Aucun résultat ni financement par un tiers n’est garanti.`;
         
         if (lower.includes('capital') || lower.includes('apport')) {
-          arganeText = `Pour incorporer des actifs incorporels au capital social (Loi 17-95 Art. 24 / Loi 5-96 Art. 53), il convient d'annexer l'inventaire contradictoire des travaux en cours (Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), garantissant l'absence de passif et la non-subordination salariale.`;
+          arganeText = `Pour incorporer des actifs incorporels au capital social (Loi 17-95 Art. 24 / Loi 5-96 Art. 53), il convient d'annexer l'inventaire contradictoire des travaux en cours (Analysé par le Bureau des méthodes Objectio — valeur soumise à l’appréciation du commissaire aux apports), sans garantir l’absence de passif ni préjuger la qualification juridique.`;
         } else if (lower.includes('deepseek') || lower.includes('sans api') || lower.includes('ia')) {
           arganeText = `Concernant les recherches développées sur plateformes IA fermées sans API (comme DeepSeek), le protocole probatoire repose sur l'empreinte de dates de séances, le scellement d'antériorité doctrinale et la conservation des journaux de requêtes (IAP - Information Attention Pénible), protégeant vos droits moraux inaliénables d'auteur.`;
         }
@@ -176,8 +176,8 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
         
         if (lower.includes('smed') || lower.includes('chrono') || lower.includes('atelier')) {
           sekyatText = `Pour la chrono-analyse SMED d'atelier, la méthodologie BMM* scinde les temps de transition : préparation externe en temps masqué, outillage pré-réglé, et standardisation 5S. Vous pouvez ainsi diviser par 3 les temps d'arrêt machine et optimiser votre Taux de Rendement Synthétique (TRS).`;
-        } else if (lower.includes('bnc') || lower.includes('dollar') || lower.includes('facture') || lower.includes('honoraires') || lower.includes('6600')) {
-          sekyatText = `Le modèle de financement international est adossé à la Note d'Honoraires BMM* ($6 600 USD / 66 000 MAD) et à la domiciliation Banque Nationale du Canada (Compte BNC International). Il permet de couvrir les requêtes serveurs et l'hébergement sans débourser un seul dirham citoyen.`;
+        } else if (lower.includes('canada') || lower.includes('banque') || lower.includes('financement')) {
+          sekyatText = `L’initiative Canada s’appuie sur une expérience bancaire personnelle historique documentée. Son état actuel, les conditions d’un éventuel usage professionnel et tout financement doivent être vérifiés. Aucun tiers ni établissement n’est présenté comme engagé.`;
         }
 
         const sekyatMsg: ChatMessage = {
@@ -528,7 +528,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                       {currentScenario.consensus}
                     </p>
                     <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
-                      <span>Adossé à la Domiciliation BNC • Gratuité usager 0,00 MAD</span>
+                      <span>Adossé à la Initiative Canada • Gratuité usager 0,00 MAD</span>
                       <button
                         onClick={handleCopyTranscript}
                         className="text-purple-300 hover:text-white flex items-center gap-1 cursor-pointer"
@@ -728,7 +728,7 @@ export const ArganeSekyatModal: React.FC<ArganeSekyatModalProps> = ({ isOpen, on
                   <div className="p-3 rounded-lg bg-slate-950 border border-slate-850">
                     <div className="text-slate-500 text-[10px] uppercase">Souveraineté & Coût</div>
                     <div className="text-emerald-300 font-bold mt-0.5">0,00 MAD Décaissé</div>
-                    <div className="text-[10px] text-slate-400 mt-1">Prise en charge Domiciliation BNC</div>
+                    <div className="text-[10px] text-slate-400 mt-1">Prise en charge Initiative Canada</div>
                   </div>
                 </div>
               </div>
