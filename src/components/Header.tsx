@@ -95,10 +95,10 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="text-emerald-300 hover:text-white bg-emerald-950/70 hover:bg-emerald-900/90 px-2 py-0.5 rounded border border-emerald-600/60 flex items-center gap-1 cursor-pointer transition-colors"
-              title="Consulter la facilité d'envoi de factures BNC et la prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
+              title="Consulter la présentation publique prudente de l’initiative Canada"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>Initiative Canada — étude en cours (Auto-Alimentation Cloud 0 MAD)</span>
+              <span>Initiative Canada — étude en cours</span>
             </button>
             <span className="text-slate-500">|</span>
             <button
@@ -202,13 +202,13 @@ export const Header: React.FC<HeaderProps> = ({
                 id="btn-logue-video-header"
                 onClick={onOpenLogueVideo}
                 className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-gradient-to-r from-rose-950 via-slate-900 to-amber-950/80 hover:from-rose-900 hover:to-slate-800 border-2 border-rose-500/80 text-rose-200 font-bold text-xs shadow-lg shadow-rose-950/50 transition-all active:scale-[0.98] cursor-pointer ring-2 ring-rose-500/25"
-                title="Accéder au Studio Logue Vidéo : Cadrage subdivisé beIN SPORTS 2026 (Arrêts de match, Kokises, Publication Propre & Autrui)"
+                title="Accéder au Studio Logue Vidéo : Cadrage subdivisé programmation audiovisuelle simulée (Arrêts de match, Kokises, Publication Propre & Autrui)"
               >
                 <Tv className="w-4 h-4 text-rose-400 shrink-0" />
                 <div className="text-left">
                   <span className="block leading-tight text-white font-semibold flex items-center gap-1.5">
                     <span>Logue Vidéo TV</span>
-                    <span className="px-1.5 py-0.2 rounded bg-rose-500/30 text-rose-300 text-[9px] font-mono">beIN 2026</span>
+                    <span className="px-1.5 py-0.2 rounded bg-rose-500/30 text-rose-300 text-[9px] font-mono">Prototype</span>
                   </span>
                   <span className="block text-[10px] font-normal text-amber-300/90 font-mono">
                     Cadre Subdivisé • Pubs & Kokises
@@ -257,7 +257,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               onClick={onOpenInternationalBilling}
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/60 text-emerald-300 font-bold text-xs shadow-md transition-all active:scale-[0.98] cursor-pointer"
-              title="Ouvrir la facilité d'envoi de factures BNC et prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
+              title="Ouvrir la présentation publique prudente de l’initiative Canada"
             >
               <Building2 className="w-4 h-4 text-emerald-400 shrink-0" />
               <div className="text-left">

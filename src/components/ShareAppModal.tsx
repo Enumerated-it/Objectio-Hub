@@ -89,7 +89,7 @@ Accès directs par pôle :
 🛡️ 2. Cyber-Défense Bancaire & Loi 31-08 (Mīzān Al-Qisṭ) :
    ${LEGAL_IDENTITY.cloudRunUrl}/#cyber
 
-🚗 3. Plateforme Flotte & Location COO-DRIVE-IT (Transport & Régie) :
+🚗 3. Mobilité & Gestion de Flotte COO-DRIVE-IT (prototype méthodologique) :
    ${LEGAL_IDENTITY.cloudRunUrl}/#transport
 
 📖 4. Bureau Méthodes Magazine (BMM — Chrono-Analyse & SMED) :

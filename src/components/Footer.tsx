@@ -119,10 +119,10 @@ export const Footer: React.FC<FooterProps> = ({
               id="btn-footer-logue-video"
               onClick={onOpenLogueVideo}
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-rose-950/80 hover:bg-rose-900 border-2 border-rose-500/70 text-rose-200 text-xs font-bold transition-all cursor-pointer shadow-md"
-              title="Accéder au Studio Logue Vidéo (Cadrage subdivisé beIN SPORTS 2026, Kokises & Publication)"
+              title="Accéder au Studio Logue Vidéo (Cadrage subdivisé programmation audiovisuelle simulée, Kokises & Publication)"
             >
               <Tv className="w-3.5 h-3.5 text-rose-400" />
-              <span>Logue Vidéo (beIN 2026)</span>
+              <span>Logue Vidéo (Prototype)</span>
             </button>
           )}
 
@@ -149,7 +149,7 @@ export const Footer: React.FC<FooterProps> = ({
           <button
             onClick={onOpenInternationalBilling}
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-emerald-950/70 hover:bg-emerald-900/90 border border-emerald-500/50 text-emerald-300 text-xs font-semibold transition-colors cursor-pointer"
-            title="Consulter la facilité d'envoi de factures BNC et prise en charge éventuelle par un tiers, non acquise (0,00 MAD débours)"
+            title="Consulter la présentation publique prudente de l’initiative Canada"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
             <span>Initiative Canada — état public</span>

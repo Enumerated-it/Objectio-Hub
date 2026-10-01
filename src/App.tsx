@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { SERVICES_LIST, LEGAL_IDENTITY, ECOSYSTEM_SITES_LIST } from './data/servicesData';
 import { ServiceItem, EcosystemSite } from './types';
 import { Header } from './components/Header';
+import { NavigationSidebar } from './components/NavigationSidebar';
 import { ServiceCard } from './components/ServiceCard';
 import { ServiceModal } from './components/ServiceModal';
 import { AttestationModal } from './components/AttestationModal';
@@ -263,7 +264,16 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-['Plus_Jakarta_Sans',sans-serif] selection:bg-amber-500/20 selection:text-amber-300">
+    <div className="min-h-screen bg-slate-950 text-slate-100 lg:flex font-['Plus_Jakarta_Sans',sans-serif] selection:bg-amber-500/20 selection:text-amber-300">
+      <NavigationSidebar
+        onHome={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        onServices={() => document.getElementById('services-publics')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+        onOpenDossier={() => { setIsDossierApportOpen(true); setAnchorInUrl('apport'); }}
+        onOpenSources={() => { setIsSourcesOpen(true); setAnchorInUrl('sources-inspiration'); }}
+        onOpenPrivateSpace={() => setIsFounderMasterAccessOpen(true)}
+        onOpenMentions={() => { setIsMentionsOpen(true); setAnchorInUrl('mentions-legales'); }}
+      />
+      <div className="min-w-0 flex-1">
       {/* Header with full identity and search bar */}
       <Header
         searchQuery={searchQuery}
@@ -303,7 +313,7 @@ export default function App() {
             <button
               onClick={() => setIsFounderMasterAccessOpen(true)}
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold whitespace-nowrap bg-gradient-to-r from-amber-950 via-slate-900 to-amber-900/80 hover:from-amber-900 hover:to-amber-800 border-2 border-amber-400/90 text-amber-200 shadow-md transition-all cursor-pointer mr-1 animate-pulse hover:animate-none"
-              title="Ouvrir la Console Maître Fondateur : Accès Plein Pouvoir sur l'ENSEMBLE des 15 Services & Workbenches"
+              title="Ouvrir la Console Maître Fondateur : espace de travail non distribué publiquement"
             >
               <KeyRound className="w-3.5 h-3.5 text-amber-400" />
               <span>#espace-fondateur (15 Services)</span>
@@ -317,10 +327,10 @@ export default function App() {
                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }}
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold whitespace-nowrap bg-rose-950/90 hover:bg-rose-900 border border-rose-500/80 text-rose-200 shadow-sm transition-all cursor-pointer mr-1"
-              title="Accéder au Studio Logue Vidéo : Cadrage TV beIN SPORTS 2026, Kokises & Publications"
+              title="Accéder au Studio Logue Vidéo : Cadrage TV programmation audiovisuelle simulée, Kokises & Publications"
             >
               <Tv className="w-3.5 h-3.5 text-rose-400" />
-              <span>#logue-video (beIN 2026)</span>
+              <span>#logue-video (Prototype)</span>
             </button>
 
             {/* Quick button to open Morchidi Digital (18 Bureaux des méthodes) */}
@@ -394,7 +404,7 @@ export default function App() {
               <Award className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-xs text-slate-400 block">Valeur d'Apport Probatoire</span>
+              <span className="text-xs text-slate-400 block">Inventaire d’apport</span>
               <strong className="text-base text-amber-300 font-mono font-bold">
                 {LEGAL_IDENTITY.certifiedContribution}
               </strong>
@@ -414,7 +424,7 @@ export default function App() {
                 ICE {LEGAL_IDENTITY.iceNumber}
               </strong>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                Conformité stricte au Droit Positif et au D.O.C marocain.
+                Identification déclarée — portée à apprécier selon les textes applicables.
               </p>
             </div>
           </div>
@@ -429,7 +439,7 @@ export default function App() {
                 {LEGAL_IDENTITY.isocNumber}
               </strong>
               <p className="text-[11px] text-slate-500 mt-0.5">
-                Accréditation professionnelle • Standards d'intégrité numérique.
+                Référence de participation — aucune accréditation revendiquée.
               </p>
             </div>
           </div>
@@ -618,14 +628,14 @@ export default function App() {
         </section>
 
         {/* ==================================================================== */}
-        {/* STUDIO LOGUE VIDÉO & CADRAGE SUBDIVISÉ beIN SPORTS (WORLD CUP 2026) */}
+        {/* STUDIO DE PROGRAMMATION VIDÉO — ANIMATION SIMULÉE */}
         {/* ==================================================================== */}
-        <section id="logue-video-section" aria-label="Studio Logue Vidéo & Cadrage TV beIN SPORTS">
+        <section id="logue-video-section" aria-label="Studio de programmation vidéo simulée">
           <VideoLogueWorldCupStudio />
         </section>
 
         {/* 15 Services Grid */}
-        <section aria-label="Grille des 15 services">
+        <section id="services-publics" aria-label="Grille des 15 services" className="scroll-mt-6">
           {/* Bannière d'orientation rapide si recherche sur Fondateur / Secrétaire Général */}
           {searchQuery && (searchQuery.toLowerCase().includes('fondat') || searchQuery.toLowerCase().includes('secrét') || searchQuery.toLowerCase().includes('secre')) && (
             <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-amber-950/80 via-slate-900 to-amber-900/40 border-2 border-amber-400/80 shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
@@ -638,7 +648,7 @@ export default function App() {
                     Accès Réservé : Fondateur & Secrétaire Général (Mohamed MORCHID)
                   </h3>
                   <p className="text-xs text-amber-200/80 mt-0.5">
-                    Console Maître Fondateur : Accédez à l'ensemble des 15 services, workbenches, note d'honoraires BMM* (montant non arrêté) et prise en charge Cloud :
+                    Espace de travail privé : les dossiers et outils internes ne sont pas distribués dans l’application publique.
                   </p>
                 </div>
               </div>
@@ -646,7 +656,7 @@ export default function App() {
                 onClick={() => setIsFounderMasterAccessOpen(true)}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-md transition-all cursor-pointer whitespace-nowrap self-stretch sm:self-auto justify-center"
               >
-                <span>Ouvrir la Console Maître (15 Services)</span>
+                <span>Consulter l’état de l’espace privé</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -745,7 +755,7 @@ export default function App() {
         onClose={() => { setIsMentionsOpen(false); setAnchorInUrl(''); }}
       />
 
-      {/* International Billing & BNC / PNUD Facilitation Modal */}
+      {/* International Billing & état public de l’initiative Canada Modal */}
       <InternationalBillingModal
         isOpen={isInternationalBillingOpen}
         onClose={() => setIsInternationalBillingOpen(false)}
@@ -792,6 +802,7 @@ export default function App() {
         }}
         onOpenFounderMasterAccess={() => setIsFounderMasterAccessOpen(true)}
       />
+      </div>
     </div>
   );
 }

@@ -29,7 +29,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'incorporel',
     categoryLabel: 'Actifs Immatériels & Propriété Intellectuelle',
     designation: 'Architecture logicielle centrale, suite des 15 services de Droit Positif, matrices de PV, protocoles contractuels et deep linking persistant.',
-    effortHeuresMOC: 42000, // 700h = 42 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2024-03-10',
     dateSoumissionInventaire: '2026-09-08', // Arrêté d'inventaire - travaux en cours
     statutDeveloppement: 'en_cours_developpement',
@@ -47,7 +47,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'incorporel',
     categoryLabel: 'Fonds Doctrinal & Référentiels d’Actes',
     designation: 'Corpus d’actes juridiques analysés par le Bureau des méthodes, clauses d’arbitrage, conventions d’entraide sans subordination et référentiels de Droit Positif marocain.',
-    effortHeuresMOC: 24000, // 400h = 24 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2024-06-01',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
@@ -65,7 +65,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'technologique',
     categoryLabel: 'Méthodologie & Unité de Mesure Analytique',
     designation: 'Modèle mathématique et algorithmique de conversion du temps d’intervention (1h = 60 MOC) et pondération de complexité/risque MOC+.',
-    effortHeuresMOC: 18000, // 300h = 18 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2024-11-15',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
@@ -83,7 +83,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'technologique',
     categoryLabel: 'Technologie Inclusive & Accessibilité Juridique',
     designation: 'Lexique bilingue et moteur de vulgarisation du Droit en Langue des Signes Française (LSF) et Langue des Signes Arabe (LSA).',
-    effortHeuresMOC: 15000, // 250h = 15 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2025-02-01',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
@@ -101,7 +101,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'operationnel',
     categoryLabel: 'Accréditation & Intégration Bancaire Sécurisée',
     designation: 'Accréditation internationale ISOC N° 2374734, générateur de clés de licences cryptographiques et passerelle sécurisée de règlement CIH Bank.',
-    effortHeuresMOC: 12000, // 200h = 12 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2025-05-10',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'actif_operationnel',
@@ -119,7 +119,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'incorporel',
     categoryLabel: 'Patrimoine Cognitif & Source d’Inspiration',
     designation: 'Travaux de conceptualisation doctrinale alimentant la réflexion humaine et les modèles d’intelligence artificielle, formalisant le constat d’« Information Attention Pénible » (IAP). Développé sur plateformes IA (DeepSeek, AI Studio) sans dépendance d’API obligatoire.',
-    effortHeuresMOC: 30000, // 500h = 30 000 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2024-01-10',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'recherche_continue',
@@ -137,7 +137,7 @@ export const INVENTAIRE_REEL_APPORT: InventoryItem[] = [
     category: 'incorporel',
     categoryLabel: 'Actifs Immatériels & Propriété Intellectuelle',
     designation: 'DOSSIER TECHNIQUE & JURIDIQUE D’INVESTISSEMENT — Rapport d’évaluation et d’inventaire des apports en nature (Lois 17-95, 5-96, 17-97). Comprend 4 actifs majeurs scellés SHA-256 : Moteur Algorithmique Mīzān Al-Qisṭ & Sentinelle Cyber Loi 31-08, Plateforme Coopérative COO-DRIVE-IT Flotte & Billetterie, Méthodologie Industrielle BMM Chrono-Analyse, Système Fiduciaire MORCHID Modèles d’Actes D.O.C et ingénierie R&D multi-appareils. Déployé sur morchidit.morchidi.digital et Cloud Run.',
-    effortHeuresMOC: 16200, // 270h équiv. / 16 200 MOC
+    effortHeuresMOC: 0, // Mesure détaillée conservée hors du bundle public
     dateDebut: '2026-08-15',
     dateSoumissionInventaire: '2026-09-08',
     statutDeveloppement: 'en_cours_developpement',
@@ -249,7 +249,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Génération automatisée de PV d’Assemblée Générale Ordinaire et Extraordinaire',
       'Empreinte de conformité probatoire avec horodatage scellé',
       'Registre d’émargement analysé avec vérification d’identité',
-      'Exportation au format opposable aux tiers et institutions'
+      'Exportation destinée à la préparation et à la vérification par les parties compétentes'
     ],
     primaryMetric: {
       label: 'Valeur Probatoire',
@@ -607,7 +607,7 @@ export const ECOSYSTEM_SITES_LIST: EcosystemSite[] = [
   {
     id: 'site-2',
     siteNumber: 'Site 2',
-    name: 'Location Flotte (COO-DRIVE-IT)',
+    name: 'Mobilité & Gestion de Flotte (COO-DRIVE-IT)',
     nameAr: 'كراء السيارات وإدارة الأساطيل التعاونية',
     hash: '#transport',
     tagline: 'Plateforme coopérative de flotte, billetterie et transport',
